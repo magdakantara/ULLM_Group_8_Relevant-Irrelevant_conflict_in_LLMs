@@ -1,0 +1,5 @@
+torch>=2.4,<3
+transformers>=4.45,<5
+accelerate>=1,<2
+safetensors>=0.4
+lm-format-enforcer==0.11.3
