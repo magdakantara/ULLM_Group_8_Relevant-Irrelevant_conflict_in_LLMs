@@ -82,6 +82,7 @@ pipeline/               inference for all four models (configs, prompts, Snelliu
   data/dataset.json     the final 300-example benchmark
 evaluation/
   judging/              labelling protocol and method
+  analysis/             labels, metrics, figures (main analysis)
   verification/         independent recomputation of all reported numbers
 ```
 
@@ -91,7 +92,7 @@ evaluation/
 | [`data/generation/berkay_generator/`](data/generation/berkay_generator/) | Deterministic, tested generator for one contributor's ten contracts |
 | [`data/quality/evaluating_data_quality.ipynb`](data/quality/evaluating_data_quality.ipynb) | Structural, manual and LLM-based dataset checks |
 | [`pipeline/`](pipeline/) | Inference for Qwen (native and YaRN routes) and for Llama/Granite (native long context) — see the [pipeline README](pipeline/README.md) |
-| [`evaluation/`](evaluation/) | Judging protocol and independent verification — see the [evaluation README](evaluation/README.md) |
+| [`evaluation/`](evaluation/) | Judging protocol, labels, metric computation, figures and an independent verification — see the [evaluation README](evaluation/README.md) |
 
 ## Reproducing
 
@@ -102,8 +103,8 @@ cd pipeline && python3 -m unittest discover -s tests
 # dataset generator tests
 python3 -I -B data/generation/berkay_generator/build_berkay_dataset.py --self-test
 
-# recompute the reported numbers from the label files
-python3 -I evaluation/verification/analysis.py LABEL_DIR pipeline/data/dataset.json EXTRA_DIR OUT_DIR
+# recompute all reported numbers and figures from the label files
+cd evaluation/analysis && pip install -r requirements.txt && python score_metrics.py && python analyze_results.py
 ```
 
 Model inference needs a GPU; the [pipeline README](pipeline/README.md) lists the Snellius
