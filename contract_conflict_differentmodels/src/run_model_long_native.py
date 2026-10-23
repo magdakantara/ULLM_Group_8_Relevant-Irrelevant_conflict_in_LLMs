@@ -1,8 +1,3 @@
-"""Long-context run for models with NATIVE 128k context (Llama-3.1, Granite-3.1).
-
-Identical to run_model_long.py except: (1) no YaRN/rope change - the model must natively
-support max_input_tokens; (2) optional multi-GPU sharding via config "device_map": "auto"
-(needed for 70B), with a hard check that nothing is offloaded to CPU/disk. No paid API calls."""
 import argparse
 import json
 from importlib.metadata import version
@@ -155,8 +150,6 @@ def main():
         (folder / 'environment.txt').write_text(subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'], text=True), encoding='utf-8')
     # Keep all weights on GPU(s): no silent CPU/disk offload.
     if config.get('device_map') == 'auto':
-        # Shard evenly across all visible GPUs (70B) so each GPU keeps headroom for the long-context
-        # KV cache; max_memory without a 'cpu' key forbids CPU offload.
         max_memory = {i: torch.cuda.get_device_properties(i).total_memory for i in range(torch.cuda.device_count())}
         device_map = 'balanced'
     else:
@@ -218,7 +211,6 @@ def main():
         n_gpu = torch.cuda.device_count()
         for d in range(n_gpu):
             torch.cuda.synchronize(d)
-        # Summed over all GPUs (equals the single-GPU value when one GPU is used).
         result['peak_gpu_allocated_gib'] = sum(torch.cuda.max_memory_allocated(d) for d in range(n_gpu)) / 2**30
         result['peak_gpu_reserved_gib'] = sum(torch.cuda.max_memory_reserved(d) for d in range(n_gpu)) / 2**30
         result['seconds'] = time.monotonic() - start

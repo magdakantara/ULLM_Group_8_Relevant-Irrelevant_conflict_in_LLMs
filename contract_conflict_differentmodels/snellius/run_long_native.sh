@@ -1,6 +1,4 @@
 #!/bin/bash
-# Long-context (131k) run for an 8B model with native 128k context, on one A100 (same GPU as the Qwen runs).
-# Example: sbatch snellius/run_long_native.sh --config config/experiment_long_native.llama8b.json --prompt baseline --all --out outputs/llama8b_long_baseline
 #SBATCH --partition=gpu_a100
 #SBATCH --gpus=1
 #SBATCH --cpus-per-task=18

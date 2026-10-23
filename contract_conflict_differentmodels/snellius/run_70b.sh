@@ -1,6 +1,4 @@
 #!/bin/bash
-# Llama-3.1-70B-Instruct, bf16, sharded over 4 x H100 80GB (140 GB weights + long-context KV cache).
-# Example: sbatch snellius/run_70b.sh --config config/experiment_long_native.llama70b.json --prompt baseline --all --out outputs/llama70b_long_baseline
 #SBATCH --partition=gpu_h100
 #SBATCH --gpus=4
 #SBATCH --cpus-per-task=32
