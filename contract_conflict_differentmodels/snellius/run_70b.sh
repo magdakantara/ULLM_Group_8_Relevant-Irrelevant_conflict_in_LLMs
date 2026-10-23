@@ -7,7 +7,6 @@
 set -euo pipefail
 cd "${SLURM_SUBMIT_DIR:?Submit from the project root}"
 source snellius/activate_env.sh
-# 70B weights (~140 GB) live on scratch, not in the home quota.
 export HF_HOME="/scratch-shared/$USER/hf_cache"
 nvidia-smi --query-gpu=name,memory.total --format=csv
 python src/run_model_long_native.py "$@"
