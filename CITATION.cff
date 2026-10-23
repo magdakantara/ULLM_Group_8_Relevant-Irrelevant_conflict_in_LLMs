@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or code, please cite it as below."
+title: "Distinguishing Relevant and Irrelevant Conflicts in Two-Version Contract Question Answering"
+type: software
+authors:
+  - family-names: "Aktaş"
+    given-names: "Berkay"
+  - family-names: "Barutcu"
+    given-names: "Dilek"
+  - family-names: "Kantara"
+    given-names: "Maria Magdalini"
+  - family-names: "Yarım"
+    given-names: "Oğuz Kağan"
+  - family-names: "Yedirmez"
+    given-names: "Engin Halil"
+repository-code: "https://github.com/magdakantara/ULLM_Group_8_Relevant-Irrelevant_conflict_in_LLMs"
+keywords:
+  - large language models
+  - knowledge conflicts
+  - legal question answering
+  - contract analysis
+  - CUAD
