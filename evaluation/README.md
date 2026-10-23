@@ -16,6 +16,19 @@ Two decisions matter most for reading the numbers:
 - Responses that failed technically (truncated, invalid JSON, out of memory) get no behaviour
   label and are reported separately.
 
+## Analysis
+
+[`analysis/`](analysis/) computes all reported metrics and figures from the label files
+(`analysis/data/*_labels.csv`). Label corrections are applied from a separate overrides file
+(`results/extra/label_overrides.csv`), so the original labels stay unchanged.
+
+```sh
+cd analysis
+pip install -r requirements.txt
+python score_metrics.py      # tables in results/ and results/extra/
+python analyze_results.py    # figures in results/figures/
+```
+
 ## Verification
 
 [`verification/analysis.py`](verification/analysis.py) recomputes the main results from the
@@ -31,10 +44,10 @@ label files with the Python standard library only, independently of the main ana
 
 It runs twice, with the original labels and with five corrected Llama-3.1-70B labels (answers
 that explicitly reported both source values but had been labelled as missed). Its results match
-the main analysis exactly.
+the analysis above exactly.
 
 ```sh
-python3 -I verification/analysis.py LABEL_DIR dataset.json EXTRA_DIR OUT_DIR
+python3 -I verification/analysis.py analysis/data ../pipeline/data/dataset.json analysis/extra_data OUT_DIR
 ```
 
 `EXTRA_DIR` must contain `likely_label_errors.csv`, `task7_source_choice.csv` and
