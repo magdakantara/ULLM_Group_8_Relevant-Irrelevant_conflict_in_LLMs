@@ -129,6 +129,32 @@ To resume after a session ends, rerun the same command with the same output fold
 
 Each run saves `responses.jsonl`, `run_info.json`, `reference_snapshot.json` and `environment.txt`. Together these preserve the outputs, attempts, settings, selected IDs, model revision, reference answers, source hashes and environment details.
 
+## Llama and Granite runs
+
+Llama-3.1-8B-Instruct, Granite-3.1-8B-Instruct and Llama-3.1-70B-Instruct were run with
+`src/run_model_long_native.py`. It uses the same dataset, prompts, message format and output
+schema as the Qwen runs, but a single route with the models' native 131k-token context; RoPE
+scaling (YaRN) is explicitly refused. Settings are in `config/experiment_long_native.*.json`
+and match the Qwen long-context settings (checked by `tests/test_long_native.py`).
+
+```bash
+# 8B models: one A100 (40 GB)
+sbatch snellius/run_long_native.sh --config config/experiment_long_native.llama8b.json \
+    --all --prompt baseline --out outputs/llama8b_long_baseline
+# 70B model: four H100 GPUs, weights cached on scratch
+sbatch snellius/run_70b.sh --config config/experiment_long_native.llama70b.json \
+    --all --prompt baseline --out outputs/llama70b_long_baseline
+```
+
+| Model | Prompt | `ok` | `truncated` | `format_error` | `out_of_memory` |
+|---|---|---:|---:|---:|---:|
+| Llama-3.1-8B | Baseline | 249 | 48 | 3 | 0 |
+| Llama-3.1-8B | Explained | 240 | 51 | 9 | 0 |
+| Granite-3.1-8B | Baseline | 239 | 49 | 0 | 12 |
+| Granite-3.1-8B | Explained | 236 | 57 | 0 | 7 |
+| Llama-3.1-70B | Baseline | 268 | 32 | 0 | 0 |
+| Llama-3.1-70B | Explained | 261 | 37 | 2 | 0 |
+
 ## Evaluation
 
 The three conditions describe the input. The following four categories describe model behavior.
