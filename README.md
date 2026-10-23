@@ -43,7 +43,7 @@ governing law and warranty duration.
   Llama-3.1-70B-Instruct
 - **Prompts:** a baseline prompt and an *explained* prompt that tells the model how to handle
   relevant and irrelevant differences
-  ([prompts](contract_conflict_project/prompts/))
+  ([prompts](pipeline/prompts/))
 - **Setup:** bfloat16, greedy decoding, seed 42, JSON output enforced with
   `lm-format-enforcer`; run on the Snellius supercomputer (A100 / H100)
 - **Scale:** 4 models × 2 prompts × 300 examples = **2,400 responses**
@@ -74,26 +74,40 @@ The full analysis is in the project report.
 
 ## Repository structure
 
+```
+data/
+  generation/           dataset construction: LLM agent and a tested deterministic generator
+  quality/              manual and LLM-based quality checks of the generated examples
+pipeline/               inference for all four models (configs, prompts, Snellius jobs, tests)
+  data/dataset.json     the final 300-example benchmark
+evaluation/
+  judging/              labelling protocol and method
+  verification/         independent recomputation of all reported numbers
+```
+
 | Path | Content |
 |---|---|
-| [`data/creating_data_agent.py`](data/creating_data_agent.py) | LLM agent that selects questions and creates the modified contract versions |
-| [`data/berkay_generator/`](data/berkay_generator/) | Deterministic, tested generator for one contributor's ten contracts |
-| [`data/evaluating_data_quality.ipynb`](data/evaluating_data_quality.ipynb) | Manual and LLM-based dataset quality checks |
-| [`contract_conflict_project/`](contract_conflict_project/) | Inference pipeline for Qwen, prompts, configs, tests and Snellius scripts ([README](contract_conflict_project/README.md)) |
-| [`contract_conflict_differentmodels/`](contract_conflict_differentmodels/) | Native long-context runs for Llama and Granite |
-| [`evaluation/`](evaluation/) | Judging protocol and an independent verification of the main results |
+| [`data/generation/creating_data_agent.py`](data/generation/creating_data_agent.py) | LLM agent that selects questions and creates the modified contract versions |
+| [`data/generation/berkay_generator/`](data/generation/berkay_generator/) | Deterministic, tested generator for one contributor's ten contracts |
+| [`data/quality/evaluating_data_quality.ipynb`](data/quality/evaluating_data_quality.ipynb) | Structural, manual and LLM-based dataset checks |
+| [`pipeline/`](pipeline/) | Inference for Qwen (native and YaRN routes) and for Llama/Granite (native long context) — see the [pipeline README](pipeline/README.md) |
+| [`evaluation/`](evaluation/) | Judging protocol and independent verification — see the [evaluation README](evaluation/README.md) |
 
 ## Reproducing
 
-Model inference needs a GPU; see the
-[pipeline README](contract_conflict_project/README.md) for the Snellius setup and the exact
-commands. The dataset generator tests and the verification script run on a laptop with the
-Python standard library (plus `openpyxl` for the generator):
-
 ```sh
-python3 -I -B data/berkay_generator/build_berkay_dataset.py --self-test
-python3 -I evaluation/verification/analysis.py LABEL_DIR dataset.json EXTRA_DIR OUT_DIR
+# pipeline tests (no GPU or model download needed)
+cd pipeline && python3 -m unittest discover -s tests
+
+# dataset generator tests
+python3 -I -B data/generation/berkay_generator/build_berkay_dataset.py --self-test
+
+# recompute the reported numbers from the label files
+python3 -I evaluation/verification/analysis.py LABEL_DIR pipeline/data/dataset.json EXTRA_DIR OUT_DIR
 ```
+
+Model inference needs a GPU; the [pipeline README](pipeline/README.md) lists the Snellius
+setup and the exact commands for every run.
 
 ## Data and licence
 
