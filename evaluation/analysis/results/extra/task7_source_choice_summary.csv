@@ -1,0 +1,24 @@
+model,prompt_type,final_choice,count,percent
+Granite 8B,baseline,Source A,6,8.571428571428571
+Granite 8B,baseline,Source B,64,91.42857142857143
+Granite 8B,explained,Source A,6,9.230769230769232
+Granite 8B,explained,Source B,59,90.76923076923077
+Llama 70B,baseline,Source A,17,45.94594594594595
+Llama 70B,baseline,Source B,16,43.24324324324324
+Llama 70B,baseline,both_attributed,2,5.405405405405405
+Llama 70B,baseline,both_unattributed,2,5.405405405405405
+Llama 70B,explained,Source A,9,45.0
+Llama 70B,explained,Source B,8,40.0
+Llama 70B,explained,both_attributed,3,15.0
+Llama 8B,baseline,Source A,29,38.666666666666664
+Llama 8B,baseline,Source B,43,57.333333333333336
+Llama 8B,baseline,both_unattributed,3,4.0
+Llama 8B,explained,Source A,29,38.15789473684211
+Llama 8B,explained,Source B,40,52.63157894736842
+Llama 8B,explained,both_unattributed,7,9.210526315789473
+Qwen 7B,baseline,Source A,5,6.329113924050633
+Qwen 7B,baseline,Source B,73,92.40506329113924
+Qwen 7B,baseline,neither,1,1.2658227848101267
+Qwen 7B,explained,Source A,4,5.194805194805195
+Qwen 7B,explained,Source B,72,93.5064935064935
+Qwen 7B,explained,unclear,1,1.2987012987012987

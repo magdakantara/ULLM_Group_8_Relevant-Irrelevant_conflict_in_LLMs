@@ -1,0 +1,5 @@
+model,paired_examples,improved,worsened,p_value
+Qwen 7B,279,6,5,1.0
+Llama 8B,229,1,3,0.625
+Granite 8B,220,5,1,0.21875
+Llama 70B,251,15,1,0.000518798828125

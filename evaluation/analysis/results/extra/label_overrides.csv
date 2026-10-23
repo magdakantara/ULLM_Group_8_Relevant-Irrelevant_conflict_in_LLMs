@@ -1,0 +1,11 @@
+model,example_id,prompt_type,field,old,new,reason
+Llama 70B,EX-150,baseline,conflict_detected,no,yes,Explicitly states the conflicting Source A and Source B values
+Llama 70B,EX-150,baseline,behavior_label,incorrect_answer,expected_correct,Correctly reports both source-specific conflicting answers
+Llama 70B,OGUZ-01-B1-Q1,baseline,conflict_detected,no,yes,Explicitly states the conflicting Source A and Source B values
+Llama 70B,OGUZ-01-B1-Q1,baseline,behavior_label,incorrect_answer,expected_correct,Correctly reports both source-specific conflicting answers
+Llama 70B,EX-093,explained,conflict_detected,no,yes,Explicitly states the conflicting Source A and Source B values
+Llama 70B,EX-093,explained,behavior_label,incorrect_answer,expected_correct,Correctly reports both source-specific conflicting answers
+Llama 70B,EX-150,explained,conflict_detected,no,yes,Explicitly states the conflicting Source A and Source B values
+Llama 70B,EX-150,explained,behavior_label,incorrect_answer,expected_correct,Correctly reports both source-specific conflicting answers
+Llama 70B,OGUZ-01-B1-Q1,explained,conflict_detected,no,yes,Explicitly states the conflicting Source A and Source B values
+Llama 70B,OGUZ-01-B1-Q1,explained,behavior_label,incorrect_answer,expected_correct,Correctly reports both source-specific conflicting answers

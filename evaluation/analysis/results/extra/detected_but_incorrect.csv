@@ -1,0 +1,9 @@
+model,prompt,relevant_n,detected,detected_but_incorrect,percent_of_detected_incorrect
+Qwen 7B,baseline,92,13,4,30.76923076923077
+Qwen 7B,explained,91,14,4,28.57142857142857
+Llama 8B,baseline,83,8,1,12.5
+Llama 8B,explained,80,4,0,0.0
+Granite 8B,baseline,82,12,4,33.33333333333333
+Granite 8B,explained,78,13,2,15.384615384615385
+Llama 70B,baseline,86,51,0,0.0
+Llama 70B,explained,87,70,1,1.4285714285714286

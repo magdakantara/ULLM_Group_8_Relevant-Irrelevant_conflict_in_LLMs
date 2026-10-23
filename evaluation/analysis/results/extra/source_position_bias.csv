@@ -1,0 +1,9 @@
+model,prompt,total_missed,source_A,source_B,other_or_unclear,source_B_percent_among_A_or_B
+Granite 8B,baseline,70,6,64,0,91.42857142857143
+Granite 8B,explained,65,6,59,0,90.76923076923077
+Llama 70B,baseline,37,17,16,4,48.484848484848484
+Llama 70B,explained,20,9,8,3,47.05882352941176
+Llama 8B,baseline,75,29,43,3,59.72222222222222
+Llama 8B,explained,76,29,40,7,57.971014492753625
+Qwen 7B,baseline,79,5,73,1,93.58974358974359
+Qwen 7B,explained,77,4,72,1,94.73684210526315

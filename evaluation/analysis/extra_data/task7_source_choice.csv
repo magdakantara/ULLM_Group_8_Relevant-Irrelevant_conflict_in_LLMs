@@ -1,0 +1,684 @@
+model,example_id,prompt_type,answer_A,answer_B,model_answer,auto_choice,needs_manual_check,manual_choice,check_note,checked_by,final_choice
+qwen7b,EX-003,baseline,Kansas,Texas,"This Agreement shall be governed and construed according to the laws of the State of Texas.
+",B,no,,,,B
+qwen7b,EX-003,explained,Kansas,Texas,"The Agreement shall be governed and construed according to the laws of the State of Texas.
+",B,no,,,,B
+qwen7b,EX-006,baseline,"September 1, 2004","October 1, 2004",The Term of this Agreement shall be for a period of [* ****] years and [*****] months commencing the 1st day of October 2004 and terminating the [*****] day of [*****].,B,no,,,,B
+qwen7b,EX-006,explained,"September 1, 2004","October 1, 2004",The Term of this Agreement shall be for a period of [* ****] years and [*****] months commencing the 1st day of October 2004 and terminating the [*****] day of [*****].,B,no,,,,B
+qwen7b,EX-009,baseline,"October 30, 2019.","October 31, 2019.","October 31, 2019",B,no,,,,B
+qwen7b,EX-009,explained,"October 30, 2019.","October 31, 2019.","October 30, 2019",A,no,,,,A
+qwen7b,EX-015,baseline,"February 17, 2016","February 18, 2016","The Effective Date of this Agreement is the 18th day of February 2016 according to Source B. This is consistent with the statement in Source A as well, where it mentions 'made effective this 18th day of February 2016'.",B,no,,,,B
+qwen7b,EX-018,baseline,"February 16, 2019","February 16, 2020","February 16, 2020",B,no,,,,B
+qwen7b,EX-018,explained,"February 16, 2019","February 16, 2020","February 16, 2020",B,no,,,,B
+qwen7b,EX-021,baseline,Texas,Colorado,"The laws of the State of Colorado govern this agreement according to Source B, Section 9 (Governing Law).",B,no,,,,B
+qwen7b,EX-021,explained,Texas,Colorado,The laws of the State of Colorado,B,no,,,,B
+qwen7b,EX-024,baseline,Ninety (90) days’ written notice,Thirty (30) days’ written notice,30 days,B,no,,,,B
+qwen7b,EX-024,explained,Ninety (90) days’ written notice,Thirty (30) days’ written notice,either party shall notify the other in writing of its intention not to renew. Such notice must be given ninety (90) days prior to expiration of the original term. This Agreement may also be terminated by either party upon thirty (30) days written notice,both,yes,unclear,conflates non-renewal (90d) and termination (30d) clauses,"AI-assisted, human-checked (Kai)",unclear
+qwen7b,EX-027,baseline,"Dynamic Hearing’s aggregate liability to IntriCon is capped at $5,000,000; no cap is stated for IntriCon.","Dynamic Hearing’s aggregate liability to IntriCon is capped at $3,000,000; no cap is stated for IntriCon.","Dynamic Hearing's aggregate liability to IntriCon for direct loss and damages and all other liability not described herein arising in connection with this Agreement whether in negligence, tort, equity, contract or otherwise, is limited to payment of damages recoverable at law or equity up to a maximum of (and, for the sake of clarity must not exceed) $5m; and",A,no,,,,A
+qwen7b,EX-027,explained,"Dynamic Hearing’s aggregate liability to IntriCon is capped at $5,000,000; no cap is stated for IntriCon.","Dynamic Hearing’s aggregate liability to IntriCon is capped at $3,000,000; no cap is stated for IntriCon.","Dynamic Hearing's aggregate liability to IntriCon for direct loss and damages and all other liability not described herein arising in connection with this Agreement whether in negligence, tort, equity, contract or otherwise, is limited to payment of damages recoverable at law or equity up to a maximum of (and, for the sake of clarity must not exceed) $5m; and",A,no,,,,A
+qwen7b,EX-033,baseline,"February 28, 2025.","February 28, 2026.","The Term may be extended with the unanimous consent of all Members. Alternatively, the Term will expire on February 28, 2026 if not extended",B,no,,,,B
+qwen7b,EX-039,baseline,At least one hundred eighty (180) days prior to the beginning of any Renewal Term.,At least ninety (90) days prior to the beginning of any Renewal Term.,90 days,B,no,,,,B
+qwen7b,EX-039,explained,At least one hundred eighty (180) days prior to the beginning of any Renewal Term.,At least ninety (90) days prior to the beginning of any Renewal Term.,"The required notice period to prevent the Agreement’s automatic renewal is 90 days for Source A and 90 days for Source B. This is mentioned in both sources under Section 15.1 of the Term and Section 15.4 of the Wind Down Period, indicating that the Agreement will automatically renew for one or more annual periods after the Initial Term unless either party gives notice of non-renewal at least 90 days prior to the beginning of any Renewal Term or if there is a notice of termination during the Wind Down Period or Continuing Obligation period, the provisions will continue to survive for the remainder of the period of time that DIALOG is authorized to Sell Licensed Products to any customer in accordance with the specified conditions in Section 15.4(b).",both,yes,B,says 90 days for both sources,"AI-assisted, human-checked (Kai)",B
+qwen7b,EX-042,baseline,"The laws of the State of California, exclusive of conflict of laws principles.","The laws of the State of New York, exclusive of conflict of laws principles.","This Agreement will be governed by and construed in accordance with the laws of the State of New York, exclusive of conflict of laws principles.
+",B,no,,,,B
+qwen7b,EX-042,explained,"The laws of the State of California, exclusive of conflict of laws principles.","The laws of the State of New York, exclusive of conflict of laws principles.","This Agreement will be governed by and construed in accordance with the laws of the State of New York, exclusive of conflict of laws principles.
+",B,no,,,,B
+qwen7b,EX-045,baseline,"State of New York (without giving effect to its conflicts of laws principles, except NY GOL §5-1401).",State of Delaware (without giving effect to its conflicts of laws principles).,Delaware,B,no,,,,B
+qwen7b,EX-045,explained,"State of New York (without giving effect to its conflicts of laws principles, except NY GOL §5-1401).",State of Delaware (without giving effect to its conflicts of laws principles).,Delaware,B,no,,,,B
+qwen7b,EX-048,baseline,Upon the later of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,Upon the earlier of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,"Unless earlier terminated as provided below, this Agreement shall remain in effect until the earlier to occur of the date that is (x) three (3) years from the date hereof and (y) the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill. Evidence A: 'Section 5. Term and Termination. (a) Unless earlier terminated as provided below, this Agreement shall remain in effect until the earlier to occur of the date that is (x) three (3) years from the date hereof and (y) the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill.' Evidence B: 'Section 5. Term and Termination. (a) Unless earlier terminated as provided below, this Agreement shall remain in effect until the earlier to occur of the date that is (x) three (3) years from the date hereof and (y) the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill.'",B,no,,,,B
+qwen7b,EX-048,explained,Upon the later of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,Upon the earlier of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,The Agreement shall remain in effect until the earlier to occur of the date that is (x) three (3) years from the date hereof and (y) the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill.,B,no,,,,B
+qwen7b,EX-054,baseline,"Ten (10) years from the Commencement Date (19 May 2010), i.e., on 19 May 2020, unless earlier terminated.","Five (5) years from the Commencement Date (19 May 2010), i.e., on 19 May 2015, unless earlier terminated.","The agreement shall continue for a term of five (5) years, unless previously terminated in accordance with Clause 15 (Termination).",B,no,,,,B
+qwen7b,EX-054,explained,"Ten (10) years from the Commencement Date (19 May 2010), i.e., on 19 May 2020, unless earlier terminated.","Five (5) years from the Commencement Date (19 May 2010), i.e., on 19 May 2015, unless earlier terminated.","The agreement shall continue for a term of five (5) years, unless previously terminated in accordance with Clause 15 (Termination).",B,no,,,,B
+qwen7b,EX-057,baseline,"No. It does not automatically renew; it may be renewed only upon mutual, written agreement of the parties.",Yes. It automatically renews for successive 12-month terms.,"The agreement automatically renews for successive 12-month terms after the initial term of 12 months, unless terminated sooner by either party with 30 days written notice",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+qwen7b,EX-057,explained,"No. It does not automatically renew; it may be renewed only upon mutual, written agreement of the parties.",Yes. It automatically renews for successive 12-month terms.,"The agreement automatically renews for successive 12-month terms upon termination of the initial 12-month term unless terminated earlier by either party with 30 days written notice.
+",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+qwen7b,EX-063,baseline,10 years per additional renewal term.,8 years per additional renewal term.,"Each of the two additional renewal terms is stated to be 10 years in length, as specified in Section 2.02 of both Source A and Source B contracts under the clause 'for 2 additional terms of 10 years each'.",A,no,,,,A
+qwen7b,EX-063,explained,10 years per additional renewal term.,8 years per additional renewal term.,Each of the two additional renewal terms is stated to be 8 years long according to Section 2.02 of both Source A and Source B contracts.,B,no,,,,B
+qwen7b,EX-066,baseline,Texas.,Oklahoma.,Texas,A,no,,,,A
+qwen7b,EX-066,explained,Texas.,Oklahoma.,Texas,A,no,,,,A
+qwen7b,EX-069,baseline,20 November 2018.,20 December 2018.,"20th day of December, 2018",B,no,,,,B
+qwen7b,EX-069,explained,20 November 2018.,20 December 2018.,"20th day of December, 2018",B,no,,,,B
+qwen7b,EX-072,baseline,New York.,New Jersey.,"The parties hereto have expressly agreed that this Agreement shall be governed by, and construed in accordance with, the laws of the State of New Jersey, applicable to contracts executed and fully to be performed therein, to the exclusion of any other applicable body of governing law.
+",B,no,,,,B
+qwen7b,EX-072,explained,New York.,New Jersey.,New Jersey,B,no,,,,B
+qwen7b,EX-075,baseline,180 days of written notice to the other party.,90 days of written notice to the other party.,either party must provide ninety (90) days written notice to the other party,B,no,,,,B
+qwen7b,EX-075,explained,180 days of written notice to the other party.,90 days of written notice to the other party.,either party must provide ninety (90) days written notice to the other party,B,no,,,,B
+qwen7b,EX-078,baseline,The 12-month period prior to the claim.,The 6-month period prior to the claim.,six,B,no,,,,B
+qwen7b,EX-078,explained,The 12-month period prior to the claim.,The 6-month period prior to the claim.,six,B,no,,,,B
+qwen7b,EX-081,baseline,At least 60 days' prior written notice of non-renewal.,At least 90 days' prior written notice of non-renewal.,ninety (90) days,B,no,,,,B
+qwen7b,EX-081,explained,At least 60 days' prior written notice of non-renewal.,At least 90 days' prior written notice of non-renewal.,ninety (90) days,B,no,,,,B
+qwen7b,EX-084,baseline,Basic Monthly Maintenance Charges for a 60-day term.,Basic Monthly Maintenance Charges for a 30-day term.,30,B,no,,,,B
+qwen7b,EX-084,explained,Basic Monthly Maintenance Charges for a 60-day term.,Basic Monthly Maintenance Charges for a 30-day term.,30 days,B,no,,,,B
+qwen7b,EX-087,baseline,12 months from the date of delivery to Customer.,18 months from the date of delivery to Customer.,eighteen (18) months,B,no,,,,B
+qwen7b,EX-087,explained,12 months from the date of delivery to Customer.,18 months from the date of delivery to Customer.,eighteen (18) months,B,no,,,,B
+qwen7b,EX-090,baseline,Not less than 4 months' written notice to the other party.,Not less than 6 months' written notice to the other party.,six (6) months,B,no,,,,B
+qwen7b,EX-090,explained,Not less than 4 months' written notice to the other party.,Not less than 6 months' written notice to the other party.,six (6) months,B,no,,,,B
+qwen7b,EX-093,baseline,One year per additional renewal term.,Two years per additional renewal term.,each automatic additional renewal term is two years,B,no,,,,B
+qwen7b,EX-093,explained,One year per additional renewal term.,Two years per additional renewal term.,each automatic additional renewal term is for two years,B,no,,,,B
+qwen7b,EX-096,baseline,Hong Kong.,Singapore.,Singapore,B,no,,,,B
+qwen7b,EX-096,explained,Hong Kong.,Singapore.,Singapore,B,no,,,,B
+qwen7b,EX-099,baseline,Within 6 months after delivery to Dragon Systems.,Within 9 months after delivery to Dragon Systems.,9 months,B,no,,,,B
+qwen7b,EX-099,explained,Within 6 months after delivery to Dragon Systems.,Within 9 months after delivery to Dragon Systems.,9 months,B,no,,,,B
+qwen7b,EX-102,baseline,60 days' written notice to MMI.,90 days' written notice to MMI.,ninety (90) days,B,no,,,,B
+qwen7b,EX-108,explained,"US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","six million US dollars ($6,000,000) in the aggregate for all claims",B,no,,,,B
+qwen7b,EX-111,baseline,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,Gridiron,unclear,yes,B,,"AI-assisted, human-checked (Kai)",B
+qwen7b,EX-111,explained,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,Gridiron,unclear,yes,B,,"AI-assisted, human-checked (Kai)",B
+qwen7b,EX-114,baseline,Colorado.,Oregon.,Oregon,B,no,,,,B
+qwen7b,EX-117,baseline,No less than 12 months before expiration of the then-current term.,No less than 9 months before expiration of the then-current term.,9 months,B,no,,,,B
+qwen7b,EX-117,explained,No less than 12 months before expiration of the then-current term.,No less than 9 months before expiration of the then-current term.,9 months,B,no,,,,B
+qwen7b,EX-120,baseline,Delaware.,New York.,"The Agreement will be governed by the laws of the State of New York without regard to its conflicts of law principles.
+",B,no,,,,B
+qwen7b,EX-120,explained,Delaware.,New York.,New York,B,no,,,,B
+qwen7b,EX-123,baseline,Thirty (30) days' written notice.,Sixty (60) days' written notice.,Either party may terminate this Agreement without cause at any time effective upon sixty (60) days' written notice,B,no,,,,B
+qwen7b,EX-126,baseline,Not less than fifteen (15) days before the end of the respective initial or renewal term.,Not less than forty-five (45) days before the end of the respective initial or renewal term.,forty-five (45) days,B,no,,,,B
+qwen7b,EX-129,baseline,At least thirty (30) days before expiration.,At least sixty (60) days before expiration.,60 days,B,no,,,,B
+qwen7b,EX-129,explained,At least thirty (30) days before expiration.,At least sixty (60) days before expiration.,60 days,B,no,,,,B
+qwen7b,EX-132,explained,"California, USA.","New York, USA.","The laws of the State of New York, USA",B,no,,,,B
+qwen7b,EX-135,baseline,"December 17, 2019.","January 17, 2020.","January 17, 2020",B,no,,,,B
+qwen7b,EX-135,explained,"December 17, 2019.","January 17, 2020.","January 17, 2020",B,no,,,,B
+qwen7b,EX-138,baseline,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,ninety (90) days' written notice,B,no,,,,B
+qwen7b,EX-138,explained,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,ninety (90) days,B,no,,,,B
+qwen7b,EX-141,baseline,Successive five (5)-year terms.,Successive three (3)-year terms.,each successive automatic renewal term is for successive 3-year terms,B,no,,,,B
+qwen7b,EX-141,explained,Successive five (5)-year terms.,Successive three (3)-year terms.,each successive automatic renewal term is for successive 3-year terms,B,no,,,,B
+qwen7b,EX-144,baseline,Not less than 90 days before the end of the five-year term.,Not less than 120 days before the end of the five-year term.,either party must provide prior written notice of termination not less than 120 days prior to the end of such five-year term,B,no,,,,B
+qwen7b,EX-144,explained,Not less than 90 days before the end of the five-year term.,Not less than 120 days before the end of the five-year term.,120 days,B,no,,,,B
+qwen7b,EX-147,baseline,"December 3, 2018.","January 3, 2019.","January 3rd, 2019",B,no,,,,B
+qwen7b,EX-147,explained,"December 3, 2018.","January 3, 2019.","January 3rd, 2019",B,no,,,,B
+qwen7b,EX-150,explained,Two weeks' written notice.,Four weeks' written notice.,four weeks,B,no,,,,B
+qwen7b,EX-153,baseline,"February 4, 2020.","March 4, 2020.","February 4, 2020",A,no,,,,A
+qwen7b,EX-153,explained,"February 4, 2020.","March 4, 2020.","February 4, 2020",A,no,,,,A
+qwen7b,EX-156,baseline,Sixty (60) days' prior written notice.,Ninety (90) days' prior written notice.,90 days,B,no,,,,B
+qwen7b,EX-156,explained,Sixty (60) days' prior written notice.,Ninety (90) days' prior written notice.,90 days,B,no,,,,B
+qwen7b,EX-159,explained,An additional one (1) year period.,An additional two (2) year period.,"The Agreement is automatically extended for an additional two (2) year period unless either Party notifies the other Party not less than six (6) months before the end of the then in effect term of its intent to terminate this Agreement. After that, any further extension or termination requires explicit notice and action from the Parties as outlined in the agreement terms for termination or extension of the Term",B,no,,,,B
+qwen7b,EX-162,baseline,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,three (3) months,B,no,,,,B
+qwen7b,EX-162,explained,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,Three (3) months,B,no,,,,B
+qwen7b,EX-165,baseline,"September 2, 2019.","October 2, 2019.","October 2, 2019",B,no,,,,B
+qwen7b,EX-165,explained,"September 2, 2019.","October 2, 2019.","October 2, 2019",B,no,,,,B
+qwen7b,EX-171,baseline,Successive 12-month periods.,Successive 24-month periods.,each successive automatic extension of the term shall be for successive 24-month periods,B,no,,,,B
+qwen7b,EX-171,explained,Successive 12-month periods.,Successive 24-month periods.,each successive 24-month periods,B,no,,,,B
+qwen7b,EX-174,baseline,At least 180 days' prior written notice.,At least 90 days' prior written notice.,90 days,B,no,,,,B
+qwen7b,EX-174,explained,At least 180 days' prior written notice.,At least 90 days' prior written notice.,90 days,B,no,,,,B
+qwen7b,EX-177,baseline,Successive five (5)-year terms.,Successive three (3)-year terms.,"The Agreement automatically renew for successive three (3)-year terms unless either Party gives written notice to the other Party of intent not to renew at least six (6) months prior to the expiration of the then-current Term. If neither party gives notice, it will automatically renew for another three-year term, and this process repeats until a party decides to terminate it by providing the required notice or the Agreement expires upon termination of the License Agreement or upon the expiration of the current term without renewal notice from either party within the required timeframe of six months prior to expiration of the then-current term as per Section 4.1 and Section 4.4 of both Source A and Source B contracts",B,no,,,,B
+qwen7b,EX-177,explained,Successive five (5)-year terms.,Successive three (3)-year terms.,"The Agreement automatically renew for successive three (3)-year terms unless either Party gives written notice to the other Party of intent not to renew at least six (6) months prior to the expiration of the then-current Term. If neither party gives notice, it will automatically renew for another three-year term, and this process repeats until a party decides to terminate it by providing the required notice or the Agreement expires due to non-renewal elections by both parties or the end of the term without notice from either party to terminate or modify the Agreement's terms and conditions as described in the document",B,no,,,,B
+qwen7b,EX-180,baseline,At least six (6) months before expiration of the then-current term.,At least three (3) months before expiration of the then-current term.,three (3) months,B,no,,,,B
+qwen7b,EX-180,explained,At least six (6) months before expiration of the then-current term.,At least three (3) months before expiration of the then-current term.,three (3) months,B,no,,,,B
+qwen7b,OGUZ-01-B1-Q1,baseline,Thirty days' written notice.,Ninety days' written notice.,ninety days,B,no,,,,B
+qwen7b,OGUZ-01-B1-Q1,explained,Thirty days' written notice.,Ninety days' written notice.,ninety days,B,no,,,,B
+qwen7b,OGUZ-01-B2-Q2,baseline,At least one month before the expiration of the initial or any renewal term.,At least three months before the expiration of the initial or any renewal term.,three months,B,no,,,,B
+qwen7b,OGUZ-01-B2-Q2,explained,At least one month before the expiration of the initial or any renewal term.,At least three months before the expiration of the initial or any renewal term.,three months,B,no,,,,B
+qwen7b,OGUZ-02-B1-Q1,baseline,Subsequent one (1) year periods.,Subsequent two (2) year periods.,three (3) years,unclear,yes,neither,"answers 3 years (initial term), not renewal period","AI-assisted, human-checked (Kai)",neither
+qwen7b,OGUZ-02-B1-Q1,explained,Subsequent one (1) year periods.,Subsequent two (2) year periods.,automatically renewed for subsequent two (2) year periods,B,no,,,,B
+qwen7b,OGUZ-02-B2-Q2,baseline,At least 120 days before the expiration of the then-current term.,At least 60 days before the expiration of the then-current term.,60 days,B,no,,,,B
+qwen7b,OGUZ-02-B2-Q2,explained,At least 120 days before the expiration of the then-current term.,At least 60 days before the expiration of the then-current term.,60 days,B,no,,,,B
+qwen7b,OGUZ-03-B1-Q1,baseline,Ninety days' written notice.,Thirty days' written notice.,Thirty days,B,no,,,,B
+qwen7b,OGUZ-03-B1-Q1,explained,Ninety days' written notice.,Thirty days' written notice.,Thirty days,B,no,,,,B
+qwen7b,OGUZ-03-B2-Q2,baseline,Periods of one (1) calendar year each.,Periods of two (2) calendar years each.,two (2) calendar years each,B,no,,,,B
+qwen7b,OGUZ-03-B2-Q2,explained,Periods of one (1) calendar year each.,Periods of two (2) calendar years each.,two (2) calendar years each,B,no,,,,B
+qwen7b,OGUZ-04-B1-Q1,baseline,"May 31, 2015.","May 31, 2016.","May 31, 2016",B,no,,,,B
+qwen7b,OGUZ-04-B1-Q1,explained,"May 31, 2015.","May 31, 2016.","May 31, 2016",B,no,,,,B
+qwen7b,OGUZ-04-B2-Q2,baseline,Ninety (90) days from the date of delivery.,One hundred eighty (180) days from the date of delivery.,180 days,B,no,,,,B
+qwen7b,OGUZ-04-B2-Q2,explained,Ninety (90) days from the date of delivery.,One hundred eighty (180) days from the date of delivery.,180 days,B,no,,,,B
+qwen7b,OGUZ-05-B1-Q1,baseline,3 years after shipment from the manufacturer.,1 year after shipment from the manufacturer.,1 year,B,no,,,,B
+qwen7b,OGUZ-05-B1-Q1,explained,3 years after shipment from the manufacturer.,1 year after shipment from the manufacturer.,1 year,B,no,,,,B
+qwen7b,OGUZ-05-B2-Q2,baseline,30 days' written notice.,60 days' written notice.,60 days,B,no,,,,B
+qwen7b,OGUZ-05-B2-Q2,explained,30 days' written notice.,60 days' written notice.,60 days,B,no,,,,B
+qwen7b,OGUZ-06-B1-Q1,baseline,"At least ninety (90) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days' prior written notice (effective any time after January 31, 1999).","Either party may, at its option, terminate this Agreement without cause, effective at any time after January 31, 1999, upon giving at least sixty (60) days prior written notice of such termination to the other party.
+",B,no,,,,B
+qwen7b,OGUZ-06-B1-Q1,explained,"At least ninety (90) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days' prior written notice (effective any time after January 31, 1999).","Either party may terminate this Agreement without cause, effective at any time after January 31, 1999, upon giving at least sixty (60) days prior written notice of such termination to the other party.
+",B,no,,,,B
+qwen7b,OGUZ-06-B2-Q2,baseline,The laws of the Commonwealth of Massachusetts.,The laws of the State of New York.,This Agreement and all related business transactions will be governed by the laws of the State of New York (without reference to principles of conflicts or choice of law which would cause the application of the internal laws of any other jurisdiction).,B,no,,,,B
+qwen7b,OGUZ-06-B2-Q2,explained,The laws of the Commonwealth of Massachusetts.,The laws of the State of New York.,The Agreement and all related business transactions will be governed by the laws of the State of New York (without reference to principles of conflicts or choice of law which would cause the application of the internal laws of any other jurisdiction).,B,no,,,,B
+qwen7b,OGUZ-07-B1-Q1,baseline,At least one hundred twenty (120) days' advance written notice.,At least ninety (90) days' advance written notice.,ninety (90) days,B,no,,,,B
+qwen7b,OGUZ-07-B1-Q1,explained,At least one hundred twenty (120) days' advance written notice.,At least ninety (90) days' advance written notice.,ninety (90) days,B,no,,,,B
+qwen7b,OGUZ-08-B1-Q1,baseline,One (1) year from the date of delivery to the Reseller.,Two (2) years from the date of delivery to the Reseller.,"Todos' performance warranty applies for a period of two (2) years from the date of delivery of each Product to the Reseller, except for those components that have a shorter expiration date as set forth on Exhibit A",B,no,,,,B
+qwen7b,OGUZ-08-B1-Q1,explained,One (1) year from the date of delivery to the Reseller.,Two (2) years from the date of delivery to the Reseller.,two (2) years,B,no,,,,B
+qwen7b,OGUZ-08-B2-Q2,baseline,At least sixty (60) days before the expiration of the then-current term.,At least ninety (90) days before the expiration of the then-current term.,ninety (90) days,B,no,,,,B
+qwen7b,OGUZ-08-B2-Q2,explained,At least sixty (60) days before the expiration of the then-current term.,At least ninety (90) days before the expiration of the then-current term.,ninety (90) days,B,no,,,,B
+qwen7b,OGUZ-09-B2-Q2,baseline,Successive one-year terms.,Successive two-year terms.,"The Agreement will renew automatically thereafter for successive two-year terms unless and until one Party gives notification of termination with at least sixty (60) days written notice. (Source B, Section 1. Term.)",both,yes,B,cites Source B only,"AI-assisted, human-checked (Kai)",B
+qwen7b,OGUZ-09-B2-Q2,explained,Successive one-year terms.,Successive two-year terms.,"The Agreement will renew automatically thereafter for successive two-year terms unless and until one Party gives notification of termination with at least sixty (60) days written notice. (Source B, Section 1. Term)
+",both,yes,B,cites Source B only,"AI-assisted, human-checked (Kai)",B
+qwen7b,OGUZ-10-B1-Q1,baseline,"July 31, 2019.","December 31, 2019.","Until December 31, 2019",B,no,,,,B
+qwen7b,OGUZ-10-B1-Q1,explained,"July 31, 2019.","December 31, 2019.","December 31, 2019",B,no,,,,B
+qwen7b,OGUZ-10-B2-Q2,baseline,The law of the State of New York.,The law of the State of Delaware.,"This Agreement shall be governed by, and construed in accordance with the law of the State of Delaware. In the event of any litigation, arbitration, or other proceeding by which one Party either seeks to enforce its rights under this Agreement or seeks a declaration of any rights or obligations under this Agreement, the prevailing Party shall be entitled to recover from the other Party, in addition to any other relief awarded, any and all costs and expenses incurred with respect to such litigation, arbitration or other proceeding, including without limitation, reasonable attorneys' fees, disbursements and costs, and experts' fees and costs.
+",B,no,,,,B
+qwen7b,OGUZ-10-B2-Q2,explained,The law of the State of New York.,The law of the State of Delaware.,"The Agreement shall be governed by, and construed in accordance with the law of the State of Delaware.
+",B,no,,,,B
+qwen7b,DIL-01-Domini-B2-Q2,baseline,At least 60 days' written notice to the other party.,At least 90 days' written notice to the other party.,90 days,B,no,,,,B
+qwen7b,DIL-01-Domini-B2-Q2,explained,At least 60 days' written notice to the other party.,At least 90 days' written notice to the other party.,90 days,B,no,,,,B
+qwen7b,DIL-02-Anixa-B2-Q2,baseline,Anixa may terminate on at least 30 days' written notice to OntoChem.,Anixa may terminate on at least 60 days' written notice to OntoChem.,"Anixa may terminate the entire Agreement without cause, and it must give at least sixty (60) days written notice to OntoChem before termination can occur. This is specified in Section 4.2 of both Source A and Source B documents under 'Term and Termination'.",B,no,,,,B
+qwen7b,DIL-02-Anixa-B2-Q2,explained,Anixa may terminate on at least 30 days' written notice to OntoChem.,Anixa may terminate on at least 60 days' written notice to OntoChem.,"Anixa may terminate the entire Agreement without cause, and it must give at least sixty (60) days written notice to OntoChem before termination can occur. This is specified in Section 4.2 of both Source A and Source B documents under 'Term and Termination'.",B,no,,,,B
+qwen7b,DIL-03-Driven-B1-Q1,baseline,"May 1, 2019.","May 31, 2019.","May 31, 2019",B,no,,,,B
+qwen7b,DIL-03-Driven-B1-Q1,explained,"May 1, 2019.","May 31, 2019.","May 31, 2019",B,no,,,,B
+qwen7b,DIL-03-Driven-B2-Q2,baseline,30 days' prior written notice to the other party.,60 days' prior written notice to the other party.,"Either Party may terminate this Agreement, with or without cause, upon giving the other party sixty (60) days prior written notice of such termination pursuant to Section 12.7 of this Agreement.
+",B,no,,,,B
+qwen7b,DIL-04-Nettaxi-B2-Q2,baseline,NETTAXI and SpinRecords.com must each give 60 days' prior written notice to the other party.,NETTAXI must give 90 days' prior written notice; SpinRecords.com must give 60 days' prior written notice.,"NETTAXI may terminate this Agreement at any time for its convenience, for no reason or for any reason, upon sixty (60) days prior written notice to SpinRecords.com. SpinRecords.com may terminate this Agreement for no reason or for any reason upon sixty (60) days prior written notice to NETTAXI.
+",unclear,yes,A,60 days for both parties,"AI-assisted, human-checked (Kai)",A
+qwen7b,DIL-04-Nettaxi-B2-Q2,explained,NETTAXI and SpinRecords.com must each give 60 days' prior written notice to the other party.,NETTAXI must give 90 days' prior written notice; SpinRecords.com must give 60 days' prior written notice.,90 days for NETTAXI and 60 days for SpinRecords.com,B,no,,,,B
+qwen7b,DIL-05-Biocept-B1-Q1,explained,"November 2, 2012.","December 2, 2012.","December 2, 2012",B,no,,,,B
+qwen7b,DIL-05-Biocept-B2-Q2,baseline,120 days' written notice to the other party.,150 days' written notice to the other party.,"both parties shall have the right to terminate this agreement at any time, for any or for no reason, upon one hundred fifty (150) days written notice to the other party",B,no,,,,B
+qwen7b,DIL-05-Biocept-B2-Q2,explained,120 days' written notice to the other party.,150 days' written notice to the other party.,one hundred fifty (150) days,B,no,,,,B
+qwen7b,DIL-06-Emerald-B2-Q2,baseline,30 days' prior written notice.,60 days' prior written notice.,60 days,B,no,,,,B
+qwen7b,DIL-06-Emerald-B2-Q2,explained,30 days' prior written notice.,60 days' prior written notice.,60 days,B,no,,,,B
+qwen7b,DIL-07-Coral-B2-Q2,baseline,At least 3 months prior notice to the Company.,At least 3 months plus 30 days prior notice to the Company.,3 months plus 30 days,B,no,,,,B
+qwen7b,DIL-07-Coral-B2-Q2,explained,At least 3 months prior notice to the Company.,At least 3 months plus 30 days prior notice to the Company.,3 months plus 30 days,B,no,,,,B
+qwen7b,DIL-08-Cyberian-B1-Q1,baseline,"February 1, 1998.","March 3, 1998.","March 3, 1998",B,no,,,,B
+qwen7b,DIL-08-Cyberian-B1-Q1,explained,"February 1, 1998.","March 3, 1998.","March 3, 1998",B,no,,,,B
+qwen7b,DIL-08-Cyberian-B2-Q2,baseline,30 days' written notice to the other party.,60 days' written notice to the other party.,"either party may terminate this Agreement, effective at any time after the first three months of the Term, by giving 60 days' written notice of termination to the other party",B,no,,,,B
+qwen7b,DIL-08-Cyberian-B2-Q2,explained,30 days' written notice to the other party.,60 days' written notice to the other party.,"either party may terminate this Agreement, effective at any time after the first three months of the Term, by giving 60 days' written notice of termination to the other party",B,no,,,,B
+qwen7b,DIL-09-Allied-B2-Q2,baseline,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,either party must provide written notice to the other party at least ninety (90) calendar days prior to the effective date of such termination,B,no,,,,B
+qwen7b,DIL-09-Allied-B2-Q2,explained,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,90 days,B,no,,,,B
+qwen7b,DIL-10-Exact-B2-Q2,baseline,Six months' prior written notice to the other party.,Six months plus 30 days' prior written notice to the other party.,"Either party must give six (6) months plus thirty (30) days prior written notice to the other party for termination without cause, as stated in Section 8.4 of both Source A and Source B. This notice period is conditional on the date being at least eighteen (18) months after the Effective Date of the agreement, which is August 21, 2018, as mentioned in Source A and Source B under Section 3.1 and 3.2 respectively. This notice period applies to termination without cause, not to termination for cause which requires shorter notice periods as outlined in Section 8.3 of both documents. The notice must be given within the applicable notice period specified in Section 8.4, and the other party will use good faith efforts to agree to the Advertising services that will be provided during the Tail Period in accordance with Section 3.2(d) and Exhibit 8.8(b).",B,no,,,,B
+qwen7b,DIL-10-Exact-B2-Q2,explained,Six months' prior written notice to the other party.,Six months plus 30 days' prior written notice to the other party.,Either party must give six (6) months plus thirty (30) days prior written notice to the other party for termination without cause after the date that is eighteen (18) months after the Effective Date,B,no,,,,B
+llama8b,EX-003,baseline,Kansas,Texas,Kansas,A,no,,,,A
+llama8b,EX-006,baseline,"September 1, 2004","October 1, 2004",The 1st day of September 2004,A,no,,,,A
+llama8b,EX-009,baseline,"October 30, 2019.","October 31, 2019.","October 30, 2019",A,no,,,,A
+llama8b,EX-012,baseline,The laws of Japan.,The laws of Sweden.,The laws of Japan,A,no,,,,A
+llama8b,EX-015,baseline,"February 17, 2016","February 18, 2016","February 17, 2016",A,no,,,,A
+llama8b,EX-018,baseline,"February 16, 2019","February 16, 2020","February 16, 2019",A,no,,,,A
+llama8b,EX-021,baseline,Texas,Colorado,Texas,A,no,,,,A
+llama8b,EX-027,baseline,"Dynamic Hearing’s aggregate liability to IntriCon is capped at $5,000,000; no cap is stated for IntriCon.","Dynamic Hearing’s aggregate liability to IntriCon is capped at $3,000,000; no cap is stated for IntriCon.",$3m,B,no,,,,B
+llama8b,EX-039,baseline,At least one hundred eighty (180) days prior to the beginning of any Renewal Term.,At least ninety (90) days prior to the beginning of any Renewal Term.,ninety (90) days prior to the beginning of any Renewal Term,B,no,,,,B
+llama8b,EX-045,baseline,"State of New York (without giving effect to its conflicts of laws principles, except NY GOL §5-1401).",State of Delaware (without giving effect to its conflicts of laws principles).,Delaware,B,no,,,,B
+llama8b,EX-048,baseline,Upon the later of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,Upon the earlier of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,"The Agreement expires on the earlier to occur of the date that is three (3) years from the date hereof and the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill, or the later to occur of the date that is three (3) years from the date hereof and the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill, depending on the version of the Agreement",both,yes,both_unattributed,lists earlier and later without attribution,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,EX-051,baseline,English law.,The laws of Hong Kong.,English law,A,no,,,,A
+llama8b,EX-057,baseline,"No. It does not automatically renew; it may be renewed only upon mutual, written agreement of the parties.",Yes. It automatically renews for successive 12-month terms.,"Yes, the agreement automatically renews for successive 12-month terms",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+llama8b,EX-063,baseline,10 years per additional renewal term.,8 years per additional renewal term.,8 years,B,no,,,,B
+llama8b,EX-069,baseline,20 November 2018.,20 December 2018.,"20th day of November, 2018",A,no,,,,A
+llama8b,EX-072,baseline,New York.,New Jersey.,New York,A,no,,,,A
+llama8b,EX-075,baseline,180 days of written notice to the other party.,90 days of written notice to the other party.,180 days,A,no,,,,A
+llama8b,EX-078,baseline,The 12-month period prior to the claim.,The 6-month period prior to the claim.,six,B,no,,,,B
+llama8b,EX-081,baseline,At least 60 days' prior written notice of non-renewal.,At least 90 days' prior written notice of non-renewal.,sixty (60) days,A,no,,,,A
+llama8b,EX-087,baseline,12 months from the date of delivery to Customer.,18 months from the date of delivery to Customer.,eighteen (18) months,B,no,,,,B
+llama8b,EX-090,baseline,Not less than 4 months' written notice to the other party.,Not less than 6 months' written notice to the other party.,six (6) months,B,no,,,,B
+llama8b,EX-093,baseline,One year per additional renewal term.,Two years per additional renewal term.,two year terms,both,yes,B,,"AI-assisted, human-checked (Kai)",B
+llama8b,EX-096,baseline,Hong Kong.,Singapore.,Singapore,B,no,,,,B
+llama8b,EX-099,baseline,Within 6 months after delivery to Dragon Systems.,Within 9 months after delivery to Dragon Systems.,9 months,B,no,,,,B
+llama8b,EX-102,baseline,60 days' written notice to MMI.,90 days' written notice to MMI.,ninety (90) days,B,no,,,,B
+llama8b,EX-105,baseline,"13 months from Shipment Date, unless otherwise agreed in writing.","15 months from Shipment Date, unless otherwise agreed in writing.",Fifteen (15) months,B,no,,,,B
+llama8b,EX-108,baseline,"US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","six million US dollars ($6,000,000) in the aggregate for all claims",B,no,,,,B
+llama8b,EX-111,baseline,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,Either Party may terminate this Agreement at any time prior to delivery of the Product,A,no,,,,A
+llama8b,EX-114,baseline,Colorado.,Oregon.,Oregon,B,no,,,,B
+llama8b,EX-117,baseline,No less than 12 months before expiration of the then-current term.,No less than 9 months before expiration of the then-current term.,9 months,B,no,,,,B
+llama8b,EX-120,baseline,Delaware.,New York.,New York,B,no,,,,B
+llama8b,EX-123,baseline,Thirty (30) days' written notice.,Sixty (60) days' written notice.,60 days,B,no,,,,B
+llama8b,EX-126,baseline,Not less than fifteen (15) days before the end of the respective initial or renewal term.,Not less than forty-five (45) days before the end of the respective initial or renewal term.,45 days,B,no,,,,B
+llama8b,EX-129,baseline,At least thirty (30) days before expiration.,At least sixty (60) days before expiration.,thirty (30) days,A,no,,,,A
+llama8b,EX-132,baseline,"California, USA.","New York, USA.","The State of California, USA",A,no,,,,A
+llama8b,EX-135,baseline,"December 17, 2019.","January 17, 2020.","January 17, 2020",B,no,,,,B
+llama8b,EX-138,baseline,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,one hundred eighty (180) days,A,no,,,,A
+llama8b,EX-141,baseline,Successive five (5)-year terms.,Successive three (3)-year terms.,three years,B,no,,,,B
+llama8b,EX-144,baseline,Not less than 90 days before the end of the five-year term.,Not less than 120 days before the end of the five-year term.,120 days,B,no,,,,B
+llama8b,EX-147,baseline,"December 3, 2018.","January 3, 2019.","December 3rd, 2018, and January 3rd, 2019",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,EX-153,baseline,"February 4, 2020.","March 4, 2020.","February 4, 2020",A,no,,,,A
+llama8b,EX-156,baseline,Sixty (60) days' prior written notice.,Ninety (90) days' prior written notice.,ninety (90) days,B,no,,,,B
+llama8b,EX-159,baseline,An additional one (1) year period.,An additional two (2) year period.,an additional one (1) year period,A,no,,,,A
+llama8b,EX-162,baseline,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,three (3) months,B,no,,,,B
+llama8b,EX-165,baseline,"September 2, 2019.","October 2, 2019.","October 2, 2019",B,no,,,,B
+llama8b,EX-168,baseline,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,ninety (90) days,B,no,,,,B
+llama8b,EX-171,baseline,Successive 12-month periods.,Successive 24-month periods.,24 months,B,no,,,,B
+llama8b,EX-174,baseline,At least 180 days' prior written notice.,At least 90 days' prior written notice.,90 days,B,no,,,,B
+llama8b,EX-177,baseline,Successive five (5)-year terms.,Successive three (3)-year terms.,three (3)-year terms,B,no,,,,B
+llama8b,EX-180,baseline,At least six (6) months before expiration of the then-current term.,At least three (3) months before expiration of the then-current term.,three (3) months,B,no,,,,B
+llama8b,OGUZ-01-B2-Q2,baseline,At least one month before the expiration of the initial or any renewal term.,At least three months before the expiration of the initial or any renewal term.,three months,B,no,,,,B
+llama8b,OGUZ-02-B1-Q1,baseline,Subsequent one (1) year periods.,Subsequent two (2) year periods.,two (2) year periods,B,no,,,,B
+llama8b,OGUZ-02-B2-Q2,baseline,At least 120 days before the expiration of the then-current term.,At least 60 days before the expiration of the then-current term.,at least one hundred twenty (120) days prior to the expiration of the then-current term,A,no,,,,A
+llama8b,OGUZ-03-B1-Q1,baseline,Ninety days' written notice.,Thirty days' written notice.,Thirty days,B,no,,,,B
+llama8b,OGUZ-03-B2-Q2,baseline,Periods of one (1) calendar year each.,Periods of two (2) calendar years each.,two calendar years each,B,no,,,,B
+llama8b,OGUZ-04-B1-Q1,baseline,"May 31, 2015.","May 31, 2016.","May 31, 2015, unless sooner terminated",A,no,,,,A
+llama8b,OGUZ-04-B2-Q2,baseline,Ninety (90) days from the date of delivery.,One hundred eighty (180) days from the date of delivery.,ninety (90) days from the date of delivery,A,no,,,,A
+llama8b,OGUZ-05-B2-Q2,baseline,30 days' written notice.,60 days' written notice.,60 days,B,no,,,,B
+llama8b,OGUZ-06-B1-Q1,baseline,"At least ninety (90) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days' prior written notice (effective any time after January 31, 1999).",sixty (60) days,B,no,,,,B
+llama8b,OGUZ-06-B2-Q2,baseline,The laws of the Commonwealth of Massachusetts.,The laws of the State of New York.,"The laws of the Commonwealth of Massachusetts will have nonexclusive jurisdiction over any disputes hereunder, and the Agreement and all related business transactions will be governed by the laws of the Commonwealth of Massachusetts (without reference to principles of conflicts or choice of law which would cause the application of the internal laws of any other jurisdiction).",A,no,,,,A
+llama8b,OGUZ-07-B1-Q1,baseline,At least one hundred twenty (120) days' advance written notice.,At least ninety (90) days' advance written notice.,120 days,A,no,,,,A
+llama8b,OGUZ-07-B2-Q2,baseline,"May 25, 1999.","June 15, 1999.","May 25, 1999",A,no,,,,A
+llama8b,OGUZ-09-B1-Q1,baseline,Ten (10) years after the Effective Date.,Five (5) years after the Effective Date.,"ten (10) years after the Effective Date, unless terminated earlier as provided in the Agreement",A,no,,,,A
+llama8b,OGUZ-09-B2-Q2,baseline,Successive one-year terms.,Successive two-year terms.,two-year terms,B,no,,,,B
+llama8b,OGUZ-10-B1-Q1,baseline,"July 31, 2019.","December 31, 2019.","July 31, 2019",A,no,,,,A
+llama8b,DIL-01-Domini-B1-Q1,baseline,"February 4, 2005.","March 6, 2005.","February 4, 2005, and March 6, 2005",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,DIL-01-Domini-B2-Q2,baseline,At least 60 days' written notice to the other party.,At least 90 days' written notice to the other party.,60 days,A,no,,,,A
+llama8b,DIL-02-Anixa-B2-Q2,baseline,Anixa may terminate on at least 30 days' written notice to OntoChem.,Anixa may terminate on at least 60 days' written notice to OntoChem.,"Anixa may terminate the entire Agreement without cause, and it must give at least sixty (60) days written notice to OntoChem in Source A, and at least sixty (60) days written notice to OntoChem in Source B",B,no,,,,B
+llama8b,DIL-05-Biocept-B2-Q2,baseline,120 days' written notice to the other party.,150 days' written notice to the other party.,one hundred fifty (150) days,B,no,,,,B
+llama8b,DIL-06-Emerald-B2-Q2,baseline,30 days' prior written notice.,60 days' prior written notice.,60 days,B,no,,,,B
+llama8b,DIL-07-Coral-B2-Q2,baseline,At least 3 months prior notice to the Company.,At least 3 months plus 30 days prior notice to the Company.,3 months plus 30 days,B,no,,,,B
+llama8b,DIL-08-Cyberian-B1-Q1,baseline,"February 1, 1998.","March 3, 1998.","February 1, 1998",A,no,,,,A
+llama8b,DIL-09-Allied-B2-Q2,baseline,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,ninety (90) calendar days,B,no,,,,B
+llama8b,DIL-10-Exact-B1-Q1,baseline,"August 21, 2018.","September 20, 2018.","August 21, 2018",A,no,,,,A
+llama8b,DIL-10-Exact-B2-Q2,baseline,Six months' prior written notice to the other party.,Six months plus 30 days' prior written notice to the other party.,six (6) months plus thirty (30) days prior written notice,B,no,,,,B
+llama8b,EX-003,explained,Kansas,Texas,Kansas,A,no,,,,A
+llama8b,EX-006,explained,"September 1, 2004","October 1, 2004",The 1st day of September 2004,A,no,,,,A
+llama8b,EX-009,explained,"October 30, 2019.","October 31, 2019.","October 30, 2019",A,no,,,,A
+llama8b,EX-012,explained,The laws of Japan.,The laws of Sweden.,The laws of Japan,A,no,,,,A
+llama8b,EX-018,explained,"February 16, 2019","February 16, 2020","February 16, 2019",A,no,,,,A
+llama8b,EX-021,explained,Texas,Colorado,Texas,A,no,,,,A
+llama8b,EX-027,explained,"Dynamic Hearing’s aggregate liability to IntriCon is capped at $5,000,000; no cap is stated for IntriCon.","Dynamic Hearing’s aggregate liability to IntriCon is capped at $3,000,000; no cap is stated for IntriCon.",$5m,A,no,,,,A
+llama8b,EX-036,explained,State of Florida.,State of Georgia.,The laws of the State of Florida,A,no,,,,A
+llama8b,EX-045,explained,"State of New York (without giving effect to its conflicts of laws principles, except NY GOL §5-1401).",State of Delaware (without giving effect to its conflicts of laws principles).,Delaware,B,no,,,,B
+llama8b,EX-051,explained,English law.,The laws of Hong Kong.,English law,A,no,,,,A
+llama8b,EX-054,explained,"Ten (10) years from the Commencement Date (19 May 2010), i.e., on 19 May 2020, unless earlier terminated.","Five (5) years from the Commencement Date (19 May 2010), i.e., on 19 May 2015, unless earlier terminated.","The agreement expires after a term of ten (10) years, unless previously terminated in accordance with Clause 15 (Termination), or after a term of five (5) years, unless previously terminated in accordance with Clause 15 (Termination).",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,EX-057,explained,"No. It does not automatically renew; it may be renewed only upon mutual, written agreement of the parties.",Yes. It automatically renews for successive 12-month terms.,"Yes, the agreement automatically renews for successive 12-month terms",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+llama8b,EX-063,explained,10 years per additional renewal term.,8 years per additional renewal term.,8 years,B,no,,,,B
+llama8b,EX-066,explained,Texas.,Oklahoma.,Oklahoma,B,no,,,,B
+llama8b,EX-069,explained,20 November 2018.,20 December 2018.,"20th day of November, 2018",A,no,,,,A
+llama8b,EX-072,explained,New York.,New Jersey.,New York,A,no,,,,A
+llama8b,EX-075,explained,180 days of written notice to the other party.,90 days of written notice to the other party.,180 days,A,no,,,,A
+llama8b,EX-081,explained,At least 60 days' prior written notice of non-renewal.,At least 90 days' prior written notice of non-renewal.,sixty (60) days,A,no,,,,A
+llama8b,EX-087,explained,12 months from the date of delivery to Customer.,18 months from the date of delivery to Customer.,eighteen (18) months,B,no,,,,B
+llama8b,EX-090,explained,Not less than 4 months' written notice to the other party.,Not less than 6 months' written notice to the other party.,six (6) months,B,no,,,,B
+llama8b,EX-093,explained,One year per additional renewal term.,Two years per additional renewal term.,two year terms,both,yes,B,,"AI-assisted, human-checked (Kai)",B
+llama8b,EX-096,explained,Hong Kong.,Singapore.,Singapore,B,no,,,,B
+llama8b,EX-099,explained,Within 6 months after delivery to Dragon Systems.,Within 9 months after delivery to Dragon Systems.,6 months,A,no,,,,A
+llama8b,EX-102,explained,60 days' written notice to MMI.,90 days' written notice to MMI.,ninety (90) days,B,no,,,,B
+llama8b,EX-105,explained,"13 months from Shipment Date, unless otherwise agreed in writing.","15 months from Shipment Date, unless otherwise agreed in writing.",Fifteen (15) months,B,no,,,,B
+llama8b,EX-108,explained,"US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","six million US dollars ($6,000,000) in the aggregate for all claims",B,no,,,,B
+llama8b,EX-111,explained,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,Gridiron,unclear,yes,B,,"AI-assisted, human-checked (Kai)",B
+llama8b,EX-114,explained,Colorado.,Oregon.,Oregon,B,no,,,,B
+llama8b,EX-117,explained,No less than 12 months before expiration of the then-current term.,No less than 9 months before expiration of the then-current term.,9 months,B,no,,,,B
+llama8b,EX-120,explained,Delaware.,New York.,New York,B,no,,,,B
+llama8b,EX-123,explained,Thirty (30) days' written notice.,Sixty (60) days' written notice.,thirty (30) days' written notice,A,no,,,,A
+llama8b,EX-126,explained,Not less than fifteen (15) days before the end of the respective initial or renewal term.,Not less than forty-five (45) days before the end of the respective initial or renewal term.,forty-five (45) days,B,no,,,,B
+llama8b,EX-129,explained,At least thirty (30) days before expiration.,At least sixty (60) days before expiration.,thirty (30) days,A,no,,,,A
+llama8b,EX-132,explained,"California, USA.","New York, USA.","California, USA",A,no,,,,A
+llama8b,EX-135,explained,"December 17, 2019.","January 17, 2020.","January 17, 2020",B,no,,,,B
+llama8b,EX-138,explained,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,one hundred eighty (180) days,A,no,,,,A
+llama8b,EX-141,explained,Successive five (5)-year terms.,Successive three (3)-year terms.,three years,B,no,,,,B
+llama8b,EX-144,explained,Not less than 90 days before the end of the five-year term.,Not less than 120 days before the end of the five-year term.,120 days,B,no,,,,B
+llama8b,EX-147,explained,"December 3, 2018.","January 3, 2019.","December 3rd, 2018, and January 3rd, 2019",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,EX-153,explained,"February 4, 2020.","March 4, 2020.","February 4, 2020",A,no,,,,A
+llama8b,EX-156,explained,Sixty (60) days' prior written notice.,Ninety (90) days' prior written notice.,ninety (90) days,B,no,,,,B
+llama8b,EX-159,explained,An additional one (1) year period.,An additional two (2) year period.,an additional one (1) year period,A,no,,,,A
+llama8b,EX-162,explained,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,three (3) months,B,no,,,,B
+llama8b,EX-165,explained,"September 2, 2019.","October 2, 2019.","October 2, 2019",B,no,,,,B
+llama8b,EX-168,explained,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,ninety (90) days,B,no,,,,B
+llama8b,EX-171,explained,Successive 12-month periods.,Successive 24-month periods.,24 months,B,no,,,,B
+llama8b,EX-174,explained,At least 180 days' prior written notice.,At least 90 days' prior written notice.,90 days,B,no,,,,B
+llama8b,EX-177,explained,Successive five (5)-year terms.,Successive three (3)-year terms.,three (3)-year terms,B,no,,,,B
+llama8b,EX-180,explained,At least six (6) months before expiration of the then-current term.,At least three (3) months before expiration of the then-current term.,three (3) months,B,no,,,,B
+llama8b,OGUZ-01-B2-Q2,explained,At least one month before the expiration of the initial or any renewal term.,At least three months before the expiration of the initial or any renewal term.,three months,B,no,,,,B
+llama8b,OGUZ-02-B1-Q1,explained,Subsequent one (1) year periods.,Subsequent two (2) year periods.,two (2) year periods,B,no,,,,B
+llama8b,OGUZ-02-B2-Q2,explained,At least 120 days before the expiration of the then-current term.,At least 60 days before the expiration of the then-current term.,at least one hundred twenty (120) days prior to the expiration of the then-current term,A,no,,,,A
+llama8b,OGUZ-03-B1-Q1,explained,Ninety days' written notice.,Thirty days' written notice.,Thirty days,B,no,,,,B
+llama8b,OGUZ-04-B1-Q1,explained,"May 31, 2015.","May 31, 2016.","May 31, 2015, unless sooner terminated",A,no,,,,A
+llama8b,OGUZ-04-B2-Q2,explained,Ninety (90) days from the date of delivery.,One hundred eighty (180) days from the date of delivery.,ninety (90) days from the date of delivery,A,no,,,,A
+llama8b,OGUZ-05-B2-Q2,explained,30 days' written notice.,60 days' written notice.,60 days,B,no,,,,B
+llama8b,OGUZ-06-B1-Q1,explained,"At least ninety (90) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days' prior written notice (effective any time after January 31, 1999).",sixty (60) days,B,no,,,,B
+llama8b,OGUZ-06-B2-Q2,explained,The laws of the Commonwealth of Massachusetts.,The laws of the State of New York.,The laws of the Commonwealth of Massachusetts,A,no,,,,A
+llama8b,OGUZ-07-B1-Q1,explained,At least one hundred twenty (120) days' advance written notice.,At least ninety (90) days' advance written notice.,ninety (90) days,B,no,,,,B
+llama8b,OGUZ-07-B2-Q2,explained,"May 25, 1999.","June 15, 1999.","May 25, 1999, and June 15, 1999",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,OGUZ-09-B1-Q1,explained,Ten (10) years after the Effective Date.,Five (5) years after the Effective Date.,"ten (10) years after the Effective Date, unless terminated earlier",A,no,,,,A
+llama8b,OGUZ-09-B2-Q2,explained,Successive one-year terms.,Successive two-year terms.,two-year terms,B,no,,,,B
+llama8b,OGUZ-10-B1-Q1,explained,"July 31, 2019.","December 31, 2019.","July 31, 2019",A,no,,,,A
+llama8b,DIL-01-Domini-B1-Q1,explained,"February 4, 2005.","March 6, 2005.","February 4, 2005, and March 6, 2005",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,DIL-01-Domini-B2-Q2,explained,At least 60 days' written notice to the other party.,At least 90 days' written notice to the other party.,60 days,A,no,,,,A
+llama8b,DIL-02-Anixa-B2-Q2,explained,Anixa may terminate on at least 30 days' written notice to OntoChem.,Anixa may terminate on at least 60 days' written notice to OntoChem.,"Anixa may terminate the entire Agreement without cause, and it must give at least sixty (60) days written notice to OntoChem in Source A, and at least sixty (60) days written notice to OntoChem in Source B",B,no,,,,B
+llama8b,DIL-03-Driven-B1-Q1,explained,"May 1, 2019.","May 31, 2019.","May 1, 2019 and May 31, 2019",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,DIL-05-Biocept-B2-Q2,explained,120 days' written notice to the other party.,150 days' written notice to the other party.,one hundred fifty (150) days,B,no,,,,B
+llama8b,DIL-06-Emerald-B1-Q1,explained,"January 10, 2019.","February 9, 2019.","January 10th, 2019, and February 9th, 2019",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,DIL-06-Emerald-B2-Q2,explained,30 days' prior written notice.,60 days' prior written notice.,60 days,B,no,,,,B
+llama8b,DIL-07-Coral-B1-Q1,explained,"February 1, 2020.","March 2, 2020.","February 1, 2020, and March 2, 2020",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama8b,DIL-07-Coral-B2-Q2,explained,At least 3 months prior notice to the Company.,At least 3 months plus 30 days prior notice to the Company.,3 months plus 30 days,B,no,,,,B
+llama8b,DIL-08-Cyberian-B1-Q1,explained,"February 1, 1998.","March 3, 1998.","February 1, 1998",A,no,,,,A
+llama8b,DIL-09-Allied-B2-Q2,explained,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,ninety (90) calendar days,B,no,,,,B
+llama8b,DIL-10-Exact-B1-Q1,explained,"August 21, 2018.","September 20, 2018.","August 21, 2018",A,no,,,,A
+llama8b,DIL-10-Exact-B2-Q2,explained,Six months' prior written notice to the other party.,Six months plus 30 days' prior written notice to the other party.,six (6) months plus thirty (30) days,B,no,,,,B
+granite8b,EX-003,baseline,Kansas,Texas,"The Agreement is governed and construed according to the laws of the State of Texas, as per Section 25 of the document.
+
+Evidence from Source A:
+'25. APPLICABLE LAW
+This Agreement shall be governed and construed according to the laws of the State of Texas.'
+
+Evidence from Source B:
+'25. APPLICABLE LAW
+This Agreement shall be governed and construed according to the laws of the State of Texas.'",B,no,,,,B
+granite8b,EX-012,baseline,The laws of Japan.,The laws of Sweden.,"The Amendment is governed by the laws of Japan, as stated in Article 3 of the document (Source A).",A,no,,,,A
+granite8b,EX-015,baseline,"February 17, 2016","February 18, 2016","The Effective Date of this Agreement is February 17, 2016",A,no,,,,A
+granite8b,EX-018,baseline,"February 16, 2019","February 16, 2020","The Initial Term expires on February 16, 2020",B,no,,,,B
+granite8b,EX-024,baseline,Ninety (90) days’ written notice,Thirty (30) days’ written notice,"Either party can terminate the agreement upon thirty (30) days written notice, as per Section 7 of the agreement.
+
+Evidence_A: 'This Agreement may also be terminated by either party upon thirty (30) days written notice.'
+
+Evidence_B: 'The term of this Agreement is twelve (12) months from the date hereof, and will be automatically renewed for one (1) additional twelve month period unless either party shall notify the other in writing of its intention not to renew. Such notice must be given ninety (90) days prior to expiration of the original term.'",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-030,baseline,"The laws of Victoria, Australia, with jurisdiction of the courts of Victoria, Australia; the 1980 UN CISG does not apply.","The laws of the State of Minnesota, United States, with jurisdiction of the courts of Minnesota, United States; the 1980 UN CISG does not apply.","This Agreement is governed by the laws of Victoria, Australia and the parties submit to the jurisdiction of the courts of Victoria, Australia. The 1980 United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement.
+
+",both,yes,A,,"AI-assisted, human-checked (Kai)",A
+granite8b,EX-033,baseline,"February 28, 2025.","February 28, 2026.","The Term of the Venture will continue in full force and effect until February 28, 2026, unless extended with the unanimous consent of all Members or otherwise provided in this Agreement.
+
+Source A: 'The duration of this Venture (the ",B,no,,,,B
+granite8b,EX-036,baseline,State of Florida.,State of Georgia.,"The governing law of the Agreement is the State of Georgia, as per Section 54 of the document: 'The Members submit to the jurisdiction of the courts of the State of Georgia for the enforcement of this Agreement and for any arbitration award or decision arising from this Agreement.'",B,no,,,,B
+granite8b,EX-039,baseline,At least one hundred eighty (180) days prior to the beginning of any Renewal Term.,At least ninety (90) days prior to the beginning of any Renewal Term.,The required notice period to prevent the Agreement’s automatic renewal is ninety (90) days prior to the beginning of any Renewal Term.,B,no,,,,B
+granite8b,EX-042,baseline,"The laws of the State of California, exclusive of conflict of laws principles.","The laws of the State of New York, exclusive of conflict of laws principles.","This Agreement will be governed by and construed in accordance with the laws of the State of New York, exclusive of conflict of laws principles.",B,no,,,,B
+granite8b,EX-045,baseline,"State of New York (without giving effect to its conflicts of laws principles, except NY GOL §5-1401).",State of Delaware (without giving effect to its conflicts of laws principles).,"The Agreement is governed by the laws of the State of Delaware, without giving effect to its principles of conflicts of laws (Source B, Section 6(g)).",B,no,,,,B
+granite8b,EX-048,baseline,Upon the later of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,Upon the earlier of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,The Agreement expires on the earlier of three years from the date of the Agreement or the date on which an affiliate of Freedom Mortgage is no longer acting as the external manager of Cherry Hill.,B,no,,,,B
+granite8b,EX-051,baseline,English law.,The laws of Hong Kong.,The agreement is governed by the laws of Hong Kong (Clause 22.1).,B,no,,,,B
+granite8b,EX-054,baseline,"Ten (10) years from the Commencement Date (19 May 2010), i.e., on 19 May 2020, unless earlier terminated.","Five (5) years from the Commencement Date (19 May 2010), i.e., on 19 May 2015, unless earlier terminated.","The agreement expires after a term of five (5) years, unless previously terminated in accordance with Clause 15 (Termination).",B,no,,,,B
+granite8b,EX-057,baseline,"No. It does not automatically renew; it may be renewed only upon mutual, written agreement of the parties.",Yes. It automatically renews for successive 12-month terms.,"Yes, the agreement automatically renews for successive 12-month terms after the initial 12-month period, unless terminated with 30 days written notice by either party.
+
+Source A: 'The term of the Agreement will be for 12 months unless terminated sooner. This agreement may be renewed upon mutual, written agreement of the parties.'
+
+Source B: 'The term of the Agreement will be for 12 months unless terminated sooner. This Agreement shall automatically renew for successive 12-month terms.'",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-060,baseline,Yes. Either party may terminate at any time with 30 days’ written notice.,Yes. Either party may terminate at any time with 10 days’ written notice.,"Yes, either party can terminate the agreement for convenience with 10 days written notice, as stated in Section VI. TERM AND TERMINATION, paragraph C of both Source A and Source B.
+
+Evidence A: 'Either party may terminate this Agreement at any time with 10 days written notice.' (Source B, Section VI. TERM AND TERMINATION, paragraph C)
+
+Evidence B: 'This agreement may be renewed upon mutual, written agreement of the parties. Either party may terminate this Agreement at any time with 10 days written notice.' (Source A, Section VI. TERM AND TERMINATION, paragraph C)",B,no,,,,B
+granite8b,EX-063,baseline,10 years per additional renewal term.,8 years per additional renewal term.,"Each of the two additional renewal terms is stated to be 8 years long in Section 2.02 of the Franchise Agreement between Airsopure and the Franchisee, as amended in Source B.
+
+Evidence from Source A:
+'2.02. At the expiration of the term or any renewal term hereof, You may, at its option, renew the Franchise granted hereunder for 2 additional terms of 8 years each on the following terms and conditions:...'
+
+Evidence from Source B:
+'2.02. At the expiration of the term or any renewal term hereof, You may, at its option, renew the Franchise granted hereunder for 2 additional terms of 8 years each on the following terms and conditions:...'
+",B,no,,,,B
+granite8b,EX-066,baseline,Texas.,Oklahoma.,"The main franchise agreement is to be interpreted and construed under the laws of the State of Oklahoma, as specified in Section 18.07 of the document.",B,no,,,,B
+granite8b,EX-075,baseline,180 days of written notice to the other party.,90 days of written notice to the other party.,ninety (90) days,B,no,,,,B
+granite8b,EX-078,baseline,The 12-month period prior to the claim.,The 6-month period prior to the claim.,six (6) months,B,no,,,,B
+granite8b,EX-081,baseline,At least 60 days' prior written notice of non-renewal.,At least 90 days' prior written notice of non-renewal.,Ninety (90) days,B,no,,,,B
+granite8b,EX-084,baseline,Basic Monthly Maintenance Charges for a 60-day term.,Basic Monthly Maintenance Charges for a 30-day term.,thirty (30) days,B,no,,,,B
+granite8b,EX-090,baseline,Not less than 4 months' written notice to the other party.,Not less than 6 months' written notice to the other party.,Not less than six (6) months written notice,B,no,,,,B
+granite8b,EX-093,baseline,One year per additional renewal term.,Two years per additional renewal term.,"Each automatic additional renewal term after the initial term is for two years, unless earlier terminated by either party.",B,no,,,,B
+granite8b,EX-096,baseline,Hong Kong.,Singapore.,"The substantive governing-law sentence in Section 10.4 names the laws of Singapore as the governing law for the agreement, rather than as the arbitration venue, which is Hong Kong as specified in Section 10.4.",both,yes,B,Singapore as governing law,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-102,baseline,60 days' written notice to MMI.,90 days' written notice to MMI.,Dragon may terminate this agreement without cause by giving ninety (90) days written notice to MMI,B,no,,,,B
+granite8b,EX-105,baseline,"13 months from Shipment Date, unless otherwise agreed in writing.","15 months from Shipment Date, unless otherwise agreed in writing.","The default Warranty Period is fifteen (15) months from the Shipment Date, unless the parties agree otherwise in writing.",B,no,,,,B
+granite8b,EX-108,baseline,"US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","six million US dollars ($6,000,000) in the aggregate for all claims",B,no,,,,B
+granite8b,EX-111,baseline,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,"Gridiron is expressly granted permission in Section 2.A to terminate the Agreement before delivery of the Product. Shi Farms is not granted this permission in the provided sources, but it is not explicitly stated that they cannot terminate the Agreement before delivery either. The permission is exclusive to Gridiron in the given text.
+
+Evidence_A: 'A. Termination. Gridiron may terminate this Agreement at any time prior to delivery of the Product.'
+
+Evidence_B: (No relevant evidence in Source B)
+",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-120,baseline,Delaware.,New York.,"The Agreement is governed by the laws of the State of Delaware, as specified in Section 12.1 of both Source A and Source B documents.
+",A,no,,,,A
+granite8b,EX-123,baseline,Thirty (30) days' written notice.,Sixty (60) days' written notice.,"Either party may terminate this Agreement without cause at any time effective upon sixty (60) days' written notice. Notwithstanding anything to the contrary contained in this Agreement, no termination of this Agreement for any reason whatsoever shall relieve the Customer of the obligation to pay all amounts due to i-on and to make such payments on a timely basis.
+
+",B,no,,,,B
+granite8b,EX-126,baseline,Not less than fifteen (15) days before the end of the respective initial or renewal term.,Not less than forty-five (45) days before the end of the respective initial or renewal term.,"The Customer or i-on must notify the other party of its intention not to renew the Agreement not less than 45 days before the end of the respective initial or renewal term.
+
+Evidence_A: 'This Agreement shall automatically be renewed for one (1) or more one (1) month periods unless either the Customer or i-on gives notice to the other party of its intention not to renew the Agreement, which notice must be given not less than forty-five (45) days before the end of the respective initial or renewal term.'
+
+Evidence_B: 'This Agreement shall automatically be renewed for one (1) or more one (1) month periods unless either the Customer or i-on gives notice to the other party of its intention not to renew the Agreement, which notice must be given not less than forty-five (45) days before the end of the respective initial or renewal term.'",B,no,,,,B
+granite8b,EX-129,baseline,At least thirty (30) days before expiration.,At least sixty (60) days before expiration.,A party must give written notice at least sixty (60) days prior to the expiration of the initial five-year term or a one-year renewal if it intends to terminate rather than renew the Agreement.,B,no,,,,B
+granite8b,EX-132,baseline,"California, USA.","New York, USA.","The Agreement is governed by the laws of the State of New York, USA, excluding conflict of laws provisions and the 1980 United Nations Convention on Contracts for the International Sale of Goods.",B,no,,,,B
+granite8b,EX-159,baseline,An additional one (1) year period.,An additional two (2) year period.,The Agreement is automatically extended for an additional two (2) year period unless either Party notifies the other Party not less than six (6) months before the end of the then in effect term of its intent to terminate this Agreement.,B,no,,,,B
+granite8b,EX-162,baseline,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,A party must notify the other party not less than three (3) months before the end of the then-in-effect term of its intent to terminate rather than allow automatic extension.,B,no,,,,B
+granite8b,EX-165,baseline,"September 2, 2019.","October 2, 2019.","The FDA must accept the relevant dossier or marketing application for review no later than October 2, 2019, which is identified as the Effective Date in the agreement.",B,no,,,,B
+granite8b,EX-168,baseline,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,"Eton must provide ninety (90) days' written notice to Aucta if Eton chooses, at its sole discretion, to terminate the Agreement after approval of the dossier or marketing application.",B,no,,,,B
+granite8b,EX-171,baseline,Successive 12-month periods.,Successive 24-month periods.,The term of the agreement automatically extends for successive 24-month periods until one Party terminates the Agreement by providing at least 180 days prior written notice to the other Party prior to the expiration of the then-current term or unless sooner terminated in accordance with the terms of this Agreement.,B,no,,,,B
+granite8b,EX-174,baseline,At least 180 days' prior written notice.,At least 90 days' prior written notice.,90 days,B,no,,,,B
+granite8b,OGUZ-01-B1-Q1,baseline,Thirty days' written notice.,Ninety days' written notice.,"Ninety days written notice is required to terminate the Agreement for any reason by either Tripath or the Distributor, as per Section 18.2 of the Agreement.
+",B,no,,,,B
+granite8b,OGUZ-01-B2-Q2,baseline,At least one month before the expiration of the initial or any renewal term.,At least three months before the expiration of the initial or any renewal term.,"A party must provide written notification of its intention not to renew the Agreement at least three months prior to the expiration of the initial or any renewal terms, as per Section 18.1 of the Agreement.
+
+Evidence from Source A:
+'18.1 The terms of this Agreement shall be one year from the effective date and will be automatically renewed on each anniversary of the effective date, for a renewal term of one year unless either party provides written notification of its intention not to renew this Agreement at least three months prior to the expiration of the initial or any renewal terms.'
+
+Evidence from Source B:
+'18.1 The terms of this Agreement shall be one year from the effective date and will be automatically renewed on each anniversary of the effective date, for a renewal term of one year unless either party provides written notification of its intention not to renew this Agreement at least three months prior to the expiration of the initial or any renewal terms.'",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-02-B1-Q1,baseline,Subsequent one (1) year periods.,Subsequent two (2) year periods.,"The Agreement is automatically renewed for subsequent two (2) year periods after the initial three-year term unless either party notifies the other in writing of its election not to renew at least one hundred twenty (120) days prior to the expiration of the then-current term.
+
+Evidence: 2.1. Unless otherwise terminated as provided herein, the initial term of this Agreement shall be three (3) years from the Effective Date and shall thereafter be automatically renewed for subsequent two (2) year periods unless either party notifies the other in writing of its election not to renew the Agreement at least one hundred twenty (120) days prior to the expiration of the then-current term. Should this Agreement be terminated by either party for any reason, the obligations of the parties to each other as set forth herein will survive any termination.
+
+Source A: 2.1. Unless otherwise terminated as provided herein, the initial term of this Agreement shall be three (3) years from the Effective Date and shall thereafter be automatically renewed for subsequent one (1) year periods unless either party notifies the other in writing of its election not to renew the Agreement at least one hundred twenty (120) days prior to the expiration of the then-current term. Should this Agreement be terminated by either party for any reason, the obligations of the parties to each other as set forth herein will survive any termination.
+
+Source B: 2.1. Unless otherwise terminated as provided herein, the initial term of this Agreement shall be three (3) years from the Effective Date and shall thereafter be automatically renewed for subsequent two (2) year periods unless either party notifies the other in writing of its election not to renew the Agreement at least one hundred twenty (120) days prior to the expiration of the then-current term. Should this Agreement be terminated by either party for any reason, the obligations of the parties to each other as set forth herein will survive any termination.",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-02-B2-Q2,baseline,At least 120 days before the expiration of the then-current term.,At least 60 days before the expiration of the then-current term.,"A party must notify the other in writing of its election not to renew the Agreement at least sixty (60) days prior to the expiration of the then-current term.
+
+Source A: 2.1. Unless otherwise terminated as provided herein, the initial term of this Agreement shall be three (3) years from the Effective Date and shall thereafter be automatically renewed for subsequent one (1) year periods unless either party notifies the other in writing of its election not to renew the Agreement at least sixty (60) days prior to the expiration of the then-current term.
+
+Source B: 2.1. Unless otherwise terminated as provided herein, the initial term of this Agreement shall be three (3) years from the Effective Date and shall thereafter be automatically renewed for subsequent one (1) year periods unless either party notifies the other in writing of its election not to renew the Agreement at least sixty (60) days prior to the expiration of the then-current term.
+
+",B,no,,,,B
+granite8b,OGUZ-03-B1-Q1,baseline,Ninety days' written notice.,Thirty days' written notice.,Thirty days Written Notice,B,no,,,,B
+granite8b,OGUZ-03-B2-Q2,baseline,Periods of one (1) calendar year each.,Periods of two (2) calendar years each.,"The Agreement automatically renews for periods of two (2) calendar years each after the initial three-year term, unless terminated by either party.",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-04-B1-Q1,baseline,"May 31, 2015.","May 31, 2016.","The term of this Agreement shall terminate on May 31, 2016, unless sooner terminated.
+
+6.01. Term. The term of this Agreement shall terminate on May 31, 2016, unless sooner terminated.
+
+6.02. Termination. This Agreement may be terminated only: (a) By either party for substantial breach of any material provision of this Agreement by the other, provided due notice has been given to the other of the alleged breach and such other party has not cured the breach within (30) days] thereof; or (b) By the Company if: there is an unacceptable change in the control or management of the Distributor; if the Distributor makes an assignment for the benefit of creditors; if a petition in bankruptcy is filed by or against the Distributor, resulting in an adjudication of bankruptcy; or, if the Distributor fails to pay its debts as they become due and provided due notice has been given by the Company to the Distributor and the Distributor has not cured such breach within thirty (30) days thereof; or (c) By the written consent of both parties; (d) Upon termination of this Agreement all further rights and obligations of the parties shall cease, except that Distributor shall not be relieved of (i) its obligation to pay any monies due, or to become due, as of or after the date of termination, and (ii) any other obligation set forth in this Agreement which is to take effect after the date of termination.
+
+Source A: 6.01. Term. The term of this Agreement shall terminate on May 31, 2015, unless sooner terminated.
+
+Source B: 6.01. Term. The term of this Agreement shall terminate on May 31, 2016, unless sooner terminated.
+
+Evidence A: 6.01. Term. The term of this Agreement shall terminate on May 31, 2015, unless sooner terminated.
+
+Evidence B: 6.01. Term. The term of this Agreement shall terminate on May 31, 2016, unless sooner terminated.
+",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-04-B2-Q2,baseline,Ninety (90) days from the date of delivery.,One hundred eighty (180) days from the date of delivery.,"The Company warrants the Products to be free from defects in material or workmanship under normal use and service for a period of 180 days from the date of delivery.
+
+Evidence_A: 5.01.  Products Warranty. Company warrants that Distributor shall acquire Products purchased hereunder free and clear of all liens and encumbrances except for Company's purchase money security interest defined in Section 1.03, above. Company further warrants all Products to be free from defects in material or workmanship under normal use and service for a period of one hundred eighty (180) days from the date of delivery.
+
+Evidence_B: (No additional information provided in Source B for this question.)",B,no,,,,B
+granite8b,OGUZ-05-B2-Q2,baseline,30 days' written notice.,60 days' written notice.,60 days,B,no,,,,B
+granite8b,OGUZ-06-B1-Q1,baseline,"At least ninety (90) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days prior written notice of such termination to the other party is required to terminate the Agreement without cause, according to Paragraph 4.2(c) of the Agreement.",B,no,,,,B
+granite8b,OGUZ-06-B2-Q2,baseline,The laws of the Commonwealth of Massachusetts.,The laws of the State of New York.,"The laws of the State of New York govern the Agreement and related business transactions, as stated in Section 5.6 of the document.
+
+Source A: '5.6. Governing Law; Jurisdiction. This Agreement and all related business transactions will be governed by the laws of the Commonwealth of Massachusetts (without reference to principles of conflicts or choice of law which would cause the application of the internal laws of any other jurisdiction). The courts of or in the Commonwealth of Massachusetts will have nonexclusive jurisdiction over any disputes hereunder.'
+
+Source B: '5.6. Governing Law; Jurisdiction. This Agreement and all related business transactions will be governed by the laws of the State of New York (without reference to principles of conflicts or choice of law which would cause the application of the internal laws of any other jurisdiction). The courts of or in the Commonwealth of Massachusetts will have nonexclusive jurisdiction over any disputes hereunder.'",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-07-B1-Q1,baseline,At least one hundred twenty (120) days' advance written notice.,At least ninety (90) days' advance written notice.,At least ninety (90) days,B,no,,,,B
+granite8b,OGUZ-07-B2-Q2,baseline,"May 25, 1999.","June 15, 1999.","The Agreement is signed and effective on the 15th day of June, 1999.",B,no,,,,B
+granite8b,OGUZ-09-B1-Q1,baseline,Ten (10) years after the Effective Date.,Five (5) years after the Effective Date.,"The initial term of the Agreement ends five years after the Effective Date, unless terminated earlier as provided in the Agreement. After the initial term, the Agreement renews automatically for successive one-year terms unless either Party gives notification of termination with at least sixty days written notice. All orders placed under this Agreement must be placed prior to the expiration or termination of the Agreement.",B,no,,,,B
+granite8b,OGUZ-10-B1-Q1,baseline,"July 31, 2019.","December 31, 2019.","The Initial Term of the Agreement continues until December 31, 2019.",B,no,,,,B
+granite8b,OGUZ-10-B2-Q2,baseline,The law of the State of New York.,The law of the State of Delaware.,"The Agreement shall be governed by, and construed in accordance with the law of the State of Delaware.",B,no,,,,B
+granite8b,DIL-01-Domini-B2-Q2,baseline,At least 60 days' written notice to the other party.,At least 90 days' written notice to the other party.,"The Sponsor or the Board of Trustees can terminate the Agreement without penalty by providing not less than 90 days' written notice to the other party, as per Section 6 of the Agreement in both Source A and Source B.
+
+Evidence A: 'This Agreement may be terminated at any time, without the payment of any penalty, with respect to any series or the Trust, by the Board of Trustees of the Trust, or by the Sponsor, in each case on not less than 90 days' written notice to the other party.'
+
+Evidence B: 'This Agreement may be terminated at any time, without the payment of any penalty, with respect to any series or the Trust, by the Board of Trustees of the Trust, or by the Sponsor, in each case on not less than 90 days' written notice to the other party.'",B,no,,,,B
+granite8b,DIL-02-Anixa-B2-Q2,baseline,Anixa may terminate on at least 30 days' written notice to OntoChem.,Anixa may terminate on at least 60 days' written notice to OntoChem.,"Anixa may terminate the entire Agreement without cause, and it must give at least sixty (60) days written notice to OntoChem as per Section 4.2 of the Agreement.
+
+Source A: 4.2 Termination by Anixa. This Agreement may be terminated by Anixa, without cause, upon at least sixty (60) days written notice to OntoChem.
+
+Source B: 4.2 Termination by Anixa. This Agreement may be terminated by Anixa, without cause, upon at least sixty (60) days written notice to OntoChem.",B,no,,,,B
+granite8b,DIL-03-Driven-B2-Q2,baseline,30 days' prior written notice to the other party.,60 days' prior written notice to the other party.,"Either party may terminate this Agreement, with or without cause, upon giving the other party sixty (60) days prior written notice of such termination pursuant to Section 12.7 of this Agreement.
+
+",B,no,,,,B
+granite8b,DIL-04-Nettaxi-B1-Q1,baseline,"November 5, 1999.","December 5, 1999.","The Effective Date of the Agreement is Nov 5, 1999, as stated in both Source A and Source B documents.",unclear,yes,A,Nov 5 claimed for both sources,"AI-assisted, human-checked (Kai)",A
+granite8b,DIL-04-Nettaxi-B2-Q2,baseline,NETTAXI and SpinRecords.com must each give 60 days' prior written notice to the other party.,NETTAXI must give 90 days' prior written notice; SpinRecords.com must give 60 days' prior written notice.,"NETTAXI may terminate this Agreement at any time for its convenience, for no reason or for any reason, upon ninety (90) days prior written notice to SpinRecords.com. SpinRecords.com may terminate this Agreement for no reason or for any reason upon sixty (60) days prior written notice to NETTAXI.",B,no,,,,B
+granite8b,DIL-05-Biocept-B1-Q1,baseline,"November 2, 2012.","December 2, 2012.","The Effective Date of the Agreement is December 2, 2012.",B,no,,,,B
+granite8b,DIL-05-Biocept-B2-Q2,baseline,120 days' written notice to the other party.,150 days' written notice to the other party.,"Both parties shall have the right to terminate this Agreement at any time, for any or for no reason, upon one hundred fifty (150) days written notice to the other party.",B,no,,,,B
+granite8b,DIL-06-Emerald-B2-Q2,baseline,30 days' prior written notice.,60 days' prior written notice.,The Company must give 60 days prior written notice to terminate the Agreement without Cause,B,no,,,,B
+granite8b,DIL-07-Coral-B2-Q2,baseline,At least 3 months prior notice to the Company.,At least 3 months plus 30 days prior notice to the Company.,"The Consultant must give the Company not less than 3 months plus 30 days prior notice of such termination when electing to terminate before the Term expires, outside the change-of-control provision (Section 5.1(a)).",B,no,,,,B
+granite8b,DIL-08-Cyberian-B1-Q1,baseline,"February 1, 1998.","March 3, 1998.","The initial Term begins on February 1, 1998, as stated in Section 4 of Source A and Section 4 of Source B, which are identical in this context.",A,no,,,,A
+granite8b,DIL-08-Cyberian-B2-Q2,baseline,30 days' written notice to the other party.,60 days' written notice to the other party.,60 days,B,no,,,,B
+granite8b,DIL-09-Allied-B2-Q2,baseline,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,Each party may also terminate the Agreement for convenience after Contract Year 2 (as defined in Section 14.4) by providing written notice to the other party at least ninety (90) calendar days prior to the effective date of such termination,B,no,,,,B
+granite8b,DIL-10-Exact-B1-Q1,baseline,"August 21, 2018.","September 20, 2018.","The Effective Date of the Agreement is September 20, 2018.",B,no,,,,B
+granite8b,DIL-10-Exact-B2-Q2,baseline,Six months' prior written notice to the other party.,Six months plus 30 days' prior written notice to the other party.,six (6) months plus thirty (30) days prior written notice,B,no,,,,B
+granite8b,EX-003,explained,Kansas,Texas,"The Agreement is governed and construed according to the laws of the State of Texas.
+
+Source A: 25. APPLICABLE LAW
+This Agreement shall be governed and construed according to the laws of the State of Texas.
+
+Source B: 25. APPLICABLE LAW
+This Agreement shall be governed and construed according to the laws of the State of Texas.
+",B,no,,,,B
+granite8b,EX-012,explained,The laws of Japan.,The laws of Sweden.,"The Amendment is governed by the laws of Japan, as per Article 3 of the document (Source A).",A,no,,,,A
+granite8b,EX-015,explained,"February 17, 2016","February 18, 2016","The Effective Date of this Agreement is February 17, 2016",A,no,,,,A
+granite8b,EX-024,explained,Ninety (90) days’ written notice,Thirty (30) days’ written notice,"Thirty (30) days written notice is required for either party to terminate the agreement for convenience.
+
+Evidence_A: 'This Agreement may also be terminated by either party upon thirty (30) days written notice.'
+
+Evidence_B: No evidence from Source B is needed as it supports the same answer as Source A.
+",B,no,,,,B
+granite8b,EX-030,explained,"The laws of Victoria, Australia, with jurisdiction of the courts of Victoria, Australia; the 1980 UN CISG does not apply.","The laws of the State of Minnesota, United States, with jurisdiction of the courts of Minnesota, United States; the 1980 UN CISG does not apply.","This Agreement is governed by the laws of Victoria, Australia and the parties submit to the jurisdiction of the courts of Victoria, Australia. The 1980 United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement.
+
+",both,yes,A,,"AI-assisted, human-checked (Kai)",A
+granite8b,EX-036,explained,State of Florida.,State of Georgia.,"The governing law of the Agreement is the State of Georgia, as per Section 54 of the document, which states that the Members submit to the jurisdiction of the courts of the State of Georgia for the enforcement of this Agreement and for any arbitration award or decision arising from this Agreement. Additionally, Section 56 specifies that any disputes will be resolved through mediation and, if necessary, final and binding arbitration in accordance with the laws of the State of Georgia. The arbitrator's award will be final, and judgment may be entered upon it by any court having jurisdiction within the State of Georgia. Furthermore, Section 48 states that the Venture will insure all its assets against loss where reasonable and standard practice in the industry, and Section 49 mentions that each Member will be indemnified and held harmless by the Venture from any and all harm or damages of any nature relating to the Member's participation in Venture affairs, except where such harm or damages results from gross negligence or willful misconduct on the part of the Member. These provisions further support the governing law being the State of Georgia.
+
+Evidence_A: Section 54 - 'The Members submit to the jurisdiction of the courts of the State of Georgia for the enforcement of this Agreement and for any arbitration award or decision arising from this Agreement.'
+
+Evidence_B: Section 56 - 'In the event a dispute arises out of, or in connection with, this Agreement, the Members will attempt to resolve the dispute through friendly consultation. If the dispute is not resolved within a reasonable period then any or all outstanding issues may be submitted to mediation in accordance with any statutory rules of mediation. If mediation is not successful in resolving the entire dispute or is unavailable, any outstanding issues will be submitted to final and binding arbitration in accordance with the laws of the State of Georgia. The arbitrator's award will be final, and judgment may be entered upon it by any court having jurisdiction within the State of Georgia.'
+
+Section 48 - 'The Venture will insure all its assets against loss where reasonable and standard practice in the industry.'
+
+Section 49 - 'Each Member will be indemnified and held harmless by the Venture from any and all harm or damages of any nature relating to the Member's participation in Venture affairs except where such harm or damages results from gross negligence or willful misconduct on the part of the Member.'",B,no,,,,B
+granite8b,EX-039,explained,At least one hundred eighty (180) days prior to the beginning of any Renewal Term.,At least ninety (90) days prior to the beginning of any Renewal Term.,The required notice period to prevent the Agreement’s automatic renewal is ninety (90) days prior to the beginning of any Renewal Term.,B,no,,,,B
+granite8b,EX-042,explained,"The laws of the State of California, exclusive of conflict of laws principles.","The laws of the State of New York, exclusive of conflict of laws principles.","This Agreement will be governed by and construed in accordance with the laws of the State of New York, exclusive of conflict of laws principles.",B,no,,,,B
+granite8b,EX-045,explained,"State of New York (without giving effect to its conflicts of laws principles, except NY GOL §5-1401).",State of Delaware (without giving effect to its conflicts of laws principles).,"The Agreement is governed by the laws of the State of Delaware, without giving effect to its principles of conflicts of laws (Source B, Section 6(g)).",B,no,,,,B
+granite8b,EX-048,explained,Upon the later of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,Upon the earlier of: (x) three years from the date hereof and (y) the date when an affiliate of Freedom Mortgage is not acting as Cherry Hill’s external manager.,"The Agreement expires on the earlier of (x) three (3) years from the date hereof and (y) the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill.
+
+Evidence_A: Section 5(a) of the Agreement states, 'Unless earlier terminated as provided below, this Agreement shall remain in effect until the earlier to occur of the date that is (x) three (3) years from the date hereof and (y) the date on which an affiliate of Freedom Mortgage is not acting as the external manager of Cherry Hill.'
+
+Evidence_B: N/A (No additional information is provided in Source B regarding the expiration of the Agreement.)",B,no,,,,B
+granite8b,EX-051,explained,English law.,The laws of Hong Kong.,The agreement is governed by the laws of Hong Kong (Clause 22.1).,B,no,,,,B
+granite8b,EX-054,explained,"Ten (10) years from the Commencement Date (19 May 2010), i.e., on 19 May 2020, unless earlier terminated.","Five (5) years from the Commencement Date (19 May 2010), i.e., on 19 May 2015, unless earlier terminated.","The agreement expires after a term of five (5) years, unless previously terminated in accordance with Clause 15 (Termination).",B,no,,,,B
+granite8b,EX-057,explained,"No. It does not automatically renew; it may be renewed only upon mutual, written agreement of the parties.",Yes. It automatically renews for successive 12-month terms.,"Yes, the agreement automatically renews for successive 12-month terms after the initial 12-month term, as stated in Section VI of both Source A and Source B.
+
+Evidence A: 'The term of the Agreement will be for 12 months unless terminated sooner. This agreement may be renewed upon mutual, written agreement of the parties. Either party may terminate this Agreement at any time with 30 days written notice.'
+
+Evidence B: 'The term of the Agreement will be for 12 months unless terminated sooner. This Agreement shall automatically renew for successive 12-month terms. Either party may terminate this agreement at any time with 30 days written notice.'",both,yes,B,claims both sources say so,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-060,explained,Yes. Either party may terminate at any time with 30 days’ written notice.,Yes. Either party may terminate at any time with 10 days’ written notice.,"Yes, either party can terminate the agreement for convenience with 10 days written notice (Source B, Section VI).",B,no,,,,B
+granite8b,EX-063,explained,10 years per additional renewal term.,8 years per additional renewal term.,"Each of the two additional renewal terms is stated to be 8 years in Section 2.02 of the Franchise Agreement between Airsopure and the Franchisee, with the total term of the Franchise Agreement being 20 years (10 years initial term + 2 x 8 years renewal terms).",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-066,explained,Texas.,Oklahoma.,"The main franchise agreement is to be interpreted and construed under the laws of the State of Oklahoma, as specified in Section 18.07.",B,no,,,,B
+granite8b,EX-075,explained,180 days of written notice to the other party.,90 days of written notice to the other party.,ninety (90) days,B,no,,,,B
+granite8b,EX-078,explained,The 12-month period prior to the claim.,The 6-month period prior to the claim.,six (6) months,B,no,,,,B
+granite8b,EX-084,explained,Basic Monthly Maintenance Charges for a 60-day term.,Basic Monthly Maintenance Charges for a 30-day term.,thirty (30) days,B,no,,,,B
+granite8b,EX-093,explained,One year per additional renewal term.,Two years per additional renewal term.,"Each automatic additional renewal term after the initial term is for two years, unless earlier terminated by either party.",B,no,,,,B
+granite8b,EX-096,explained,Hong Kong.,Singapore.,"The substantive governing-law sentence in Section 10.4 names the laws of Singapore as the governing law for the agreement, rather than as the arbitration venue, which is Hong Kong.",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-102,explained,60 days' written notice to MMI.,90 days' written notice to MMI.,Dragon may terminate this agreement without cause by giving ninety (90) days written notice to MMI,B,no,,,,B
+granite8b,EX-105,explained,"13 months from Shipment Date, unless otherwise agreed in writing.","15 months from Shipment Date, unless otherwise agreed in writing.","The default Warranty Period is fifteen (15) months from the Shipment Date, unless the parties agree otherwise in writing.",B,no,,,,B
+granite8b,EX-108,explained,"US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","six million US dollars ($6,000,000) in the aggregate for all claims",B,no,,,,B
+granite8b,EX-111,explained,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,Gridiron,unclear,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-117,explained,No less than 12 months before expiration of the then-current term.,No less than 9 months before expiration of the then-current term.,"A party must notify the other of its intention not to renew no less than 9 months prior to the expiration of the then-current term, unless terminated as permitted under this Agreement.
+",B,no,,,,B
+granite8b,EX-120,explained,Delaware.,New York.,"The laws of the State of Delaware are expressly selected to govern the Agreement under Section 12.1, as stated in the contract: 'This Agreement will be governed by the laws of the State of Delaware without regard to its conflicts of law principles.'",A,no,,,,A
+granite8b,EX-123,explained,Thirty (30) days' written notice.,Sixty (60) days' written notice.,"Sixty (60) days' written notice is required for either party to terminate the hosting arrangement without cause, making the termination effective sixty days after the notice is given.
+
+Evidence A: 'Either party may terminate this Agreement without cause at any time effective upon sixty (60) days' written notice.'
+
+Evidence B: 'Either party may terminate this Agreement without cause at any time effective upon thirty (30) days' written notice.' (This statement is incorrect and does not match the provided document.)",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,EX-126,explained,Not less than fifteen (15) days before the end of the respective initial or renewal term.,Not less than forty-five (45) days before the end of the respective initial or renewal term.,"The Customer or i-on must notify the other party of its intention not to renew the Agreement not less than forty-five (45) days before the end of the respective initial or renewal term.
+
+Evidence_A: The term of this Agreement for the Hosted Site shall commence upon April 1, 1999 and shall continue for a period of six (6) months, unless earlier terminated in accordance with provisions hereof. This Agreement shall automatically be renewed for one (1) or more one (1) month periods unless either the Customer or i-on gives notice to the other party of its intention not to renew the Agreement, which notice must be given not less than forty-five (45) days before the end of the respective initial or renewal term.
+
+Evidence_B: (No relevant information in Source B to support this answer.)",B,no,,,,B
+granite8b,EX-129,explained,At least thirty (30) days before expiration.,At least sixty (60) days before expiration.,A party must give written notice at least sixty (60) days prior to the expiration of the initial five-year term or a one-year renewal if it intends to terminate rather than renew the Agreement.,B,no,,,,B
+granite8b,EX-132,explained,"California, USA.","New York, USA.","The Agreement is governed by the laws of the State of New York, USA, excluding conflict of laws provisions and the 1980 United Nations Convention on Contracts for the International Sale of Goods.",B,no,,,,B
+granite8b,EX-135,explained,"December 17, 2019.","January 17, 2020.","The Effective Date of the license agreement between CytoDyn and Vyera Pharmaceuticals is January 17, 2020.",B,no,,,,B
+granite8b,EX-138,explained,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,ninety (90) days' written notice,B,no,,,,B
+granite8b,EX-159,explained,An additional one (1) year period.,An additional two (2) year period.,The Agreement is automatically extended for an additional two (2) year period unless either Party notifies the other Party not less than six (6) months before the end of the then in effect term of its intent to terminate this Agreement.,B,no,,,,B
+granite8b,EX-162,explained,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,A party must notify the other party not less than three (3) months before the end of the then-in-effect term of its intent to terminate rather than allow automatic extension.,B,no,,,,B
+granite8b,EX-165,explained,"September 2, 2019.","October 2, 2019.","The FDA must accept the relevant dossier or marketing application for review no later than October 2, 2019, which is identified as the Effective Date in the Exclusive License and Product Development Agreement between Eton Pharmaceuticals and Aucta Pharmaceuticals.",B,no,,,,B
+granite8b,EX-168,explained,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,"Eton must provide ninety (90) days' written notice to Aucta if Eton chooses, at its sole discretion, to terminate the Agreement after approval of the dossier or marketing application.",B,no,,,,B
+granite8b,EX-171,explained,Successive 12-month periods.,Successive 24-month periods.,The term of the agreement automatically extends for successive 24-month periods until one Party terminates the Agreement by providing at least 180 days prior written notice to the other Party prior to the expiration of the then-current term or unless sooner terminated in accordance with the terms of this Agreement.,B,no,,,,B
+granite8b,EX-174,explained,At least 180 days' prior written notice.,At least 90 days' prior written notice.,90 days,B,no,,,,B
+granite8b,OGUZ-01-B1-Q1,explained,Thirty days' written notice.,Ninety days' written notice.,"Ninety days written notice is required to terminate the Agreement for any reason by either Tripath or the Distributor, as per Section 18.2 of the Agreement.
+
+Source A: 'Tripath may terminate this Agreement for any reason with thirty days written notice.'
+
+Source B: 'Tripath or Distributor may terminate this Agreement for any reason with ninety days written notice.'",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-01-B2-Q2,explained,At least one month before the expiration of the initial or any renewal term.,At least three months before the expiration of the initial or any renewal term.,"A party must provide written notification of its intention not to renew the Agreement at least three months prior to the expiration of the initial or any renewal terms.
+
+Source A: 18.1 The terms of this Agreement shall be one year from the effective date and will be automatically renewed on each anniversary of the effective date, for a renewal term of one year unless either party provides written notification of its intention not to renew this Agreement at least three months prior to the expiration of the initial or any renewal terms.
+
+Source B: 18.1 The terms of this Agreement shall be one year from the effective date and will be automatically renewed on each anniversary of the effective date, for a renewal term of one year unless either party provides written notification of its intention not to renew this Agreement at least three months prior to the expiration of the initial or any renewal terms.
+
+Both sources support the same answer, which is that a party must give written notice of its intention not to renew the Agreement at least three months before the expiration of the initial or any renewal terms.",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-02-B1-Q1,explained,Subsequent one (1) year periods.,Subsequent two (2) year periods.,"The Agreement is automatically renewed for subsequent two (2) year periods after the initial three-year term, unless either party notifies the other in writing of its election not to renew at least one hundred twenty (120) days prior to the expiration of the then-current term.
+
+Evidence_A: 2.1. Unless otherwise terminated as provided herein, the initial term of this Agreement shall be three (3) years from the Effective Date and shall thereafter be automatically renewed for subsequent two (2) year periods unless either party notifies the other in writing of its election not to renew the Agreement at least one hundred twenty (120) days prior to the expiration of the then-current term.
+
+Evidence_B: 2.1. Unless otherwise terminated as provided herein, the initial term of this Agreement shall be three (3) years from the Effective Date and shall thereafter be automatically renewed for subsequent two (2) year periods unless either party notifies the other in writing of its election not to renew the Agreement at least one hundred twenty (120) days prior to the expiration of the then-current term.",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-03-B1-Q1,explained,Ninety days' written notice.,Thirty days' written notice.,Thirty days Written Notice,B,no,,,,B
+granite8b,OGUZ-03-B2-Q2,explained,Periods of one (1) calendar year each.,Periods of two (2) calendar years each.,The Agreement automatically renews for periods of two (2) calendar years each after the initial three-year term.,both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-04-B2-Q2,explained,Ninety (90) days from the date of delivery.,One hundred eighty (180) days from the date of delivery.,"The Company warrants the Products to be free from defects in material or workmanship under normal use and service for a period of ninety (90) days from the date of delivery, as per Section 5.01 of the agreement in Source A and Source B.
+
+Source A evidence: 'Company further warrants all Products to be free from defects in material or workmanship under normal use and service for a period of ninety (90) days from the date of delivery.'
+
+Source B evidence: 'Company further warrants all Products to be free from defects in material or workmanship under normal use and service for a period of ninety (90) days from the date of delivery.'",A,no,,,,A
+granite8b,OGUZ-05-B2-Q2,explained,30 days' written notice.,60 days' written notice.,60 days,B,no,,,,B
+granite8b,OGUZ-06-B1-Q1,explained,"At least ninety (90) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days prior written notice of such termination to the other party is required to terminate the Agreement without cause, according to Paragraph 4.2(c) of both Source A and Source B.",B,no,,,,B
+granite8b,OGUZ-06-B2-Q2,explained,The laws of the Commonwealth of Massachusetts.,The laws of the State of New York.,"The laws of the State of New York govern the Agreement and related business transactions, as stated in Section 5.6 of the document.
+
+Source A: '5.6. Governing Law; Jurisdiction. This Agreement and all related business transactions will be governed by the laws of the Commonwealth of Massachusetts (without reference to principles of conflicts or choice of law which would cause the application of the internal laws of any other jurisdiction). The courts of or in the Commonwealth of Massachusetts will have nonexclusive jurisdiction over any disputes hereunder.'
+
+Source B: '5.6. Governing Law; Jurisdiction. This Agreement and all related business transactions will be governed by the laws of the State of New York (without reference to principles of conflicts or choice of law which would cause the application of the internal laws of any other jurisdiction). The courts of or in the Commonwealth of Massachusetts will have nonexclusive jurisdiction over any disputes hereunder.'",both,yes,B,,"AI-assisted, human-checked (Kai)",B
+granite8b,OGUZ-07-B1-Q1,explained,At least one hundred twenty (120) days' advance written notice.,At least ninety (90) days' advance written notice.,At least ninety (90) days,B,no,,,,B
+granite8b,OGUZ-07-B2-Q2,explained,"May 25, 1999.","June 15, 1999.","The Agreement is signed and effective on the 15th day of June, 1999.",B,no,,,,B
+granite8b,OGUZ-09-B1-Q1,explained,Ten (10) years after the Effective Date.,Five (5) years after the Effective Date.,"The initial term of the Agreement ends five (5) years after the Effective Date, unless terminated earlier as provided in the Agreement. After the initial term, the Agreement renews automatically for successive one-year terms unless either Party gives notification of termination with at least sixty (60) days written notice. All orders placed under this Agreement must be placed prior to the expiration or termination of the Agreement.",B,no,,,,B
+granite8b,OGUZ-10-B1-Q1,explained,"July 31, 2019.","December 31, 2019.","The Initial Term of the Agreement continues until December 31, 2019.",B,no,,,,B
+granite8b,OGUZ-10-B2-Q2,explained,The law of the State of New York.,The law of the State of Delaware.,"The Agreement shall be governed by, and construed in accordance with the law of the State of Delaware.",B,no,,,,B
+granite8b,DIL-01-Domini-B2-Q2,explained,At least 60 days' written notice to the other party.,At least 90 days' written notice to the other party.,"The Sponsor or the Board of Trustees can terminate the Agreement without penalty by providing not less than 90 days' written notice to the other party, as per Section 6 of the Agreement in both Source A and Source B.
+
+Evidence_A: 'This Agreement may be terminated at any time, without the payment of any penalty, with respect to any series or the Trust, by the Board of Trustees of the Trust, or by the Sponsor, in each case on not less than 90 days' written notice to the other party.'
+
+Evidence_B: 'This Agreement may be terminated at any time, without the payment of any penalty, with respect to any series or the Trust, by the Board of Trustees of the Trust, or by the Sponsor, in each case on not less than 90 days' written notice to the other party.'",B,no,,,,B
+granite8b,DIL-02-Anixa-B2-Q2,explained,Anixa may terminate on at least 30 days' written notice to OntoChem.,Anixa may terminate on at least 60 days' written notice to OntoChem.,"Anixa may terminate the entire Agreement without cause, and it must give at least sixty (60) days written notice to OntoChem as per Section 4.2 of the Agreement.
+
+Source A: 4.2 Termination by Anixa. This Agreement may be terminated by Anixa, without cause, upon at least sixty (60) days written notice to OntoChem.
+
+Source B: 4.2 Termination by Anixa. This Agreement may be terminated by Anixa, without cause, upon at least sixty (60) days written notice to OntoChem.",B,no,,,,B
+granite8b,DIL-03-Driven-B2-Q2,explained,30 days' prior written notice to the other party.,60 days' prior written notice to the other party.,"Sixty (60) days prior written notice is required to terminate the Agreement without cause, as per Section 7.2 of the Agreement for both parties, Company and Consultant, TruckThat LLC and Driven Deliveries, Inc., respectively, as per Source A and Source B of the Consulting Agreement documents provided.
+
+Evidence_A: 'The Company may terminate this Agreement immediately and without prior notice if Consultant refuses to or is unable to perform the Services or is in breach of any material provision of this Agreement. 7.2. Termination. Either Party may terminate this Agreement, with or without cause, upon giving the other party sixty (60) days prior written notice of such termination pursuant to Section 12.7 of this Agreement.'
+
+Evidence_B: '7.2. Termination. Either Party may terminate this Agreement, with or without cause, upon giving the other party sixty (60) days prior written notice of such termination pursuant to Section 12.7 of this Agreement.'",B,no,,,,B
+granite8b,DIL-04-Nettaxi-B1-Q1,explained,"November 5, 1999.","December 5, 1999.","The Effective Date of the Agreement is Nov 5, 1999, as stated in both Source A and Source B.",unclear,yes,A,Nov 5 claimed for both sources,"AI-assisted, human-checked (Kai)",A
+granite8b,DIL-04-Nettaxi-B2-Q2,explained,NETTAXI and SpinRecords.com must each give 60 days' prior written notice to the other party.,NETTAXI must give 90 days' prior written notice; SpinRecords.com must give 60 days' prior written notice.,"NETTAXI may terminate this Agreement at any time for its convenience, for no reason or for any reason, upon ninety (90) days prior written notice to SpinRecords.com. SpinRecords.com may terminate this Agreement for no reason or for any reason upon sixty (60) days prior written notice to NETTAXI.",B,no,,,,B
+granite8b,DIL-05-Biocept-B1-Q1,explained,"November 2, 2012.","December 2, 2012.","The Effective Date of the Agreement is December 2, 2012.",B,no,,,,B
+granite8b,DIL-05-Biocept-B2-Q2,explained,120 days' written notice to the other party.,150 days' written notice to the other party.,"Both parties shall have the right to terminate this Agreement at any time, for any or for no reason, upon one hundred fifty (150) days written notice to the other party.",B,no,,,,B
+granite8b,DIL-06-Emerald-B2-Q2,explained,30 days' prior written notice.,60 days' prior written notice.,"The Company must give 60 days prior written notice to terminate the Agreement without Cause, with the termination date specified in the written notice and not earlier than the required notice period.
+
+Evidence A: 5.4 Emeralds' Right to Terminate this Agreement without Cause. The Company may terminate this Agreement and the engagement of the Contractor without Cause at any time on 60 days prior written notice.
+
+Evidence B: No relevant information in Source B.",B,no,,,,B
+granite8b,DIL-08-Cyberian-B2-Q2,explained,30 days' written notice to the other party.,60 days' written notice to the other party.,60 days,B,no,,,,B
+granite8b,DIL-09-Allied-B2-Q2,explained,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,Each party may also terminate the Agreement for convenience after Contract Year 2 (as defined in Section 14.4) by providing written notice to the other party at least ninety (90) calendar days prior to the effective date of such termination,B,no,,,,B
+granite8b,DIL-10-Exact-B1-Q1,explained,"August 21, 2018.","September 20, 2018.","The Effective Date of the Agreement is September 20, 2018.",B,no,,,,B
+granite8b,DIL-10-Exact-B2-Q2,explained,Six months' prior written notice to the other party.,Six months plus 30 days' prior written notice to the other party.,six (6) months plus thirty (30) days prior written notice,B,no,,,,B
+llama70b,EX-039,baseline,At least one hundred eighty (180) days prior to the beginning of any Renewal Term.,At least ninety (90) days prior to the beginning of any Renewal Term.,ninety (90) days prior to the beginning of any Renewal Term,B,no,,,,B
+llama70b,EX-063,baseline,10 years per additional renewal term.,8 years per additional renewal term.,8 years,B,no,,,,B
+llama70b,EX-078,baseline,The 12-month period prior to the claim.,The 6-month period prior to the claim.,6,B,no,,,,B
+llama70b,EX-087,baseline,12 months from the date of delivery to Customer.,18 months from the date of delivery to Customer.,twelve (12) months,A,no,,,,A
+llama70b,EX-090,baseline,Not less than 4 months' written notice to the other party.,Not less than 6 months' written notice to the other party.,six (6) months,B,no,,,,B
+llama70b,EX-093,baseline,One year per additional renewal term.,Two years per additional renewal term.,two years,B,no,,,,B
+llama70b,EX-096,baseline,Hong Kong.,Singapore.,Singapore,B,no,,,,B
+llama70b,EX-105,baseline,"13 months from Shipment Date, unless otherwise agreed in writing.","15 months from Shipment Date, unless otherwise agreed in writing.",Thirteen (13) months,A,no,,,,A
+llama70b,EX-108,baseline,"US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","$5,000,000",A,no,,,,A
+llama70b,EX-111,baseline,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,"Either Party (Source A) or Gridiron (Source B) may terminate the Agreement before delivery of the Product, depending on the version of the contract in effect",A,no,,,,A
+llama70b,EX-129,baseline,At least thirty (30) days before expiration.,At least sixty (60) days before expiration.,thirty (30) days,A,no,,,,A
+llama70b,EX-132,baseline,"California, USA.","New York, USA.",California,A,no,,,,A
+llama70b,EX-135,baseline,"December 17, 2019.","January 17, 2020.","December 17, 2019",A,no,,,,A
+llama70b,EX-138,baseline,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,one hundred eighty (180) days,A,no,,,,A
+llama70b,EX-144,baseline,Not less than 90 days before the end of the five-year term.,Not less than 120 days before the end of the five-year term.,120 days,B,no,,,,B
+llama70b,EX-150,baseline,Two weeks' written notice.,Four weeks' written notice.,"Source A: 2 weeks, Source B: 4 weeks",both,yes,both_attributed,LIKELY LABEL ERROR: explicitly attributes A/B values -> conflict_detected should be yes,"AI-assisted, human-checked (Kai)",both_attributed
+llama70b,EX-153,baseline,"February 4, 2020.","March 4, 2020.","February 4, 2020",A,no,,,,A
+llama70b,EX-156,baseline,Sixty (60) days' prior written notice.,Ninety (90) days' prior written notice.,sixty (60) days,A,no,,,,A
+llama70b,EX-159,baseline,An additional one (1) year period.,An additional two (2) year period.,one (1) year period,A,no,,,,A
+llama70b,EX-162,baseline,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,six (6) months,A,no,,,,A
+llama70b,EX-168,baseline,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,90 days,B,no,,,,B
+llama70b,EX-174,baseline,At least 180 days' prior written notice.,At least 90 days' prior written notice.,180 days,A,no,,,,A
+llama70b,EX-177,baseline,Successive five (5)-year terms.,Successive three (3)-year terms.,three (3) years,B,no,,,,B
+llama70b,EX-180,baseline,At least six (6) months before expiration of the then-current term.,At least three (3) months before expiration of the then-current term.,six (6) months,A,no,,,,A
+llama70b,OGUZ-01-B1-Q1,baseline,Thirty days' written notice.,Ninety days' written notice.,"30 days in Source A, 90 days in Source B",both,yes,both_attributed,LIKELY LABEL ERROR: explicitly attributes A/B values -> conflict_detected should be yes,"AI-assisted, human-checked (Kai)",both_attributed
+llama70b,OGUZ-02-B1-Q1,baseline,Subsequent one (1) year periods.,Subsequent two (2) year periods.,one year,A,no,,,,A
+llama70b,OGUZ-02-B2-Q2,baseline,At least 120 days before the expiration of the then-current term.,At least 60 days before the expiration of the then-current term.,one hundred twenty (120) days,A,no,,,,A
+llama70b,OGUZ-06-B1-Q1,baseline,"At least ninety (90) days' prior written notice (effective any time after January 31, 1999).","At least sixty (60) days' prior written notice (effective any time after January 31, 1999).",sixty (60) days,B,no,,,,B
+llama70b,OGUZ-08-B2-Q2,baseline,At least sixty (60) days before the expiration of the then-current term.,At least ninety (90) days before the expiration of the then-current term.,ninety (90) days,B,no,,,,B
+llama70b,OGUZ-09-B2-Q2,baseline,Successive one-year terms.,Successive two-year terms.,one year,A,no,,,,A
+llama70b,DIL-04-Nettaxi-B2-Q2,baseline,NETTAXI and SpinRecords.com must each give 60 days' prior written notice to the other party.,NETTAXI must give 90 days' prior written notice; SpinRecords.com must give 60 days' prior written notice.,"NETTAXI must give 90 days notice, SpinRecords.com must give 60 days notice",B,no,,,,B
+llama70b,DIL-06-Emerald-B1-Q1,baseline,"January 10, 2019.","February 9, 2019.","January 10, 2019 and February 9, 2019",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama70b,DIL-06-Emerald-B2-Q2,baseline,30 days' prior written notice.,60 days' prior written notice.,60 days,B,no,,,,B
+llama70b,DIL-07-Coral-B1-Q1,baseline,"February 1, 2020.","March 2, 2020.","February 1, 2020, and March 2, 2020",both,yes,both_unattributed,,"AI-assisted, human-checked (Kai)",both_unattributed
+llama70b,DIL-07-Coral-B2-Q2,baseline,At least 3 months prior notice to the Company.,At least 3 months plus 30 days prior notice to the Company.,3 months plus 30 days,B,no,,,,B
+llama70b,DIL-09-Allied-B2-Q2,baseline,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,ninety (90) calendar days,B,no,,,,B
+llama70b,DIL-10-Exact-B2-Q2,baseline,Six months' prior written notice to the other party.,Six months plus 30 days' prior written notice to the other party.,six (6) months plus thirty (30) days,B,no,,,,B
+llama70b,EX-039,explained,At least one hundred eighty (180) days prior to the beginning of any Renewal Term.,At least ninety (90) days prior to the beginning of any Renewal Term.,90 days,B,no,,,,B
+llama70b,EX-090,explained,Not less than 4 months' written notice to the other party.,Not less than 6 months' written notice to the other party.,six (6) months,B,no,,,,B
+llama70b,EX-093,explained,One year per additional renewal term.,Two years per additional renewal term.,"Source A: 1 year, Source B: 2 years",both,yes,both_attributed,LIKELY LABEL ERROR: explicitly attributes A/B values -> conflict_detected should be yes,"AI-assisted, human-checked (Kai)",both_attributed
+llama70b,EX-096,explained,Hong Kong.,Singapore.,Singapore,B,no,,,,B
+llama70b,EX-105,explained,"13 months from Shipment Date, unless otherwise agreed in writing.","15 months from Shipment Date, unless otherwise agreed in writing.",Thirteen (13) months,A,no,,,,A
+llama70b,EX-108,explained,"US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.","$5,000,000",A,no,,,,A
+llama70b,EX-111,explained,Either party: Shi Farms or Gridiron.,Gridiron is the party expressly granted that permission in Section 2.A.,Source A: Either Party; Source B: Gridiron,A,no,,,,A
+llama70b,EX-135,explained,"December 17, 2019.","January 17, 2020.","December 17, 2019",A,no,,,,A
+llama70b,EX-138,explained,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,one hundred eighty (180) days,A,no,,,,A
+llama70b,EX-150,explained,Two weeks' written notice.,Four weeks' written notice.,"Source A: 2 weeks, Source B: 4 weeks",both,yes,both_attributed,LIKELY LABEL ERROR: explicitly attributes A/B values -> conflict_detected should be yes,"AI-assisted, human-checked (Kai)",both_attributed
+llama70b,EX-153,explained,"February 4, 2020.","March 4, 2020.","February 4, 2020",A,no,,,,A
+llama70b,EX-156,explained,Sixty (60) days' prior written notice.,Ninety (90) days' prior written notice.,ninety (90) days,B,no,,,,B
+llama70b,EX-159,explained,An additional one (1) year period.,An additional two (2) year period.,one (1) year period,A,no,,,,A
+llama70b,EX-162,explained,Not less than six (6) months before the end of the then-current term.,Not less than three (3) months before the end of the then-current term.,six (6) months,A,no,,,,A
+llama70b,EX-168,explained,One hundred eighty (180) days' written notice.,Ninety (90) days' written notice.,90 days,B,no,,,,B
+llama70b,OGUZ-01-B1-Q1,explained,Thirty days' written notice.,Ninety days' written notice.,"Source A: 30 days, Source B: 90 days",both,yes,both_attributed,LIKELY LABEL ERROR: explicitly attributes A/B values -> conflict_detected should be yes,"AI-assisted, human-checked (Kai)",both_attributed
+llama70b,OGUZ-02-B2-Q2,explained,At least 120 days before the expiration of the then-current term.,At least 60 days before the expiration of the then-current term.,one hundred twenty (120) days,A,no,,,,A
+llama70b,OGUZ-08-B2-Q2,explained,At least sixty (60) days before the expiration of the then-current term.,At least ninety (90) days before the expiration of the then-current term.,ninety (90) days,B,no,,,,B
+llama70b,DIL-07-Coral-B2-Q2,explained,At least 3 months prior notice to the Company.,At least 3 months plus 30 days prior notice to the Company.,"3 months plus 30 days in Source B, 3 months in Source A",B,no,,,,B
+llama70b,DIL-09-Allied-B2-Q2,explained,At least 60 calendar days' written notice to the other party.,At least 90 calendar days' written notice to the other party.,90 calendar days,B,no,,,,B

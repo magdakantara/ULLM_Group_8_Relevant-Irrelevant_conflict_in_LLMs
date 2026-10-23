@@ -1,0 +1,9 @@
+scope,model,paired_examples,improved,worsened,p_value,p_holm,significant_0_05
+pooled,Qwen 7B,279,6,5,1.0,1.0,False
+pooled,Llama 8B,229,1,3,0.625,1.0,False
+pooled,Granite 8B,220,5,1,0.21875,0.65625,False
+pooled,Llama 70B,251,15,1,0.000518798828125,0.0020751953125,True
+relevant_conflict,Qwen 7B,87,4,2,0.6875,1.0,False
+relevant_conflict,Llama 8B,77,1,3,0.625,1.0,False
+relevant_conflict,Granite 8B,75,5,1,0.21875,0.65625,False
+relevant_conflict,Llama 70B,79,15,1,0.000518798828125,0.0020751953125,True

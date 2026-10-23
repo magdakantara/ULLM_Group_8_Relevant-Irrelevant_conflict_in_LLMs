@@ -1,0 +1,601 @@
+example_id,prompt_type,case_label,run_status,behavior_label,conflict_detected,judge_reason
+EX-001,baseline,agreement,ok,expected_correct,no,"Correctly gives Kansas, the governing law in both sources (§25)."
+EX-001,explained,agreement,ok,expected_correct,no,"Correctly gives Kansas, the governing law in both sources (§25)."
+EX-002,baseline,agreement,ok,expected_correct,no,"Correctly identifies September 1, 2004 as the commencement date in both sources (§1)."
+EX-002,explained,agreement,ok,expected_correct,no,"Correctly identifies September 1, 2004 as the commencement date in both sources (§1)."
+EX-003,baseline,relevant_conflict,ok,incorrect_answer,no,Selects Texas without acknowledging that Source A specifies Kansas and Source B specifies Texas (§25).
+EX-003,explained,relevant_conflict,ok,incorrect_answer,no,Selects Texas without acknowledging that Source A specifies Kansas and Source B specifies Texas (§25).
+EX-004,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives September 1, 2004; the changed governing law does not affect commencement (§1)."
+EX-004,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives September 1, 2004; the changed governing law does not affect commencement (§1)."
+EX-005,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives Kansas; changing commencement does not change the governing-law clause (§25).
+EX-005,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives Kansas; changing commencement does not change the governing-law clause (§25).
+EX-006,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives only October 1, 2004, ignoring Source A's September 1, 2004 commencement date (§1)."
+EX-006,explained,relevant_conflict,ok,incorrect_answer,no,"Gives only October 1, 2004, ignoring Source A's September 1, 2004 commencement date (§1)."
+EX-007,baseline,agreement,ok,expected_correct,no,"Correctly states October 30, 2019, the defined Effective Date in both opening paragraphs."
+EX-007,explained,agreement,ok,expected_correct,no,"Correctly states October 30, 2019, the defined Effective Date in both opening paragraphs."
+EX-008,baseline,agreement,ok,expected_correct,no,Correctly states that Japanese law governs in both sources (Article 3).
+EX-008,explained,agreement,ok,expected_correct,no,Correctly states that Japanese law governs in both sources (Article 3).
+EX-009,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives October 31 alone without recognizing Source A's October 30, 2019 Effective Date."
+EX-009,explained,relevant_conflict,ok,incorrect_answer,no,"Gives October 30 alone without recognizing Source B's October 31, 2019 Effective Date."
+EX-010,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives Japanese law; the changed Effective Date does not affect Article 3.
+EX-010,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives Japanese law; the changed Effective Date does not affect Article 3.
+EX-011,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives October 30, 2019; the changed governing law does not affect the defined date."
+EX-011,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives October 30, 2019; the changed governing law does not affect the defined date."
+EX-012,baseline,relevant_conflict,ok,expected_correct,yes,Correctly attributes Japanese law to A and Swedish law to B without selecting one as authoritative (Article 3).
+EX-012,explained,relevant_conflict,truncated,,,
+EX-013,baseline,agreement,ok,expected_correct,no,"Correctly states February 17, 2016, the Effective Date in both opening paragraphs."
+EX-013,explained,agreement,ok,expected_correct,no,"Correctly states February 17, 2016, the Effective Date in both opening paragraphs."
+EX-014,baseline,agreement,ok,expected_correct,no,"Correctly gives February 16, 2019 as the Initial Term's expiration in both sources."
+EX-014,explained,agreement,ok,expected_correct,no,"Correctly gives February 16, 2019 as the Initial Term's expiration in both sources."
+EX-015,baseline,relevant_conflict,ok,incorrect_answer,no,"Incorrectly claims both sources specify February 18, 2016; A specifies February 17 and B February 18."
+EX-015,explained,relevant_conflict,truncated,,,
+EX-016,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives February 16, 2019; changing the Effective Date leaves this express expiration unchanged."
+EX-016,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives February 16, 2019; changing the Effective Date leaves this express expiration unchanged."
+EX-017,baseline,irrelevant_conflict,ok,expected_correct,no,"States the correct shared February 17, 2016 date; the unfinished quotation does not prevent evaluating that answer."
+EX-017,explained,irrelevant_conflict,ok,expected_correct,no,"States the correct shared February 17, 2016 date; the unfinished quotation does not prevent evaluating that answer."
+EX-018,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives February 16, 2020 alone and fails to acknowledge A's February 16, 2019 expiration."
+EX-018,explained,relevant_conflict,ok,incorrect_answer,no,"Gives February 16, 2020 alone and fails to acknowledge A's February 16, 2019 expiration."
+EX-019,baseline,agreement,ok,expected_correct,no,Correctly identifies Texas as the governing law under §9 in both sources.
+EX-019,explained,agreement,ok,expected_correct,no,Correctly identifies Texas as the governing law under §9 in both sources.
+EX-020,baseline,agreement,ok,expected_correct,no,Correctly gives 90 days for termination for convenience under §7 in both sources.
+EX-020,explained,agreement,ok,expected_correct,no,Correctly gives 90 days for termination for convenience under §7 in both sources.
+EX-021,baseline,relevant_conflict,ok,incorrect_answer,no,Gives Colorado alone and does not acknowledge Texas in Source A's governing-law clause (§9).
+EX-021,explained,relevant_conflict,ok,incorrect_answer,no,Gives Colorado alone and does not acknowledge Texas in Source A's governing-law clause (§9).
+EX-022,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 90-day convenience-termination notice (§7), despite the governing-law edit."
+EX-022,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 90-day convenience-termination notice (§7), despite the governing-law edit."
+EX-023,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives Texas; the termination-notice edit leaves the governing-law clause unchanged (§9).
+EX-023,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives Texas; the termination-notice edit leaves the governing-law clause unchanged (§9).
+EX-024,baseline,relevant_conflict,ok,incorrect_answer,no,Selects B's 30-day convenience-termination notice without acknowledging A's 90 days (§7).
+EX-024,explained,relevant_conflict,ok,incorrect_answer,no,"Mentions 90 days for non-renewal and 30 days for termination, but never identifies the A/B conflict on convenience termination."
+EX-025,baseline,agreement,ok,expected_correct,no,Correctly states Dynamic Hearing's $5 million cap (§10.3(d)); the trailing conjunction does not obscure that answer.
+EX-025,explained,agreement,ok,incorrect_answer,no,Incorrectly invents a reciprocal $5 million cap for IntriCon; §10.3(d) caps Dynamic Hearing's liability only.
+EX-026,baseline,agreement,ok,expected_correct,no,"Correctly gives Victoria, Australia for both governing law and courts (§12.8); omitting the CISG exclusion does not change the requested jurisdictions."
+EX-026,explained,agreement,ok,expected_correct,no,"Correctly gives Victoria, Australia for both governing law and courts (§12.8); omitting the CISG exclusion does not change the requested jurisdictions."
+EX-027,baseline,relevant_conflict,ok,incorrect_answer,no,States only the $5 million cap and misses the $5 million versus $3 million disagreement in §10.3(d).
+EX-027,explained,relevant_conflict,ok,incorrect_answer,no,States only the $5 million cap and misses the $5 million versus $3 million disagreement in §10.3(d).
+EX-028,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives Victoria for both law and courts (§12.8); the liability-cap edit is irrelevant to these jurisdictions.
+EX-028,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives Victoria for both law and courts (§12.8); the liability-cap edit is irrelevant to these jurisdictions.
+EX-029,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly states Dynamic Hearing's unchanged $5 million cap (§10.3(d)), despite the governing-law edit."
+EX-029,explained,irrelevant_conflict,ok,incorrect_answer,no,Adds an unsupported $5 million cap for IntriCon; only Dynamic Hearing has that stated cap (§10.3(d)).
+EX-030,baseline,relevant_conflict,format_error,,,
+EX-030,explained,relevant_conflict,truncated,,,
+EX-031,baseline,agreement,ok,expected_correct,no,"Correctly states February 28, 2025 as the Venture's term expiration (§4)."
+EX-031,explained,agreement,ok,expected_correct,no,"Correctly states February 28, 2025 as the Venture's term expiration (§4)."
+EX-032,baseline,agreement,ok,incorrect_answer,no,Quotes Florida court jurisdiction (§54) rather than answering which law governs; jurisdiction alone does not establish governing law.
+EX-032,explained,agreement,ok,incorrect_answer,no,Quotes Florida court jurisdiction (§54) rather than answering which law governs; jurisdiction alone does not establish governing law.
+EX-033,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives B's February 28, 2026 expiration without acknowledging A's February 28, 2025 (§4)."
+EX-033,explained,relevant_conflict,ok,expected_correct,yes,"Correctly reports February 28, 2025 for A and February 28, 2026 for B without selecting a winner."
+EX-034,baseline,irrelevant_conflict,ok,incorrect_answer,no,"Quotes Florida court jurisdiction (§54), leaving the governing-law question unanswered even though the reference names the same state."
+EX-034,explained,irrelevant_conflict,ok,incorrect_answer,no,"Quotes Florida court jurisdiction (§54), leaving the governing-law question unanswered even though the reference names the same state."
+EX-035,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged February 28, 2025 expiration (§4), despite the jurisdiction/law edit."
+EX-035,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged February 28, 2025 expiration (§4), despite the jurisdiction/law edit."
+EX-036,baseline,relevant_conflict,truncated,,,
+EX-036,explained,relevant_conflict,ok,expected_correct,yes,"Correctly reports Florida for A and Georgia for B, preserving the governing-law disagreement."
+EX-037,baseline,agreement,ok,expected_correct,no,Correctly gives the shared 180-day non-renewal period (§15.1).
+EX-037,explained,agreement,ok,expected_correct,no,Correctly gives 180 days for both sources; its unsupported wording comparison does not assert different required notice periods.
+EX-038,baseline,agreement,ok,expected_correct,no,"Correctly gives California law, excluding conflict-of-laws principles (§19.1)."
+EX-038,explained,agreement,ok,expected_correct,no,"Correctly gives California law, excluding conflict-of-laws principles (§19.1)."
+EX-039,baseline,relevant_conflict,ok,incorrect_answer,no,Selects B's 90 days without acknowledging A's 180-day non-renewal requirement (§15.1).
+EX-039,explained,relevant_conflict,ok,incorrect_answer,no,Incorrectly claims both sources require 90 days; A requires 180 and B 90 (§15.1).
+EX-040,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged California law (§19.1), despite the non-renewal notice edit."
+EX-040,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged California law (§19.1), despite the non-renewal notice edit."
+EX-041,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives 180 days before renewal; its erroneous additional section reference does not change the correct §15.1 answer.
+EX-041,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives the unchanged 180-day non-renewal notice (§15.1).
+EX-042,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives New York alone, failing to report A's California versus B's New York governing law (§19.1)."
+EX-042,explained,relevant_conflict,ok,incorrect_answer,no,"Gives New York alone, failing to report A's California versus B's New York governing law (§19.1)."
+EX-043,baseline,agreement,ok,expected_correct,no,Correctly gives New York law with the stated conflict-of-laws exception (§6(g)).
+EX-043,explained,agreement,ok,expected_correct,no,Correctly gives New York law with the stated conflict-of-laws exception (§6(g)).
+EX-044,baseline,agreement,ok,expected_correct,no,Correctly identifies expiration at the later of the three-year date and the external-manager condition (§5(a)).
+EX-044,explained,agreement,ok,expected_correct,no,Correctly identifies expiration at the later of the three-year date and the external-manager condition (§5(a)).
+EX-045,baseline,relevant_conflict,ok,incorrect_answer,no,Selects Delaware without reporting Source A's New York governing law (§6(g)).
+EX-045,explained,relevant_conflict,ok,incorrect_answer,no,Selects Delaware without reporting Source A's New York governing law (§6(g)).
+EX-046,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives the unchanged later-of expiration rule (§5(a)); the governing-law change is irrelevant.
+EX-046,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives the unchanged later-of expiration rule (§5(a)); the governing-law change is irrelevant.
+EX-047,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged New York law (§6(g)); the expiration-rule edit does not affect it.
+EX-047,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged New York law (§6(g)); the expiration-rule edit does not affect it.
+EX-048,baseline,relevant_conflict,ok,incorrect_answer,no,"Claims the earlier-of rule for both sources, missing that A says later and B earlier (§5(a))."
+EX-048,explained,relevant_conflict,ok,incorrect_answer,no,States only B's earlier-of expiration rule and misses A's later-of rule (§5(a)).
+EX-049,baseline,agreement,ok,expected_correct,no,Correctly identifies English law in both sources (§22.1).
+EX-049,explained,agreement,ok,expected_correct,no,Correctly identifies English law in both sources (§22.1).
+EX-050,baseline,agreement,ok,expected_correct,no,Correctly gives the shared ten-year contractual term with early termination allowed (§3.1); a calendar-date calculation is not required to state that term.
+EX-050,explained,agreement,ok,expected_correct,no,Correctly gives the shared ten-year contractual term with early termination allowed (§3.1); a calendar-date calculation is not required to state that term.
+EX-051,baseline,relevant_conflict,ok,incorrect_answer,yes,"Reports both incompatible governing laws, but the evidence fields reverse their sources: A actually says English law and B Hong Kong (§22.1)."
+EX-051,explained,relevant_conflict,ok,incorrect_answer,yes,"Reports both incompatible governing laws, but the evidence fields reverse their sources: A actually says English law and B Hong Kong (§22.1)."
+EX-052,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged ten-year term, subject to early termination (§3.1), despite the governing-law edit."
+EX-052,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged ten-year term, subject to early termination (§3.1), despite the governing-law edit."
+EX-053,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives English law (§22.1), unaffected by the term-length edit."
+EX-053,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives English law (§22.1), unaffected by the term-length edit."
+EX-054,baseline,relevant_conflict,ok,incorrect_answer,no,Gives only the five-year term in B and fails to acknowledge A's ten-year term (§3.1).
+EX-054,explained,relevant_conflict,ok,incorrect_answer,no,Gives only the five-year term in B and fails to acknowledge A's ten-year term (§3.1).
+EX-055,baseline,agreement,ok,expected_correct,no,Correctly states that renewal requires mutual written agreement and is not automatic (Section VI).
+EX-055,explained,agreement,ok,expected_correct,no,Correctly states that renewal requires mutual written agreement and is not automatic (Section VI).
+EX-056,baseline,agreement,ok,expected_correct,no,Correctly states that either party may terminate at any time on 30 days' written notice (Section VI).
+EX-056,explained,agreement,ok,expected_correct,no,Correctly states that either party may terminate at any time on 30 days' written notice (Section VI).
+EX-057,baseline,relevant_conflict,ok,incorrect_answer,no,Reports automatic twelve-month renewals from B without acknowledging that A requires mutual written agreement (Section VI).
+EX-057,explained,relevant_conflict,ok,incorrect_answer,no,Reports automatic twelve-month renewals from B without acknowledging that A requires mutual written agreement (Section VI).
+EX-058,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives either party's unchanged right to terminate at any time with 30 days' notice (Section VI).
+EX-058,explained,irrelevant_conflict,ok,expected_correct,no,Gives the correct shared right and 30-day notice; its aside about explicit wording does not assert a different notice requirement.
+EX-059,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly says renewal requires mutual written agreement; the changed termination notice does not make renewal automatic.
+EX-059,explained,irrelevant_conflict,ok,expected_correct,no,Correctly says renewal requires mutual written agreement; the changed termination notice does not make renewal automatic.
+EX-060,baseline,relevant_conflict,ok,expected_correct,yes,Correctly distinguishes A's 30 days from B's 10 days while noting that both permit termination by either party.
+EX-060,explained,relevant_conflict,ok,expected_correct,yes,Correctly distinguishes A's 30 days from B's 10 days while noting that both permit termination by either party.
+EX-061,baseline,agreement,ok,expected_correct,no,Correctly gives ten years for each additional renewal term under §2.02 in both sources.
+EX-061,explained,agreement,ok,expected_correct,no,Correctly gives ten years for each additional renewal term under §2.02 in both sources.
+EX-062,baseline,agreement,ok,expected_correct,no,Correctly identifies Texas as the law expressly selected in §18.07.
+EX-062,explained,agreement,ok,expected_correct,no,Correctly identifies Texas as the law expressly selected in §18.07.
+EX-063,baseline,relevant_conflict,ok,incorrect_answer,no,Incorrectly says both sources provide ten-year renewals; B changes them to eight years (§2.02).
+EX-063,explained,relevant_conflict,ok,incorrect_answer,no,Incorrectly says both sources provide eight-year renewals; A specifies ten years (§2.02).
+EX-064,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged Texas law (§18.07), despite the renewal-duration edit."
+EX-064,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged Texas law (§18.07), despite the renewal-duration edit."
+EX-065,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged ten-year renewal terms (§2.02), despite the governing-law edit."
+EX-065,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged ten-year renewal terms (§2.02), despite the governing-law edit."
+EX-066,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives Texas alone, ignoring the Oklahoma law selected by B in §18.07."
+EX-066,explained,relevant_conflict,ok,incorrect_answer,no,"Gives Texas alone, ignoring the Oklahoma law selected by B in §18.07."
+EX-067,baseline,agreement,ok,expected_correct,no,"Correctly gives November 20, 2018 as defined in the opening paragraph; the spaced ordinal is a harmless transcription artifact."
+EX-067,explained,agreement,ok,expected_correct,no,"Correctly gives November 20, 2018 as defined in the opening paragraph; the spaced ordinal is a harmless transcription artifact."
+EX-068,baseline,agreement,ok,expected_correct,no,Correctly gives New York law as expressly selected in §10.5(a).
+EX-068,explained,agreement,ok,expected_correct,no,Correctly gives New York law as expressly selected in §10.5(a).
+EX-069,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives December 20, 2018 alone, overlooking November 20, 2018 in A's opening paragraph."
+EX-069,explained,relevant_conflict,ok,incorrect_answer,no,"Gives December 20, 2018 alone, overlooking November 20, 2018 in A's opening paragraph."
+EX-070,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged New York law (§10.5(a)), despite the Effective Date edit."
+EX-070,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged New York law (§10.5(a)), despite the Effective Date edit."
+EX-071,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged November 20, 2018; the governing-law edit is unrelated to the defined date."
+EX-071,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged November 20, 2018; the governing-law edit is unrelated to the defined date."
+EX-072,baseline,relevant_conflict,ok,incorrect_answer,no,Selects New Jersey without acknowledging A's New York governing law (§10.5(a)).
+EX-072,explained,relevant_conflict,ok,incorrect_answer,no,Selects New Jersey without acknowledging A's New York governing law (§10.5(a)).
+EX-073,baseline,agreement,ok,expected_correct,no,Correctly gives the 180-day notice required for termination without liability (§1.3).
+EX-073,explained,agreement,ok,expected_correct,no,Correctly gives the 180-day notice required for termination without liability (§1.3).
+EX-074,baseline,agreement,ok,expected_correct,no,Correctly identifies the twelve-month lookback in limb (ii) of the liability clause (§5.3(d)).
+EX-074,explained,agreement,ok,expected_correct,no,Correctly identifies the twelve-month lookback in limb (ii) of the liability clause (§5.3(d)).
+EX-075,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 180-day versus B's 90-day termination notice (§1.3)."
+EX-075,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 180-day versus B's 90-day termination notice (§1.3)."
+EX-076,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged twelve-month liability lookback (§5.3(d)(ii)), despite the notice edit."
+EX-076,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged twelve-month liability lookback (§5.3(d)(ii)), despite the notice edit."
+EX-077,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 180-day termination notice (§1.3), despite the liability-lookback edit."
+EX-077,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 180-day termination notice (§1.3), despite the liability-lookback edit."
+EX-078,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives six months alone, ignoring A's twelve-month lookback in §5.3(d)(ii)."
+EX-078,explained,relevant_conflict,ok,incorrect_answer,no,"Gives six months alone, ignoring A's twelve-month lookback in §5.3(d)(ii)."
+EX-079,baseline,agreement,ok,expected_correct,no,Correctly states at least 60 days' notice to prevent automatic renewal (§2).
+EX-079,explained,agreement,ok,expected_correct,no,Correctly states at least 60 days' notice to prevent automatic renewal (§2).
+EX-080,baseline,agreement,ok,expected_correct,no,Correctly identifies the 60-day charge period used for XIMAGE's liability ceiling (§15).
+EX-080,explained,agreement,ok,expected_correct,no,Correctly identifies the 60-day charge period used for XIMAGE's liability ceiling (§15).
+EX-081,baseline,relevant_conflict,ok,incorrect_answer,no,Gives only B's 90-day non-renewal notice and overlooks A's 60-day requirement (§2).
+EX-081,explained,relevant_conflict,ok,incorrect_answer,no,Gives only B's 90-day non-renewal notice and overlooks A's 60-day requirement (§2).
+EX-082,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 60-day liability-ceiling period (§15), despite the renewal-notice edit."
+EX-082,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 60-day liability-ceiling period (§15), despite the renewal-notice edit."
+EX-083,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly states the unchanged 60-day non-renewal notice (§2), despite the liability-ceiling edit."
+EX-083,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly states the unchanged 60-day non-renewal notice (§2), despite the liability-ceiling edit."
+EX-084,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 30 days alone, failing to distinguish A's 60-day and B's 30-day liability-ceiling periods (§15)."
+EX-084,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 30 days alone, failing to distinguish A's 60-day and B's 30-day liability-ceiling periods (§15)."
+EX-085,baseline,agreement,ok,expected_correct,no,Correctly gives the twelve-month Warranty Period measured from delivery (§10).
+EX-085,explained,agreement,ok,expected_correct,no,Correctly gives the twelve-month Warranty Period measured from delivery (§10).
+EX-086,baseline,agreement,ok,expected_correct,no,Correctly gives the four-month minimum notice for termination without cause (§15.2).
+EX-086,explained,agreement,ok,expected_correct,no,Correctly gives the four-month minimum notice for termination without cause (§15.2).
+EX-087,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives an eighteen-month warranty alone, ignoring A's twelve-month Warranty Period (§10)."
+EX-087,explained,relevant_conflict,ok,incorrect_answer,no,"Gives an eighteen-month warranty alone, ignoring A's twelve-month Warranty Period (§10)."
+EX-088,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged four-month termination notice (§15.2), despite the warranty edit."
+EX-088,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged four-month termination notice (§15.2), despite the warranty edit."
+EX-089,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged twelve-month warranty (§10), despite the termination-notice edit."
+EX-089,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged twelve-month warranty (§10), despite the termination-notice edit."
+EX-090,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives six months alone, missing A's four-month versus B's six-month termination notice (§15.2)."
+EX-090,explained,relevant_conflict,ok,incorrect_answer,no,"Gives six months alone, missing A's four-month versus B's six-month termination notice (§15.2)."
+EX-091,baseline,agreement,ok,expected_correct,no,Correctly states that each automatic renewal lasts one year (§8.1).
+EX-091,explained,agreement,ok,expected_correct,no,Correctly states that each automatic renewal lasts one year (§8.1).
+EX-092,baseline,agreement,ok,expected_correct,no,Correctly gives Hong Kong as the substantive governing law in §10.4.
+EX-092,explained,agreement,ok,expected_correct,no,Correctly gives Hong Kong as the substantive governing law in §10.4.
+EX-093,baseline,relevant_conflict,ok,incorrect_answer,no,Gives two-year renewals alone and fails to acknowledge A's one-year renewals (§8.1).
+EX-093,explained,relevant_conflict,ok,incorrect_answer,no,Gives two-year renewals alone and fails to acknowledge A's one-year renewals (§8.1).
+EX-094,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged Hong Kong governing law (§10.4), despite the renewal-duration edit."
+EX-094,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged Hong Kong governing law (§10.4), despite the renewal-duration edit."
+EX-095,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged one-year renewals (§8.1), despite the governing-law edit."
+EX-095,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged one-year renewals (§8.1), despite the governing-law edit."
+EX-096,baseline,relevant_conflict,ok,incorrect_answer,no,"Selects Singapore alone, ignoring Hong Kong in A's substantive governing-law sentence (§10.4)."
+EX-096,explained,relevant_conflict,ok,incorrect_answer,no,"Selects Singapore alone, ignoring Hong Kong in A's substantive governing-law sentence (§10.4)."
+EX-097,baseline,agreement,ok,expected_correct,no,Correctly gives the six-month post-delivery window for defective Services (§6).
+EX-097,explained,agreement,ok,expected_correct,no,Correctly gives the six-month post-delivery window for defective Services (§6).
+EX-098,baseline,agreement,ok,expected_correct,no,Correctly gives Dragon's 60-day written notice for termination without cause (§12).
+EX-098,explained,agreement,ok,expected_correct,no,Correctly gives Dragon's 60-day written notice for termination without cause (§12).
+EX-099,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives nine months alone, overlooking A's six-month warranty-remedy window (§6)."
+EX-099,explained,relevant_conflict,ok,incorrect_answer,no,"Gives nine months alone, overlooking A's six-month warranty-remedy window (§6)."
+EX-100,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day termination notice (§12), despite the warranty-window edit."
+EX-100,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day termination notice (§12), despite the warranty-window edit."
+EX-101,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged six-month warranty-remedy window (§6), despite the termination-notice edit."
+EX-101,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged six-month warranty-remedy window (§6), despite the termination-notice edit."
+EX-102,baseline,relevant_conflict,ok,incorrect_answer,no,Selects B's 90-day notice without acknowledging A's 60 days (§12).
+EX-102,explained,relevant_conflict,ok,expected_correct,yes,Explicitly contrasts A's 60-day notice with B's 90 days and identifies the relevant discrepancy (§12).
+EX-103,baseline,agreement,ok,expected_correct,no,Correctly gives the default thirteen-month Warranty Period in definition (xxii).
+EX-103,explained,agreement,truncated,,,
+EX-104,baseline,agreement,ok,expected_correct,no,"Correctly gives the $5 million aggregate ceiling for the specified damages (§15.4), with the IP exception outside the question's scope."
+EX-104,explained,agreement,ok,expected_correct,no,"Correctly gives the $5 million aggregate ceiling for the specified damages (§15.4), with the IP exception outside the question's scope."
+EX-105,baseline,relevant_conflict,truncated,,,
+EX-105,explained,relevant_conflict,format_error,,,
+EX-106,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged $5 million aggregate ceiling (§15.4), despite the warranty-period edit."
+EX-106,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged $5 million aggregate ceiling (§15.4), despite the warranty-period edit."
+EX-107,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged thirteen-month warranty in definition (xxii), despite the liability-ceiling edit."
+EX-107,explained,irrelevant_conflict,truncated,,,
+EX-108,baseline,relevant_conflict,truncated,,,
+EX-108,explained,relevant_conflict,ok,incorrect_answer,no,"States $6 million alone, missing A's $5 million versus B's $6 million ceiling (§15.4)."
+EX-109,baseline,agreement,ok,expected_correct,no,Correctly states that either party has the express pre-delivery termination permission (§2.A).
+EX-109,explained,agreement,ok,expected_correct,no,Correctly states that either party has the express pre-delivery termination permission (§2.A).
+EX-110,baseline,agreement,ok,expected_correct,no,Correctly identifies Colorado as the law specified in §5.B.
+EX-110,explained,agreement,ok,expected_correct,no,Correctly identifies Colorado as the law specified in §5.B.
+EX-111,baseline,relevant_conflict,ok,incorrect_answer,no,"Names Gridiron alone, failing to acknowledge that A expressly permits either party to terminate (§2.A)."
+EX-111,explained,relevant_conflict,ok,incorrect_answer,no,"Names Gridiron alone, failing to acknowledge that A expressly permits either party to terminate (§2.A)."
+EX-112,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly identifies unchanged Colorado law (§5.B), despite the termination-party edit."
+EX-112,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly identifies unchanged Colorado law (§5.B), despite the termination-party edit."
+EX-113,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly states either party may terminate before delivery (§2.A); the law edit is unrelated.
+EX-113,explained,irrelevant_conflict,ok,expected_correct,no,Correctly states either party may terminate before delivery (§2.A); the law edit is unrelated.
+EX-114,baseline,relevant_conflict,ok,incorrect_answer,no,Selects Oregon alone and misses Colorado in Source A (§5.B).
+EX-114,explained,relevant_conflict,ok,expected_correct,yes,Correctly attributes Colorado to A and Oregon to B without privileging either (§5.B).
+EX-115,baseline,agreement,ok,expected_correct,no,Correctly gives no less than twelve months' notice before expiration (§6.1).
+EX-115,explained,agreement,ok,expected_correct,no,Correctly gives no less than twelve months' notice before expiration (§6.1).
+EX-116,baseline,agreement,ok,expected_correct,no,Correctly identifies Delaware as the governing law (§12.1).
+EX-116,explained,agreement,ok,expected_correct,no,Correctly identifies Delaware as the governing law (§12.1).
+EX-117,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives nine months alone, missing A's twelve-month versus B's nine-month non-renewal notice (§6.1)."
+EX-117,explained,relevant_conflict,ok,incorrect_answer,no,"Gives nine months alone, missing A's twelve-month versus B's nine-month non-renewal notice (§6.1)."
+EX-118,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged Delaware law (§12.1), despite the non-renewal notice edit."
+EX-118,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged Delaware law (§12.1), despite the non-renewal notice edit."
+EX-119,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged twelve-month non-renewal notice (§6.1), despite the governing-law edit."
+EX-119,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged twelve-month non-renewal notice (§6.1), despite the governing-law edit."
+EX-120,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives New York alone, ignoring Delaware in A's governing-law provision (§12.1)."
+EX-120,explained,relevant_conflict,ok,incorrect_answer,no,"Gives New York alone, ignoring Delaware in A's governing-law provision (§12.1)."
+EX-121,baseline,agreement,ok,expected_correct,no,Correctly gives 30 days' notice for termination without cause (Term and Termination).
+EX-121,explained,agreement,ok,expected_correct,no,Correctly gives 30 days' notice for termination without cause (Term and Termination).
+EX-122,baseline,agreement,ok,expected_correct,no,Correctly gives at least 15 days before term-end for non-renewal (Term and Termination).
+EX-122,explained,agreement,ok,expected_correct,no,Correctly gives at least 15 days before term-end for non-renewal (Term and Termination).
+EX-123,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives B's 60-day termination notice alone, ignoring A's 30 days (Term and Termination)."
+EX-123,explained,relevant_conflict,truncated,,,
+EX-124,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged 15-day non-renewal notice; the convenience-termination notice edit is irrelevant.
+EX-124,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged 15-day non-renewal notice; the convenience-termination notice edit is irrelevant.
+EX-125,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged 30-day convenience-termination notice; the non-renewal notice edit is irrelevant.
+EX-125,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged 30-day convenience-termination notice; the non-renewal notice edit is irrelevant.
+EX-126,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 45 days alone, missing A's 15-day versus B's 45-day non-renewal notice."
+EX-126,explained,relevant_conflict,ok,expected_correct,yes,"After opening with B's value, explicitly distinguishes A's 15 days from B's 45; the complete answer preserves the disagreement."
+EX-127,baseline,agreement,ok,expected_correct,no,Correctly gives at least 30 days before expiration for non-renewal (§11.1).
+EX-127,explained,agreement,ok,expected_correct,no,Correctly gives at least 30 days before expiration for non-renewal (§11.1).
+EX-128,baseline,agreement,ok,expected_correct,no,Correctly identifies California law with the stated exclusions (§14.3).
+EX-128,explained,agreement,ok,expected_correct,no,Correctly identifies California law with the stated exclusions (§14.3).
+EX-129,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, missing A's 30-day versus B's 60-day non-renewal notice (§11.1)."
+EX-129,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, missing A's 30-day versus B's 60-day non-renewal notice (§11.1)."
+EX-130,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged California law (§14.3); the non-renewal notice edit is irrelevant.
+EX-130,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged California law (§14.3); the non-renewal notice edit is irrelevant.
+EX-131,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day non-renewal notice (§11.1), despite the governing-law edit."
+EX-131,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day non-renewal notice (§11.1), despite the governing-law edit."
+EX-132,baseline,relevant_conflict,truncated,,,
+EX-132,explained,relevant_conflict,ok,incorrect_answer,no,Selects New York without acknowledging A's California law (§14.3).
+EX-133,baseline,agreement,ok,expected_correct,no,"Correctly gives December 17, 2019 as the defined Effective Date in the opening paragraph."
+EX-133,explained,agreement,ok,expected_correct,no,"Correctly gives December 17, 2019 as the defined Effective Date in the opening paragraph."
+EX-134,baseline,agreement,truncated,,,
+EX-134,explained,agreement,ok,expected_correct,no,Correctly gives Vyera's 180-day notice after the specified second anniversary (§11.2(c)).
+EX-135,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives January 17, 2020 alone, overlooking A's December 17, 2019 Effective Date."
+EX-135,explained,relevant_conflict,ok,incorrect_answer,no,"Gives January 17, 2020 alone, overlooking A's December 17, 2019 Effective Date."
+EX-136,baseline,irrelevant_conflict,truncated,,,
+EX-136,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives the unchanged 180-day notice (§11.2(c)); the Effective Date edit does not alter the stated period.
+EX-137,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged December 17, 2019, despite the termination-notice edit."
+EX-137,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged December 17, 2019, despite the termination-notice edit."
+EX-138,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, failing to report A's 180-day versus B's 90-day notice in §11.2(c)."
+EX-138,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, failing to report A's 180-day versus B's 90-day notice in §11.2(c)."
+EX-139,baseline,agreement,ok,expected_correct,no,"Correctly states five years for each automatic renewal (§§1.12, 11.1)."
+EX-139,explained,agreement,ok,expected_correct,no,"Correctly states five years for each automatic renewal (§§1.12, 11.1)."
+EX-140,baseline,agreement,ok,expected_correct,no,"Correctly gives at least 90 days before term-end to prevent renewal (§§1.12, 11.1)."
+EX-140,explained,agreement,ok,expected_correct,no,"Correctly gives at least 90 days before term-end to prevent renewal (§§1.12, 11.1)."
+EX-141,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives three-year renewals alone, ignoring A's five-year renewals (§§1.12, 11.1)."
+EX-141,explained,relevant_conflict,ok,incorrect_answer,no,"Gives three-year renewals alone, ignoring A's five-year renewals (§§1.12, 11.1)."
+EX-142,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 90-day non-renewal notice (§§1.12, 11.1), despite the renewal-duration edit."
+EX-142,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged 90-day non-renewal notice (§§1.12, 11.1), despite the renewal-duration edit."
+EX-143,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged five-year renewals (§§1.12, 11.1), despite the notice-period edit."
+EX-143,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged five-year renewals (§§1.12, 11.1), despite the notice-period edit."
+EX-144,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 120 days alone, missing A's 90-day versus B's 120-day non-renewal notice (§§1.12, 11.1)."
+EX-144,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 120 days alone, missing A's 90-day versus B's 120-day non-renewal notice (§§1.12, 11.1)."
+EX-145,baseline,agreement,ok,expected_correct,no,"Correctly gives December 3, 2018 as the opening paragraph's Effective Date."
+EX-145,explained,agreement,ok,expected_correct,no,"Correctly gives December 3, 2018 as the opening paragraph's Effective Date."
+EX-146,baseline,agreement,ok,expected_correct,no,Correctly gives two weeks' notice for either party's termination for any reason (§11.1).
+EX-146,explained,agreement,ok,expected_correct,no,Correctly gives two weeks' notice for either party's termination for any reason (§11.1).
+EX-147,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives January 3, 2019 alone, ignoring A's December 3, 2018 Effective Date."
+EX-147,explained,relevant_conflict,ok,incorrect_answer,no,"Gives January 3, 2019 alone, ignoring A's December 3, 2018 Effective Date."
+EX-148,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged two-week termination notice (§11.1), despite the Effective Date edit."
+EX-148,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged two-week termination notice (§11.1), despite the Effective Date edit."
+EX-149,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged December 3, 2018, despite the termination-notice edit."
+EX-149,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged December 3, 2018, despite the termination-notice edit."
+EX-150,baseline,relevant_conflict,ok,incorrect_answer,yes,"Recognizes two versus four weeks, but then selects B using an unsupported claim that it is newer (§11.1)."
+EX-150,explained,relevant_conflict,ok,incorrect_answer,no,"Gives four weeks alone, ignoring A's two-week termination notice (§11.1)."
+EX-151,baseline,agreement,ok,expected_correct,no,"Correctly identifies February 4, 2020 as the defined Effective Date."
+EX-151,explained,agreement,ok,expected_correct,no,"Correctly identifies February 4, 2020 as the defined Effective Date."
+EX-152,baseline,agreement,ok,expected_correct,no,Correctly gives Aimmune's 60-day convenience-termination notice (§13.4).
+EX-152,explained,agreement,ok,expected_correct,no,Correctly gives Aimmune's 60-day convenience-termination notice (§13.4).
+EX-153,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives February 4, 2020 alone, failing to acknowledge B's March 4, 2020 Effective Date."
+EX-153,explained,relevant_conflict,ok,incorrect_answer,no,"Gives February 4, 2020 alone, failing to acknowledge B's March 4, 2020 Effective Date."
+EX-154,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day convenience-termination notice (§13.4), despite the Effective Date edit."
+EX-154,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day convenience-termination notice (§13.4), despite the Effective Date edit."
+EX-155,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 4, 2020, despite the termination-notice edit."
+EX-155,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 4, 2020, despite the termination-notice edit."
+EX-156,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 60-day versus B's 90-day notice (§13.4)."
+EX-156,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 60-day versus B's 90-day notice (§13.4)."
+EX-157,baseline,agreement,ok,expected_correct,no,Correctly gives recurring one-year extensions under §2.2.
+EX-157,explained,agreement,ok,expected_correct,no,Correctly gives the one-year extension and notice condition (§2.2); the trailing unfinished phrase does not obscure the answer.
+EX-158,baseline,agreement,ok,expected_correct,no,Correctly gives at least six months before term-end for notice preventing automatic extension (§2.2).
+EX-158,explained,agreement,ok,incorrect_answer,no,Starts with six months but later reverses §2.2 by saying failure to give notice causes termination rather than automatic renewal.
+EX-159,baseline,relevant_conflict,ok,incorrect_answer,yes,"Distinguishes A's one year from B's two years, then arbitrarily declares A's one year the correct answer (§2.2)."
+EX-159,explained,relevant_conflict,ok,incorrect_answer,no,States only B's two-year extension and never acknowledges A's one year; its later claim about further extensions is also unsupported.
+EX-160,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged six-month non-renewal notice (§2.2), despite the extension-length edit."
+EX-160,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged six-month non-renewal notice (§2.2), despite the extension-length edit."
+EX-161,baseline,irrelevant_conflict,ok,incorrect_answer,no,"Gives the correct one-year period but then says automatic extension stops after that, contradicting recurring extensions at each term-end (§2.2)."
+EX-161,explained,irrelevant_conflict,truncated,,,
+EX-162,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives three months alone, ignoring A's six-month non-renewal notice (§2.2)."
+EX-162,explained,relevant_conflict,ok,incorrect_answer,no,"Gives three months alone, ignoring A's six-month non-renewal notice (§2.2)."
+EX-163,baseline,agreement,ok,expected_correct,no,"Correctly identifies September 2, 2019 as the FDA-acceptance deadline called the Effective Date in the Term clause."
+EX-163,explained,agreement,ok,expected_correct,no,"Correctly identifies September 2, 2019 as the FDA-acceptance deadline called the Effective Date in the Term clause."
+EX-164,baseline,agreement,ok,expected_correct,no,Correctly gives Eton's 180-day post-approval termination notice (§11.4(b)).
+EX-164,explained,agreement,ok,expected_correct,no,Correctly gives Eton's 180-day post-approval termination notice (§11.4(b)).
+EX-165,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives October 2, 2019 alone, missing A's September 2, 2019 FDA-acceptance deadline."
+EX-165,explained,relevant_conflict,ok,incorrect_answer,no,"Gives October 2, 2019 alone, missing A's September 2, 2019 FDA-acceptance deadline."
+EX-166,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 180-day post-approval notice (§11.4(b)), despite the FDA-deadline edit."
+EX-166,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 180-day post-approval notice (§11.4(b)), despite the FDA-deadline edit."
+EX-167,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged September 2, 2019 for FDA acceptance, despite the termination-notice edit."
+EX-167,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged September 2, 2019 for FDA acceptance, despite the termination-notice edit."
+EX-168,baseline,relevant_conflict,truncated,,,
+EX-168,explained,relevant_conflict,truncated,,,
+EX-169,baseline,agreement,ok,expected_correct,no,Correctly gives twelve months for each successive extension (§1).
+EX-169,explained,agreement,ok,expected_correct,no,Correctly gives twelve months for each successive extension (§1).
+EX-170,baseline,agreement,ok,expected_correct,no,"Correctly gives at least 180 days' notice before expiration (§§1, 5.2)."
+EX-170,explained,agreement,ok,expected_correct,no,"Correctly gives at least 180 days' notice before expiration (§§1, 5.2)."
+EX-171,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 24-month extensions alone, overlooking A's twelve-month extensions (§1)."
+EX-171,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 24-month extensions alone, overlooking A's twelve-month extensions (§1)."
+EX-172,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 180-day notice before term-end (§§1, 5.2), despite the extension-length edit."
+EX-172,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 180-day notice before term-end (§§1, 5.2), despite the extension-length edit."
+EX-173,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged twelve-month extensions (§1), despite the termination-notice edit."
+EX-173,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged twelve-month extensions (§1), despite the termination-notice edit."
+EX-174,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, failing to report A's 180-day versus B's 90-day notice (§§1, 5.2)."
+EX-174,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, failing to report A's 180-day versus B's 90-day notice (§§1, 5.2)."
+EX-175,baseline,agreement,truncated,,,
+EX-175,explained,agreement,ok,expected_correct,no,Correctly gives successive five-year renewals with the shared six-month opt-out notice (§4.1).
+EX-176,baseline,agreement,ok,incorrect_answer,no,Discusses material-breach cure periods (§4.2) instead of the six-month non-renewal notice asked for (§4.1).
+EX-176,explained,agreement,ok,expected_correct,no,Correctly gives the six-month notice before expiration required to opt out of renewal (§4.1).
+EX-177,baseline,relevant_conflict,ok,incorrect_answer,no,Reports three-year renewals without acknowledging five-year renewals in A (§4.1).
+EX-177,explained,relevant_conflict,ok,incorrect_answer,no,Reports three-year renewals without acknowledging five-year renewals in A (§4.1).
+EX-178,baseline,irrelevant_conflict,ok,incorrect_answer,no,Quotes breach-termination provisions rather than answering the unchanged six-month non-renewal notice question (§4.1).
+EX-178,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged six-month non-renewal notice (§4.1), despite the renewal-duration edit."
+EX-179,baseline,irrelevant_conflict,ok,incorrect_answer,no,Gives five years but incorrectly makes automatic renewal end when renewal negotiations cease; §4.1 treats those negotiations separately after an opt-out.
+EX-179,explained,irrelevant_conflict,truncated,,,
+EX-180,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives three months alone, missing A's six-month versus B's three-month non-renewal notice (§4.1)."
+EX-180,explained,relevant_conflict,ok,incorrect_answer,no,"Gives three months alone, missing A's six-month versus B's three-month non-renewal notice (§4.1)."
+OGUZ-01-B0-Q1,baseline,agreement,ok,expected_correct,no,Correctly gives 30 days' notice for termination for any reason (§18.2).
+OGUZ-01-B0-Q1,explained,agreement,ok,expected_correct,no,Correctly gives 30 days' notice for termination for any reason (§18.2).
+OGUZ-01-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives at least one month before expiration for non-renewal (§18.1).
+OGUZ-01-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives at least one month before expiration for non-renewal (§18.1).
+OGUZ-01-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, ignoring A's 30-day termination notice (§18.2)."
+OGUZ-01-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, ignoring A's 30-day termination notice (§18.2)."
+OGUZ-01-B1-Q2,baseline,irrelevant_conflict,ok,incorrect_answer,no,"Answers 90 days from the termination clause (§18.2), but the question asks the unchanged one-month non-renewal period (§18.1)."
+OGUZ-01-B1-Q2,explained,irrelevant_conflict,ok,incorrect_answer,no,"Answers 90 days from the termination clause (§18.2), but the question asks the unchanged one-month non-renewal period (§18.1)."
+OGUZ-01-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice (§18.2), despite the non-renewal notice edit."
+OGUZ-01-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice (§18.2), despite the non-renewal notice edit."
+OGUZ-01-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives three months alone, missing A's one-month versus B's three-month non-renewal period (§18.1)."
+OGUZ-01-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives three months alone, missing A's one-month versus B's three-month non-renewal period (§18.1)."
+OGUZ-02-B0-Q1,baseline,agreement,ok,expected_correct,no,Correctly states one-year renewals after the three-year initial term (§2.1).
+OGUZ-02-B0-Q1,explained,agreement,ok,expected_correct,no,Correctly states one-year renewals after the three-year initial term (§2.1).
+OGUZ-02-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives at least 120 days before expiration for non-renewal (§2.1).
+OGUZ-02-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives at least 120 days before expiration for non-renewal (§2.1).
+OGUZ-02-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,Gives the three-year initial term instead of either renewal period and misses the one-year versus two-year conflict (§2.1).
+OGUZ-02-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,Gives two-year renewals alone without acknowledging A's one-year renewals (§2.1).
+OGUZ-02-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 120-day non-renewal notice (§2.1), despite the renewal-length edit."
+OGUZ-02-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 120-day non-renewal notice (§2.1), despite the renewal-length edit."
+OGUZ-02-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives the shared one-year renewal length (§2.1); the additional 60-day notice comes from B and concerns the other question.
+OGUZ-02-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives the shared one-year renewal length (§2.1); the additional 60-day notice comes from B and concerns the other question.
+OGUZ-02-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, ignoring A's 120-day non-renewal notice (§2.1)."
+OGUZ-02-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, ignoring A's 120-day non-renewal notice (§2.1)."
+OGUZ-03-B0-Q1,baseline,agreement,ok,expected_correct,no,Correctly gives 90 days' written notice under the general termination clause (§16.C).
+OGUZ-03-B0-Q1,explained,agreement,ok,expected_correct,no,Correctly gives 90 days' written notice under the general termination clause (§16.C).
+OGUZ-03-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives one calendar year for each renewal after the initial term (§2.A).
+OGUZ-03-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives one calendar year for each renewal after the initial term (§2.A).
+OGUZ-03-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 30 days alone, missing A's 90-day versus B's 30-day termination notice (§16.C)."
+OGUZ-03-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 30 days alone, missing A's 90-day versus B's 30-day termination notice (§16.C)."
+OGUZ-03-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged one-calendar-year renewals (§2.A), despite the termination-notice edit."
+OGUZ-03-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged one-calendar-year renewals (§2.A), despite the termination-notice edit."
+OGUZ-03-B2-Q1,baseline,irrelevant_conflict,truncated,,,
+OGUZ-03-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 90-day termination notice (§16.C), despite the renewal-duration edit."
+OGUZ-03-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives two-calendar-year renewals alone, ignoring A's one-calendar-year renewals (§2.A)."
+OGUZ-03-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives two-calendar-year renewals alone, ignoring A's one-calendar-year renewals (§2.A)."
+OGUZ-04-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives May 31, 2015 as the term's termination date (§6.01)."
+OGUZ-04-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives May 31, 2015 as the term's termination date (§6.01)."
+OGUZ-04-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives a 90-day warranty from delivery (Warranty clause).
+OGUZ-04-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives a 90-day warranty from delivery (Warranty clause).
+OGUZ-04-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives May 31, 2016 alone, ignoring May 31, 2015 in A (§6.01)."
+OGUZ-04-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives May 31, 2016 alone, ignoring May 31, 2015 in A (§6.01)."
+OGUZ-04-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 90-day warranty coverage, despite the agreement-expiration edit."
+OGUZ-04-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 90-day warranty coverage, despite the agreement-expiration edit."
+OGUZ-04-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged May 31, 2015 expiration (§6.01), despite the warranty-duration edit."
+OGUZ-04-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged May 31, 2015 expiration (§6.01), despite the warranty-duration edit."
+OGUZ-04-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 180 days alone, missing A's 90-day versus B's 180-day warranty."
+OGUZ-04-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 180 days alone, missing A's 90-day versus B's 180-day warranty."
+OGUZ-05-B0-Q1,baseline,agreement,ok,expected_correct,no,Correctly gives the three-year product warranty from shipment (§8).
+OGUZ-05-B0-Q1,explained,agreement,ok,expected_correct,no,Correctly gives the three-year product warranty from shipment (§8).
+OGUZ-05-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives the 30-day notice for termination for any reason (Termination clause).
+OGUZ-05-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives the 30-day notice for termination for any reason (Termination clause).
+OGUZ-05-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives one year alone, overlooking A's three-year product warranty (§8)."
+OGUZ-05-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives one year alone, overlooking A's three-year product warranty (§8)."
+OGUZ-05-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice, despite the warranty-duration edit."
+OGUZ-05-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice, despite the warranty-duration edit."
+OGUZ-05-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged three-year warranty coverage (§8), despite the termination-notice edit."
+OGUZ-05-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged three-year warranty coverage (§8), despite the termination-notice edit."
+OGUZ-05-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, missing A's 30-day versus B's 60-day termination notice."
+OGUZ-05-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, missing A's 30-day versus B's 60-day termination notice."
+OGUZ-06-B0-Q1,baseline,agreement,ok,expected_correct,no,Correctly gives the 90-day minimum notice for termination without cause (§4.2(c)).
+OGUZ-06-B0-Q1,explained,agreement,ok,expected_correct,no,Correctly gives the 90-day minimum notice for termination without cause (§4.2(c)).
+OGUZ-06-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly identifies Massachusetts law for the Agreement and related transactions (§5.6).
+OGUZ-06-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly identifies Massachusetts law for the Agreement and related transactions (§5.6).
+OGUZ-06-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, failing to report A's 90-day versus B's 60-day without-cause notice (§4.2(c))."
+OGUZ-06-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, failing to report A's 90-day versus B's 60-day without-cause notice (§4.2(c))."
+OGUZ-06-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly identifies unchanged Massachusetts law (§5.6), despite the termination-notice edit."
+OGUZ-06-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly identifies unchanged Massachusetts law (§5.6), despite the termination-notice edit."
+OGUZ-06-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 90-day termination notice (§4.2(c)), despite the governing-law edit."
+OGUZ-06-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 90-day termination notice (§4.2(c)), despite the governing-law edit."
+OGUZ-06-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Selects New York law alone, ignoring Massachusetts in A's governing-law clause (§5.6)."
+OGUZ-06-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Selects New York law alone, ignoring Massachusetts in A's governing-law clause (§5.6)."
+OGUZ-07-B0-Q1,baseline,agreement,ok,expected_correct,no,Correctly gives at least 120 days under the termination clause subject to statutory renewal (F.2).
+OGUZ-07-B0-Q1,explained,agreement,ok,expected_correct,no,Correctly gives at least 120 days under the termination clause subject to statutory renewal (F.2).
+OGUZ-07-B0-Q2,baseline,agreement,ok,expected_correct,no,"Correctly gives May 25, 1999 as the signed-and-effective date."
+OGUZ-07-B0-Q2,explained,agreement,ok,expected_correct,no,"Correctly gives May 25, 1999 as the signed-and-effective date."
+OGUZ-07-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, ignoring A's 120-day notice requirement (F.2)."
+OGUZ-07-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, ignoring A's 120-day notice requirement (F.2)."
+OGUZ-07-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged May 25, 1999, despite the termination-notice edit."
+OGUZ-07-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged May 25, 1999, despite the termination-notice edit."
+OGUZ-07-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 120-day notice (F.2), despite the signed-and-effective date edit."
+OGUZ-07-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 120-day notice (F.2), despite the signed-and-effective date edit."
+OGUZ-07-B2-Q2,baseline,relevant_conflict,ok,expected_correct,yes,"Correctly attributes May 25, 1999 to A and June 15, 1999 to B without selecting one date."
+OGUZ-07-B2-Q2,explained,relevant_conflict,ok,expected_correct,yes,"Correctly attributes May 25 to A and June 15, 1999 to B; embedded evidence-field text does not obscure the source-specific answers."
+OGUZ-08-B0-Q1,baseline,agreement,ok,expected_correct,no,Correctly gives the one-year performance warranty from delivery (§7.1).
+OGUZ-08-B0-Q1,explained,agreement,ok,expected_correct,no,Correctly gives the one-year performance warranty from delivery (§7.1).
+OGUZ-08-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives the 60-day notice needed to prevent renewal (§11.1).
+OGUZ-08-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives the 60-day notice needed to prevent renewal (§11.1).
+OGUZ-08-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives two years alone, failing to acknowledge A's one-year performance warranty (§7.1)."
+OGUZ-08-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives two years alone, failing to acknowledge A's one-year performance warranty (§7.1)."
+OGUZ-08-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day non-renewal notice (§11.1), despite the warranty-duration edit."
+OGUZ-08-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day non-renewal notice (§11.1), despite the warranty-duration edit."
+OGUZ-08-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged one-year warranty (§7.1), despite the non-renewal notice edit."
+OGUZ-08-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged one-year warranty (§7.1), despite the non-renewal notice edit."
+OGUZ-08-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 60-day versus B's 90-day non-renewal notice (§11.1)."
+OGUZ-08-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 60-day versus B's 90-day non-renewal notice (§11.1)."
+OGUZ-09-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly states that the initial term ends ten years after the Effective Date, subject to earlier termination (§1)."
+OGUZ-09-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly states that the initial term ends ten years after the Effective Date, subject to earlier termination (§1)."
+OGUZ-09-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives successive one-year automatic renewals (§1).
+OGUZ-09-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives successive one-year automatic renewals (§1).
+OGUZ-09-B1-Q1,baseline,relevant_conflict,ok,expected_correct,yes,Correctly reports A's ten-year initial term and B's five-year initial term without selecting either as authoritative (§1).
+OGUZ-09-B1-Q1,explained,relevant_conflict,ok,expected_correct,yes,Correctly reports A's ten-year initial term and B's five-year initial term without selecting either as authoritative (§1).
+OGUZ-09-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives the unchanged one-year renewal length (§1), despite the initial-term edit."
+OGUZ-09-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,Correctly distinguishes the irrelevant five-versus-ten-year initial-term difference from the shared one-year renewal length (§1).
+OGUZ-09-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged ten-year initial-term duration (§1), despite the renewal-length edit."
+OGUZ-09-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged ten-year initial-term duration (§1), despite the renewal-length edit."
+OGUZ-09-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives B's two-year renewals alone, ignoring A's one-year renewals (§1)."
+OGUZ-09-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives B's two-year renewals alone, ignoring A's one-year renewals (§1)."
+OGUZ-10-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives July 31, 2019 as the Initial Term's end (§1)."
+OGUZ-10-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives July 31, 2019 as the Initial Term's end (§1)."
+OGUZ-10-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly names New York law; the quoted arbitration-law wording names the same state as the general governing-law clause.
+OGUZ-10-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly names New York law; the quoted arbitration-law wording names the same state as the general governing-law clause.
+OGUZ-10-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives December 31, 2019 alone, ignoring A's July 31, 2019 Initial Term end (§1)."
+OGUZ-10-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives December 31, 2019 alone, ignoring A's July 31, 2019 Initial Term end (§1)."
+OGUZ-10-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly names unchanged New York law; the Initial Term edit does not affect the selected state.
+OGUZ-10-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,Correctly names unchanged New York law; the Initial Term edit does not affect the selected state.
+OGUZ-10-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged July 31, 2019 Initial Term end (§1), despite the governing-law edit."
+OGUZ-10-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged July 31, 2019 Initial Term end (§1), despite the governing-law edit."
+OGUZ-10-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives Delaware law alone, failing to report New York in A's general governing-law clause."
+OGUZ-10-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives Delaware law alone, failing to report New York in A's general governing-law clause."
+DIL-01-Domini-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives February 4, 2005, the agreement date made effective by §6."
+DIL-01-Domini-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives February 4, 2005, the agreement date made effective by §6."
+DIL-01-Domini-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives at least 60 days' notice for penalty-free termination by either specified party (§6).
+DIL-01-Domini-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives at least 60 days' notice for penalty-free termination by either specified party (§6).
+DIL-01-Domini-B1-Q1,baseline,relevant_conflict,ok,expected_correct,yes,"Correctly distinguishes A's February 4, 2005 from B's March 6, 2005 effective date."
+DIL-01-Domini-B1-Q1,explained,relevant_conflict,truncated,,,
+DIL-01-Domini-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day termination notice (§6), despite the date edit."
+DIL-01-Domini-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day termination notice (§6), despite the date edit."
+DIL-01-Domini-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 4, 2005, despite the termination-notice edit."
+DIL-01-Domini-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 4, 2005, despite the termination-notice edit."
+DIL-01-Domini-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 60-day versus B's 90-day termination notice (§6)."
+DIL-01-Domini-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, missing A's 60-day versus B's 90-day termination notice (§6)."
+DIL-02-Anixa-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives April 14, 2020 as the defined Effective Date."
+DIL-02-Anixa-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives April 14, 2020 as the defined Effective Date."
+DIL-02-Anixa-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly identifies Anixa as the terminating party and at least 30 days' notice to OntoChem (§4.2).
+DIL-02-Anixa-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly identifies Anixa as the terminating party and at least 30 days' notice to OntoChem (§4.2).
+DIL-02-Anixa-B1-Q1,baseline,relevant_conflict,ok,expected_correct,yes,"Correctly attributes April 14, 2020 to A and May 14, 2020 to B without privileging either."
+DIL-02-Anixa-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,yes,"Recognizes April 14 versus May 14, 2020 but improperly treats B as newer and authoritative, selecting its date."
+DIL-02-Anixa-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives Anixa's unchanged 30-day without-cause notice to OntoChem (§4.2), despite the date edit."
+DIL-02-Anixa-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives Anixa's unchanged 30-day without-cause notice to OntoChem (§4.2), despite the date edit."
+DIL-02-Anixa-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged April 14, 2020, despite the termination-notice edit."
+DIL-02-Anixa-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged April 14, 2020, despite the termination-notice edit."
+DIL-02-Anixa-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,Incorrectly claims both sources require 60 days; A requires Anixa to give 30 days and B 60 (§4.2).
+DIL-02-Anixa-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,Incorrectly claims both sources require 60 days; A requires Anixa to give 30 days and B 60 (§4.2).
+DIL-03-Driven-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives May 1, 2019 as the defined Effective Date."
+DIL-03-Driven-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives May 1, 2019 as the defined Effective Date."
+DIL-03-Driven-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives either party's 30-day prior notice for termination without cause (§7.2).
+DIL-03-Driven-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives either party's 30-day prior notice for termination without cause (§7.2).
+DIL-03-Driven-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives May 31, 2019 alone, missing A's May 1, 2019 Effective Date."
+DIL-03-Driven-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives May 31, 2019 alone, missing A's May 1, 2019 Effective Date."
+DIL-03-Driven-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice (§7.2), despite the date edit."
+DIL-03-Driven-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice (§7.2), despite the date edit."
+DIL-03-Driven-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged May 1, 2019, despite the termination-notice edit."
+DIL-03-Driven-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged May 1, 2019, despite the termination-notice edit."
+DIL-03-Driven-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, ignoring A's 30-day termination notice (§7.2)."
+DIL-03-Driven-B2-Q2,explained,relevant_conflict,truncated,,,
+DIL-04-Nettaxi-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives November 5, 1999 as the opening paragraph's Effective Date."
+DIL-04-Nettaxi-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives November 5, 1999 as the opening paragraph's Effective Date."
+DIL-04-Nettaxi-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives 60 days for each party's convenience termination (§8.2).
+DIL-04-Nettaxi-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives 60 days for each party's convenience termination (§8.2).
+DIL-04-Nettaxi-B1-Q1,baseline,relevant_conflict,ok,expected_correct,yes,"Correctly gives November 5, 1999 for A and December 5, 1999 for B without selecting a single date."
+DIL-04-Nettaxi-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,yes,Recognizes the conflicting dates but then arbitrarily selects A's November 5 date as the answer; conflict recognition does not make that choice correct.
+DIL-04-Nettaxi-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day notice for each party (§8.2), despite the Effective Date edit."
+DIL-04-Nettaxi-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 60-day notice for each party (§8.2), despite the Effective Date edit."
+DIL-04-Nettaxi-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged November 5, 1999, despite NETTAXI's notice-period edit."
+DIL-04-Nettaxi-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged November 5, 1999, despite NETTAXI's notice-period edit."
+DIL-04-Nettaxi-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days for both parties from A, ignoring B's 90-day notice for NETTAXI (§8.2)."
+DIL-04-Nettaxi-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,Gives only B's party-specific notice periods and misses that A requires NETTAXI to give 60 rather than 90 days (§8.2).
+DIL-05-Biocept-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives November 2, 2012 as the defined Effective Date."
+DIL-05-Biocept-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives November 2, 2012 as the defined Effective Date."
+DIL-05-Biocept-B0-Q2,baseline,agreement,ok,expected_correct,no,"Correctly gives the general 120-day convenience-termination notice, distinct from the change-of-control rule (§11.2(b))."
+DIL-05-Biocept-B0-Q2,explained,agreement,ok,expected_correct,no,"Correctly gives the general 120-day convenience-termination notice, distinct from the change-of-control rule (§11.2(b))."
+DIL-05-Biocept-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,yes,"States both conflicting dates, then chooses B's December 2, 2012 because it is more recent; that preference is unsupported."
+DIL-05-Biocept-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives December 2, 2012 alone, missing November 2, 2012 in A."
+DIL-05-Biocept-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 120-day general convenience notice (§11.2(b)), despite the date edit."
+DIL-05-Biocept-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 120-day general convenience notice (§11.2(b)), despite the date edit."
+DIL-05-Biocept-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged November 2, 2012, despite the termination-notice edit."
+DIL-05-Biocept-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged November 2, 2012, despite the termination-notice edit."
+DIL-05-Biocept-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 150 days alone, failing to report A's 120-day versus B's 150-day general notice (§11.2(b))."
+DIL-05-Biocept-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 150 days alone, failing to report A's 120-day versus B's 150-day general notice (§11.2(b))."
+DIL-06-Emerald-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives January 10, 2019 as the stated Effective Date and term commencement."
+DIL-06-Emerald-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives January 10, 2019 as the stated Effective Date and term commencement."
+DIL-06-Emerald-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives the Company's 30-day notice for termination without Cause (§5.4).
+DIL-06-Emerald-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives the Company's 30-day notice for termination without Cause (§5.4).
+DIL-06-Emerald-B1-Q1,baseline,relevant_conflict,ok,expected_correct,yes,"Correctly attributes January 10, 2019 to A and February 9, 2019 to B without selecting one."
+DIL-06-Emerald-B1-Q1,explained,relevant_conflict,ok,expected_correct,yes,"Correctly attributes January 10, 2019 to A and February 9, 2019 to B without selecting one."
+DIL-06-Emerald-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day Company notice (§5.4), despite the Effective Date edit."
+DIL-06-Emerald-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day Company notice (§5.4), despite the Effective Date edit."
+DIL-06-Emerald-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged January 10, 2019, despite the Company notice-period edit."
+DIL-06-Emerald-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged January 10, 2019, despite the Company notice-period edit."
+DIL-06-Emerald-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, missing A's 30-day versus B's 60-day Company notice (§5.4)."
+DIL-06-Emerald-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, missing A's 30-day versus B's 60-day Company notice (§5.4)."
+DIL-07-Coral-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives February 1, 2020, as stated in the opening paragraph and §21.1(n)."
+DIL-07-Coral-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives February 1, 2020, as stated in the opening paragraph and §21.1(n)."
+DIL-07-Coral-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives the Consultant's minimum three-month notice under §5.1(a).
+DIL-07-Coral-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives the Consultant's minimum three-month notice under §5.1(a).
+DIL-07-Coral-B1-Q1,baseline,relevant_conflict,ok,expected_correct,yes,"Correctly reports February 1, 2020 for A and March 2, 2020 for B without privileging either."
+DIL-07-Coral-B1-Q1,explained,relevant_conflict,ok,expected_correct,yes,"Correctly reports February 1, 2020 for A and March 2, 2020 for B without privileging either."
+DIL-07-Coral-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged three-month Consultant notice (§5.1(a)), despite the Effective Date edit."
+DIL-07-Coral-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged three-month Consultant notice (§5.1(a)), despite the Effective Date edit."
+DIL-07-Coral-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 1, 2020, despite the Consultant notice-period edit."
+DIL-07-Coral-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 1, 2020, despite the Consultant notice-period edit."
+DIL-07-Coral-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives three months plus 30 days alone, ignoring A's three-month notice (§5.1(a))."
+DIL-07-Coral-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives three months plus 30 days alone, ignoring A's three-month notice (§5.1(a))."
+DIL-08-Cyberian-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives February 1, 1998 as the initial Term's start (§4)."
+DIL-08-Cyberian-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives February 1, 1998 as the initial Term's start (§4)."
+DIL-08-Cyberian-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives 30 days' termination notice after the initial restriction (§4(a)).
+DIL-08-Cyberian-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives 30 days' termination notice after the initial restriction (§4(a)).
+DIL-08-Cyberian-B1-Q1,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives March 3, 1998 alone, missing A's February 1, 1998 initial Term start (§4)."
+DIL-08-Cyberian-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,no,"Gives March 3, 1998 alone, missing A's February 1, 1998 initial Term start (§4)."
+DIL-08-Cyberian-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice (§4(a)), despite the term-start edit."
+DIL-08-Cyberian-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged 30-day termination notice (§4(a)), despite the term-start edit."
+DIL-08-Cyberian-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 1, 1998 term start (§4), despite the termination-notice edit."
+DIL-08-Cyberian-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 1, 1998 term start (§4), despite the termination-notice edit."
+DIL-08-Cyberian-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, ignoring A's 30-day termination notice after the initial restriction (§4(a))."
+DIL-08-Cyberian-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 60 days alone, ignoring A's 30-day termination notice after the initial restriction (§4(a))."
+DIL-09-Allied-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives February 1, 2019 as the opening paragraph's Effective Date."
+DIL-09-Allied-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives February 1, 2019 as the opening paragraph's Effective Date."
+DIL-09-Allied-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives at least 60 calendar days' notice once convenience termination is allowed (§14.2).
+DIL-09-Allied-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives at least 60 calendar days' notice once convenience termination is allowed (§14.2).
+DIL-09-Allied-B1-Q1,baseline,relevant_conflict,truncated,,,
+DIL-09-Allied-B1-Q1,explained,relevant_conflict,ok,incorrect_answer,yes,Recognizes both dates but explicitly selects B without source authority; the final conflict caveat does not retract that arbitrary selection.
+DIL-09-Allied-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged 60-calendar-day notice (§14.2); the question conditions on termination already being permitted.
+DIL-09-Allied-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged 60-calendar-day notice (§14.2); the question conditions on termination already being permitted.
+DIL-09-Allied-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 1, 2019, despite the notice-period edit."
+DIL-09-Allied-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged February 1, 2019, despite the notice-period edit."
+DIL-09-Allied-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, overlooking A's 60-calendar-day convenience-termination notice (§14.2)."
+DIL-09-Allied-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives 90 days alone, overlooking A's 60-calendar-day convenience-termination notice (§14.2)."
+DIL-10-Exact-B0-Q1,baseline,agreement,ok,expected_correct,no,"Correctly gives August 21, 2018 as the defined Effective Date."
+DIL-10-Exact-B0-Q1,explained,agreement,ok,expected_correct,no,"Correctly gives August 21, 2018 as the defined Effective Date."
+DIL-10-Exact-B0-Q2,baseline,agreement,ok,expected_correct,no,Correctly gives six months' notice once termination without cause is permitted (§8.4).
+DIL-10-Exact-B0-Q2,explained,agreement,ok,expected_correct,no,Correctly gives six months' notice once termination without cause is permitted (§8.4).
+DIL-10-Exact-B1-Q1,baseline,relevant_conflict,truncated,,,
+DIL-10-Exact-B1-Q1,explained,relevant_conflict,truncated,,,
+DIL-10-Exact-B1-Q2,baseline,irrelevant_conflict,ok,expected_correct,no,Correctly gives unchanged six-month notice (§8.4); the extra subsection citation does not change that answer.
+DIL-10-Exact-B1-Q2,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged six-month notice (§8.4), despite the Effective Date edit."
+DIL-10-Exact-B2-Q1,baseline,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged August 21, 2018, despite the without-cause notice edit."
+DIL-10-Exact-B2-Q1,explained,irrelevant_conflict,ok,expected_correct,no,"Correctly gives unchanged August 21, 2018, despite the without-cause notice edit."
+DIL-10-Exact-B2-Q2,baseline,relevant_conflict,ok,incorrect_answer,no,Incorrectly attributes six months plus 30 days to both sources; A requires six months and B adds 30 days (§8.4).
+DIL-10-Exact-B2-Q2,explained,relevant_conflict,ok,incorrect_answer,no,"Gives six months plus 30 days alone, ignoring A's six-month notice (§8.4)."

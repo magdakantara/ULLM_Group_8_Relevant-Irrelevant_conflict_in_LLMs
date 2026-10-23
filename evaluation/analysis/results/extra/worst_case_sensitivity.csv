@@ -1,0 +1,9 @@
+model,prompt,n,correct,worst_case_accuracy,relevant_n,relevant_correct,worst_case_relevant_accuracy,relevant_detected,worst_case_detection_recall,accuracy_rank
+Qwen 7B,baseline,300,198,66.0,100,9,9.0,13,13.0,2.0
+Qwen 7B,explained,300,200,66.66666666666666,100,10,10.0,14,14.000000000000002,2.0
+Llama 8B,baseline,300,173,57.666666666666664,100,7,7.000000000000001,8,8.0,3.0
+Llama 8B,explained,300,164,54.666666666666664,100,4,4.0,4,4.0,4.0
+Granite 8B,baseline,300,165,55.00000000000001,100,8,8.0,12,12.0,4.0
+Granite 8B,explained,300,169,56.333333333333336,100,11,11.0,13,13.0,3.0
+Llama 70B,baseline,300,233,77.66666666666666,100,51,51.0,51,51.0,1.0
+Llama 70B,explained,300,243,81.0,100,69,69.0,70,70.0,1.0

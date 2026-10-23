@@ -1,0 +1,9 @@
+model,prompt,total,ok,failures,assessable_percent
+Qwen 7B,baseline,300,288,12,96.0
+Qwen 7B,explained,300,287,13,95.66666666666667
+Llama 8B,baseline,300,249,51,83.0
+Llama 8B,explained,300,240,60,80.0
+Granite 8B,baseline,300,239,61,79.66666666666666
+Granite 8B,explained,300,236,64,78.66666666666666
+Llama 70B,baseline,300,268,32,89.33333333333333
+Llama 70B,explained,300,261,39,87.0

@@ -1,0 +1,6 @@
+model,example_id,prompt_type,model_answer,current_conflict_detected,suggested
+llama70b,EX-150,baseline,"Source A: 2 weeks, Source B: 4 weeks",no,yes
+llama70b,OGUZ-01-B1-Q1,baseline,"30 days in Source A, 90 days in Source B",no,yes
+llama70b,EX-093,explained,"Source A: 1 year, Source B: 2 years",no,yes
+llama70b,EX-150,explained,"Source A: 2 weeks, Source B: 4 weeks",no,yes
+llama70b,OGUZ-01-B1-Q1,explained,"Source A: 30 days, Source B: 90 days",no,yes

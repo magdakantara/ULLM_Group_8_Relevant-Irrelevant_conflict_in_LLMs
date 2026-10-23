@@ -1,0 +1,25 @@
+model,prompt,condition,n,correct,accuracy
+Qwen 7B,baseline,agreement,50,50,100.0
+Qwen 7B,baseline,irrelevant_conflict,51,49,96.07843137254902
+Qwen 7B,baseline,relevant_conflict,36,2,5.555555555555555
+Qwen 7B,explained,agreement,50,49,98.0
+Qwen 7B,explained,irrelevant_conflict,51,49,96.07843137254902
+Qwen 7B,explained,relevant_conflict,36,4,11.11111111111111
+Llama 8B,baseline,agreement,50,50,100.0
+Llama 8B,baseline,irrelevant_conflict,51,51,100.0
+Llama 8B,baseline,relevant_conflict,36,2,5.555555555555555
+Llama 8B,explained,agreement,50,50,100.0
+Llama 8B,explained,irrelevant_conflict,51,51,100.0
+Llama 8B,explained,relevant_conflict,36,0,0.0
+Granite 8B,baseline,agreement,50,50,100.0
+Granite 8B,baseline,irrelevant_conflict,51,51,100.0
+Granite 8B,baseline,relevant_conflict,36,2,5.555555555555555
+Granite 8B,explained,agreement,50,50,100.0
+Granite 8B,explained,irrelevant_conflict,51,51,100.0
+Granite 8B,explained,relevant_conflict,36,5,13.88888888888889
+Llama 70B,baseline,agreement,50,50,100.0
+Llama 70B,baseline,irrelevant_conflict,51,51,100.0
+Llama 70B,baseline,relevant_conflict,36,25,69.44444444444444
+Llama 70B,explained,agreement,50,50,100.0
+Llama 70B,explained,irrelevant_conflict,51,51,100.0
+Llama 70B,explained,relevant_conflict,36,30,83.33333333333334
