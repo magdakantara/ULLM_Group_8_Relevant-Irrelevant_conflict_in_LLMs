@@ -1,10 +1,12 @@
 # Contract conflict evaluation
 
-This project tests how Qwen2.5-7B-Instruct answers questions when two contract sources agree or disagree. The main question is whether it recognizes a conflict that affects the answer without unnecessarily refusing to answer when a disagreement is irrelevant.
+This pipeline tests how LLMs answer questions when two contract sources agree or disagree. It was first built for Qwen2.5-7B-Instruct and later extended to Llama-3.1-8B, Granite-3.1-8B and Llama-3.1-70B (see [Llama and Granite runs](#llama-and-granite-runs)). The main question is whether it recognizes a conflict that affects the answer without unnecessarily refusing to answer when a disagreement is irrelevant.
 
 We compare baseline and explained prompts on the same examples. This is an inference experiment; no training or fine-tuning is performed.
 
 ## Current status
+
+> **Update (23 October 2026):** runs for all four models are complete. Labels, metrics, confidence intervals and figures are in [`../evaluation/`](../evaluation/); raw outputs are in [`../outputs/`](../outputs/). The status below describes the Qwen runs as of 18 October.
 
 All four v9 runs were completed and their outputs checked on 18 October 2026. There are 600 response records, with no missing or duplicate example IDs within the planned runs. The dataset fingerprints and source hashes match the saved references. Both prompts use the same example selection and resolved model revision.
 
@@ -245,12 +247,6 @@ In the local workspace, the extracted archive is under `../outputs/evaluation_v9
 
 The local project folder predates the final Snellius changes. Its missing control runner, v9 data subsets and revision lock are available in the extracted archive. Use the archived files to reproduce v9 rather than assuming this local folder is a complete copy of the final runtime.
 
-## Remaining work and limitations
-
-1. Settle the formatting-only evidence rule and finish response annotations.
-2. Check ambiguous cases and a control sample through human review.
-3. Calculate behavior rates and conflict-recognition metrics with explicit denominators.
-4. Report prompt comparisons, route-specific results and paired agreement/irrelevant behavior.
-5. Prepare final tables, figures and example responses.
+## Limitations
 
 The dataset is not an independently validated benchmark. Reference answers still require semantic checks. Question wording varies across contributors, pilot observations influenced the execution setup, and examples within a contract are dependent. These limitations should remain explicit in the final report.
