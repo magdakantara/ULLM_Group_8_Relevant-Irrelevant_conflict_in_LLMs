@@ -84,6 +84,7 @@ evaluation/
   judging/              labelling protocol and method
   analysis/             labels, metrics, figures (main analysis)
   verification/         independent recomputation of all reported numbers
+outputs/                raw model responses and run metadata per model and prompt
 ```
 
 | Path | Content |
@@ -93,6 +94,7 @@ evaluation/
 | [`data/quality/evaluating_data_quality.ipynb`](data/quality/evaluating_data_quality.ipynb) | Structural, manual and LLM-based dataset checks |
 | [`pipeline/`](pipeline/) | Inference for Qwen (native and YaRN routes) and for Llama/Granite (native long context) — see the [pipeline README](pipeline/README.md) |
 | [`evaluation/`](evaluation/) | Judging protocol, labels, metric computation, figures and an independent verification — see the [evaluation README](evaluation/README.md) |
+| [`outputs/`](outputs/) | Raw responses (`responses.jsonl`), run settings (`run_info.json`) and software environment for every run |
 
 ## Reproducing
 
