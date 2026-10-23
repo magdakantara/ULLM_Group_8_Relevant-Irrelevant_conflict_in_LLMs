@@ -1,0 +1,746 @@
+{
+  "schema_version": "1.0",
+  "created_date": "2026-10-13",
+  "source": {
+    "filename": "CUADv1.json",
+    "sha256": "ed0b77d85bdf4014d7495800e8e4a70565b48ee6f8a2e5dca9cf8655dbf10eae",
+    "version": "aok_v1.0"
+  },
+  "owner": "Berkay",
+  "reviewer": "Engin",
+  "review_status": "pending",
+  "expected_contract_count": 10,
+  "contracts": [
+    {
+      "id": "BER-01-Airtech",
+      "original_contract_id": "AIRTECHINTERNATIONALGROUPINC_05_08_2000-EX-10.4-FRANCHISE AGREEMENT",
+      "contract_type": "Franchise Agreement",
+      "document_index": 270,
+      "paragraph_index": 0,
+      "context_sha256": "c9a4d1006bce3890bb04151d0bf1f791b43012e7322ac550813e855461ba3da8",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Renewal Term",
+          "text": "Assuming the renewal conditions in Section 2.02 are satisfied, how long is each of the two additional renewal terms stated in that section?",
+          "answer_original": "10 years per additional renewal term.",
+          "answer_modified": "8 years per additional renewal term.",
+          "annotation_id": "AIRTECHINTERNATIONALGROUPINC_05_08_2000-EX-10.4-FRANCHISE AGREEMENT__Renewal Term",
+          "evidence": [
+            {
+              "start": 4146,
+              "end": 5868,
+              "text": "At the expiration of the term or any renewal term hereof, You may, at its option, renew the Franchise granted hereunder for 2 additional terms of 10 years each on the following terms and conditions:\n\n\n\n\n\nA. You shall give AIRSOPURE notice in writing of Your election to renew this Agreement at least 3 months prior to the expiration of the then-current term.\n\nB. You shall not be in default of any provision of this Agreement or amendment hereto, including without limitation all payment obligations to AIRSOPURE and its affiliates.\n\nC. As a condition of renewal of the Franchise, You agree to execute AIRSOPURE's then-current form of franchise agreement and to comply fully with all terms and conditions thereof, and to pay AIRSOPURE the then-current renewal fee, which is presently $1,000.00. You understand that AIRSOPURE may revise its franchise agreement for any renewal term, at AIRSOPURE's sole discretion, including without limitation to increase the royalty fees or other fees payable by You or to require other obligations of franchisees.\n\nD. You shall meet AIRSOPURE's then-current qualifications and training requirements.\n\nE. You shall execute a general release in a form prescribed by AIRSOPURE releasing AIRSOPURE and its affiliates, directors, officers, employees and agents from all known and unknown claims and liabilities to the extent permitted by state and federal law.\n\nF. You may be required, at AIRSOPURE's sole discretion, to upgrade or remodel Your AIRSOPURE Center to conform to AIRSOPURE's then-current specifications and standards as specified in AIRSOPURE's Operating Manual of otherwise in writing, provided such upgrade or remodel is reasonable in terms of cost and implementation schedule."
+            }
+          ],
+          "scope_notes": "The duration of each additional Section 2.02 renewal term, not the separate initial term or number of renewals."
+        },
+        {
+          "id": "Q2",
+          "category": "Governing Law",
+          "text": "Which state's laws are specified for interpreting and construing the main franchise agreement in Section 18.07?",
+          "answer_original": "Texas.",
+          "answer_modified": "Oklahoma.",
+          "annotation_id": "AIRTECHINTERNATIONALGROUPINC_05_08_2000-EX-10.4-FRANCHISE AGREEMENT__Governing Law",
+          "evidence": [
+            {
+              "start": 56975,
+              "end": 57149,
+              "text": "This Agreement takes effect upon its acceptance and execution by AIRSOPURE in the State of Texas, and shall be interpreted and construed under the laws of the State of Texas."
+            }
+          ],
+          "scope_notes": "The substantive-law phrase in Section 18.07 of the main franchise agreement, not its execution location, venue clause or attached Associate instrument."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 2.02: change the duration of each additional renewal term from 10 years to 8 years; leave the two-term count, initial term and other renewal conditions unchanged.",
+          "patches": [
+            {
+              "start": 4292,
+              "end": 4300,
+              "before": "10 years",
+              "after": "8 years"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 18.07: change only the substantive governing-law state from Texas to Oklahoma; preserve the Texas execution location, Texas venue and separate attached instrument.",
+          "patches": [
+            {
+              "start": 57143,
+              "end": 57148,
+              "before": "Texas",
+              "after": "Oklahoma"
+            }
+          ]
+        }
+      },
+      "independence_note": "Under the text-only question scope, the stated renewal-term duration and the separately named substantive-law state are distinct parameters. No conclusion about changes in real-world enforceability is intended.",
+      "review_notes": [
+        "Renewal remains subject to all of Section 2.02's conditions; the question assumes these are satisfied.",
+        "The original contains a separate attached Associate instrument with its own law clause. Do not conflate it with the main agreement."
+      ]
+    },
+    {
+      "id": "BER-02-Simplicity",
+      "original_contract_id": "SimplicityEsportsGamingCompany_20181130_8-K_EX-10.1_11444071_EX-10.1_Franchise Agreement",
+      "contract_type": "Franchise Agreement",
+      "document_index": 394,
+      "paragraph_index": 0,
+      "context_sha256": "4e5ebafdd3f0f5b43a304ea01666db6ee39355ddb58155c1c8a8fec3cf37824a",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Effective Date",
+          "text": "What calendar date is expressly defined as the Effective Date in the opening paragraph of the Master Franchise Agreement?",
+          "answer_original": "20 November 2018.",
+          "answer_modified": "20 December 2018.",
+          "annotation_id": "SimplicityEsportsGamingCompany_20181130_8-K_EX-10.1_11444071_EX-10.1_Franchise Agreement__Effective Date",
+          "evidence": [
+            {
+              "start": 118,
+              "end": 145,
+              "text": "20t h day of November, 2018"
+            }
+          ],
+          "scope_notes": "The explicitly defined opening-paragraph Effective Date, not an inferred execution, expiry or renewal date."
+        },
+        {
+          "id": "Q2",
+          "category": "Governing Law",
+          "text": "Which state's laws does Section 10.5(a) expressly select to govern and construe this Agreement?",
+          "answer_original": "New York.",
+          "answer_modified": "New Jersey.",
+          "annotation_id": "SimplicityEsportsGamingCompany_20181130_8-K_EX-10.1_11444071_EX-10.1_Franchise Agreement__Governing Law",
+          "evidence": [
+            {
+              "start": 23947,
+              "end": 24230,
+              "text": "The parties hereto have expressly agreed that this Agreement shall be governed by, and construed in accordance with, the laws of the State of New York, applicable to contracts executed and fully to be performed therein, to the exclusion of any other applicable body of governing law."
+            }
+          ],
+          "scope_notes": "Substantive governing law under Section 10.5(a), not the courts selected in Section 10.5(b)."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Opening paragraph: replace November with December in the defined Effective Date, changing 20 November 2018 to 20 December 2018; preserve the original date typography and other text.",
+          "patches": [
+            {
+              "start": 131,
+              "end": 139,
+              "before": "November",
+              "after": "December"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 10.5(a): change the substantive governing-law state from New York to New Jersey; leave the New York court provisions and addresses unchanged.",
+          "patches": [
+            {
+              "start": 24089,
+              "end": 24097,
+              "before": "New York",
+              "after": "New Jersey"
+            }
+          ]
+        }
+      },
+      "independence_note": "The two questions ask for the explicit defined date and named law state. Changing the date can affect other term-dependent provisions, but those provisions are not the second question's target.",
+      "review_notes": [
+        "Keep the source's unusual '20t h' date typography; do not silently clean the full contract.",
+        "Review is about the expressly written parameters, not whether a changed law/date would affect other legal outcomes."
+      ]
+    },
+    {
+      "id": "BER-03-UAGH",
+      "original_contract_id": "UAGHINC_04_14_2004-EX-10.18-MAINTENANCE AGREEMENT",
+      "contract_type": "Maintenance Agreement",
+      "document_index": 331,
+      "paragraph_index": 0,
+      "context_sha256": "357149c870e8edc3d56935a44a10fe0ecdd4db2381e3cd1fd72c0eadbe200bde",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Termination For Convenience",
+          "text": "Under Section 1.3, how many days of written notice must either party provide to terminate the Agreement at any time without liability?",
+          "answer_original": "180 days of written notice to the other party.",
+          "answer_modified": "90 days of written notice to the other party.",
+          "annotation_id": "UAGHINC_04_14_2004-EX-10.18-MAINTENANCE AGREEMENT__Termination For Convenience",
+          "evidence": [
+            {
+              "start": 1633,
+              "end": 1813,
+              "text": "Notwithstanding the foregoing, either party may terminate this Agreement at any time without liability by providing one hundred eighty (180) days written notice to the other party."
+            }
+          ],
+          "scope_notes": "Section 1.3 termination, not the distinct Section 1.2 non-extension notice."
+        },
+        {
+          "id": "Q2",
+          "category": "Cap On Liability",
+          "text": "In limb (ii) of paragraph (d) under Limitation of Liability, how many months before the claim are used to measure the amount paid by the Company to the Provider?",
+          "answer_original": "The 12-month period prior to the claim.",
+          "answer_modified": "The 6-month period prior to the claim.",
+          "annotation_id": "UAGHINC_04_14_2004-EX-10.18-MAINTENANCE AGREEMENT__Cap On Liability",
+          "evidence": [
+            {
+              "start": 9232,
+              "end": 10490,
+              "text": "EXCEPT AS STATED ABOVE, THE PROVIDER'S OBLIGATIONS UNDER THIS AGREEMENT ARE IN LIEU OF ALL OTHER WARRANTIES, EXPRESSED OR IMPLIED. ALL IMPLIED WARRANTIES ARE LIMITED TO THE DURATION OF THIS AGREEMENT. A PARTY'S TOTAL LIABILITY TO THE OTHER PARTY IN CONNECTION WITH THIS AGREEMENT, FOR ANY AND ALL CAUSES OF ACTIONS AND CLAIMS, INCLUDING, WITHOUT LIMITATION, BREACH OF CONTRACT, BREACH OF WARRANTY, NEGLIGENCE, STRICT LIABILITY, MISREPRESENTATION AND OTHER TORTS, SHALL BE:   (a) FOR BODILY INJURY OR DEATH TO ANY PERSON PROXIMATELY CAUSED BY A PARTY'S NEGLIGENCE, THE AMOUNT OF DIRECT DAMAGES PROVEN;   (b) FOR LOSS OR DAMAGE TO REAL PROPERTY OR TANGIBLE PERSONAL PROPERTY PROXIMATELY CAUSED BY A PARTY'S NEGLIGENCE, THE AMOUNT OF DIRECT DAMAGES PROVEN;   (c) FOR ANY DAMAGES ARISING OUT OF THE WILLFUL OR INTENTIONAL MISCONDUCT OF A PARTY, THE AMOUNT OF DIRECT DAMAGES PROVEN;   (d) FOR ALL OTHER DAMAGES OTHER THAN THOSE SET FORTH ABOVE AND NOT EXCLUDED UNDER THIS AGREEMENT, EACH PARTY'S LIABILITY TO THE OTHER PARTY DURING ANY TWELVE (12) MONTH PERIOD SHALL BE LIMITED TO THE LESSOR OF (i) DIRECT DAMAGES PROVEN BY THE PARTY, OR (ii) THE AMOUNT PAID BY THE COMPANY TO THE PROVIDER UNDER THIS AGREEMENT FOR THE TWELVE (12) MONTH PERIOD PRIOR TO THE CLAIM."
+            }
+          ],
+          "scope_notes": "Only the lookback in limb (ii), not the separate annual liability window, a fixed dollar cap, or an exception to the formula."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 1.3: change the written termination-notice period from one hundred eighty (180) days to ninety (90) days; retain the reciprocal right and other provisions.",
+          "patches": [
+            {
+              "start": 1749,
+              "end": 1773,
+              "before": "one hundred eighty (180)",
+              "after": "ninety (90)"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "The all-other-damages cap's limb (ii): change the Company-to-Provider payment lookback from TWELVE (12) months to SIX (6) months prior to the claim. Preserve the separate twelve-month liability window, lesser-of formula and carve-outs.",
+          "patches": [
+            {
+              "start": 10446,
+              "end": 10457,
+              "before": "TWELVE (12)",
+              "after": "SIX (6)"
+            }
+          ]
+        }
+      },
+      "independence_note": "Q1 asks for the fixed notice period, while Q2 asks for the fixed lookback parameter printed in the cap formula, not the actual future amount paid or damages owed.",
+      "review_notes": [
+        "The original cap is the lesser of proven direct damages and specified payments; do not describe the lookback as a dollar amount.",
+        "Preserve bodily injury, tangible-property, willful/intentional-misconduct and Service Fee provisions."
+      ]
+    },
+    {
+      "id": "BER-04-Imageware",
+      "original_contract_id": "IMAGEWARESYSTEMSINC_12_20_1999-EX-10.22-MAINTENANCE AGREEMENT",
+      "contract_type": "Maintenance Agreement",
+      "document_index": 472,
+      "paragraph_index": 0,
+      "context_sha256": "a3434e0b2e5eb0f8d1548c6d7ba40a4f7f46d26f6f7381dbb8831bb929226444",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Notice Period To Terminate Renewal",
+          "text": "How much prior written notice must either party give to prevent automatic renewal under Section 2?",
+          "answer_original": "At least 60 days' prior written notice of non-renewal.",
+          "answer_modified": "At least 90 days' prior written notice of non-renewal.",
+          "annotation_id": "IMAGEWARESYSTEMSINC_12_20_1999-EX-10.22-MAINTENANCE AGREEMENT__Notice Period To Terminate Renewal",
+          "evidence": [
+            {
+              "start": 4752,
+              "end": 5028,
+              "text": "This      Agreement shall automatically renew for consecutive one (1) year terms      at XIMAGE's then prevailing rates at the end of each one (1) year term      unless either party gives at least sixty (60) days prior written notice      of the non-renewal of this Agreement."
+            }
+          ],
+          "scope_notes": "The express minimum non-renewal notice in Section 2, not a breach, payment or other notice period."
+        },
+        {
+          "id": "Q2",
+          "category": "Cap On Liability",
+          "text": "Under Section 15, XIMAGE's stated liability ceiling to MORPHO is based on basic Monthly Maintenance Charges for a term of how many days?",
+          "answer_original": "Basic Monthly Maintenance Charges for a 60-day term.",
+          "answer_modified": "Basic Monthly Maintenance Charges for a 30-day term.",
+          "annotation_id": "IMAGEWARESYSTEMSINC_12_20_1999-EX-10.22-MAINTENANCE AGREEMENT__Cap On Liability",
+          "evidence": [
+            {
+              "start": 17236,
+              "end": 17712,
+              "text": "MORPHO agrees that XIMAGE's total liability to MORPHO for any damages      suffered in connection with, or arising out of, this Agreement or      MORPHO's use of any documentation, product or service provided (or to be      provided) hereunder, regardless of whether any such liability is based      upon contract, tort or other basis, shall be limited to an amount not to      exceed the basic Monthly Maintenance Charges, for a sixty (60) day term      under this Agreement."
+            }
+          ],
+          "scope_notes": "The maintenance-charge period in XIMAGE's stated cap, not an assertion that all damage types are recoverable."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 2: change the minimum non-renewal notice from sixty (60) days to ninety (90) days. Preserve the one-year renewal periods and unrelated sixty-day provisions.",
+          "patches": [
+            {
+              "start": 4949,
+              "end": 4959,
+              "before": "sixty (60)",
+              "after": "ninety (90)"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 15: change the charge-based liability cap's reference term from sixty (60) days to thirty (30) days. Preserve the separate non-renewal rule and damages exclusions.",
+          "patches": [
+            {
+              "start": 17666,
+              "end": 17676,
+              "before": "sixty (60)",
+              "after": "thirty (30)"
+            }
+          ]
+        }
+      },
+      "independence_note": "Although both original provisions contain 'sixty (60)', they refer to separate parameters: non-renewal notice and the charge period used in the liability cap. Each variant edits only one located occurrence.",
+      "review_notes": [
+        "Do not globally replace sixty-day values; the full contract contains additional notice, cure and payment provisions.",
+        "Retain the consequential and other excluded-damages language."
+      ]
+    },
+    {
+      "id": "BER-05-InMode",
+      "original_contract_id": "InmodeLtd_20190729_F-1A_EX-10.9_11743243_EX-10.9_Manufacturing Agreement",
+      "contract_type": "Manufacturing Agreement",
+      "document_index": 140,
+      "paragraph_index": 0,
+      "context_sha256": "93e278dfb01b1994b76f58b0c46d679979030e7ed3149e212ecc502b50ac7c10",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Warranty Duration",
+          "text": "How long is the defined Warranty Period in Section 10, measured from delivery to Customer?",
+          "answer_original": "12 months from the date of delivery to Customer.",
+          "answer_modified": "18 months from the date of delivery to Customer.",
+          "annotation_id": "InmodeLtd_20190729_F-1A_EX-10.9_11743243_EX-10.9_Manufacturing Agreement__Warranty Duration",
+          "evidence": [
+            {
+              "start": 15246,
+              "end": 15368,
+              "text": "For the purpose of this Agreement, \"Warranty Period\" shall mean twelve (12) months as of the date of delivery to Customer."
+            }
+          ],
+          "scope_notes": "The defined Warranty Period; all coverage qualifications, exclusions and remedies remain applicable."
+        },
+        {
+          "id": "Q2",
+          "category": "Termination For Convenience",
+          "text": "Under Section 15.2, what minimum written notice must either party give to terminate the Agreement without cause?",
+          "answer_original": "Not less than 4 months' written notice to the other party.",
+          "answer_modified": "Not less than 6 months' written notice to the other party.",
+          "annotation_id": "InmodeLtd_20190729_F-1A_EX-10.9_11743243_EX-10.9_Manufacturing Agreement__Termination For Convenience",
+          "evidence": [
+            {
+              "start": 23617,
+              "end": 23827,
+              "text": "Notwithstanding anything to the contrary stated in this Agreement, either party may terminate this Agreement at any time without cause by giving to the other party, not less than four (4) months written notice."
+            }
+          ],
+          "scope_notes": "The minimum without-cause notice in Section 15.2, not for-cause cure periods or the financial consequences of termination."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 10: change the defined Warranty Period from twelve (12) months to eighteen (18) months from delivery to Customer. Preserve the delivery trigger and all coverage qualifications.",
+          "patches": [
+            {
+              "start": 15310,
+              "end": 15321,
+              "before": "twelve (12)",
+              "after": "eighteen (18)"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 15.2: change the minimum without-cause notice from four (4) months to six (6) months; leave for-cause provisions and termination-payment obligations unchanged.",
+          "patches": [
+            {
+              "start": 23796,
+              "end": 23804,
+              "before": "four (4)",
+              "after": "six (6)"
+            }
+          ]
+        }
+      },
+      "independence_note": "The questions ask for the stated warranty duration and without-cause notice duration, not the calendar timing or financial consequences of any particular termination.",
+      "review_notes": [
+        "Warranty material coverage is qualified by the original material manufacturer's warranty; preserve this qualification.",
+        "Section 16 obligations remain in the full text and are not removed or inferred away."
+      ]
+    },
+    {
+      "id": "BER-06-Electrameccanica",
+      "original_contract_id": "ELECTRAMECCANICA VEHICLES CORP. - Manufacturing Agreement",
+      "contract_type": "Manufacturing Agreement",
+      "document_index": 76,
+      "paragraph_index": 0,
+      "context_sha256": "edaae9dbe93477b73c5bf8edbe2fe2f7775af5198cad21d7c9ed5b971b561f4a",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Renewal Term",
+          "text": "Under Section 8.1, how long is each automatic additional renewal term after the initial term, unless earlier terminated?",
+          "answer_original": "One year per additional renewal term.",
+          "answer_modified": "Two years per additional renewal term.",
+          "annotation_id": "ELECTRAMECCANICA VEHICLES CORP. - Manufacturing Agreement__Renewal Term",
+          "evidence": [
+            {
+              "start": 29226,
+              "end": 29426,
+              "text": "This Agreement shall have a term of four (4) years from the effective date first set forth above, and shall automatically renew for additional one year terms unless earlier terminated by either party."
+            }
+          ],
+          "scope_notes": "Additional renewal terms, not the original four-year term or a calculated expiration date."
+        },
+        {
+          "id": "Q2",
+          "category": "Governing Law",
+          "text": "Which jurisdiction's laws are named in the substantive governing-law sentence in Section 10.4, rather than as the arbitration venue?",
+          "answer_original": "Hong Kong.",
+          "answer_modified": "Singapore.",
+          "annotation_id": "ELECTRAMECCANICA VEHICLES CORP. - Manufacturing Agreement__Governing Law",
+          "evidence": [
+            {
+              "start": 40144,
+              "end": 40266,
+              "text": "This Agreement shall be governed by and construed under the laws of Hong Kong without regard to choice of laws principles."
+            }
+          ],
+          "scope_notes": "The named governing law, not the arbitration location, institution or language."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 8.1: change automatic additional one year terms to additional two year terms. Preserve the initial four-year term and termination conditions.",
+          "patches": [
+            {
+              "start": 29369,
+              "end": 29377,
+              "before": "one year",
+              "after": "two year"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 10.4: change only the governing-law jurisdiction from Hong Kong to Singapore. Preserve the Hong Kong arbitration venue and institution and the English-language provisions.",
+          "patches": [
+            {
+              "start": 40212,
+              "end": 40221,
+              "before": "Hong Kong",
+              "after": "Singapore"
+            }
+          ]
+        }
+      },
+      "independence_note": "The printed additional-term duration and substantive-law jurisdiction are separately stated; the questions do not request external-law interpretation of renewal enforceability.",
+      "review_notes": [
+        "The original effective-date day is blank and is not used as a question.",
+        "Hong Kong appears in several arbitration references; only the substantive-law occurrence is edited."
+      ]
+    },
+    {
+      "id": "BER-07-Dragon",
+      "original_contract_id": "DRAGONSYSTEMSINC_01_08_1999-EX-10.17-OUTSOURCING AGREEMENT",
+      "contract_type": "Outsourcing Agreement",
+      "document_index": 62,
+      "paragraph_index": 0,
+      "context_sha256": "8d8020e5c0bcaafac609fe53a2e7edbe2ecbf15541dc846ed25ac63ec822b37e",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Warranty Duration",
+          "text": "Under Section 6, within how many months after delivery to Dragon Systems must the Services become defective for the stated warranty remedies to apply on that ground?",
+          "answer_original": "Within 6 months after delivery to Dragon Systems.",
+          "answer_modified": "Within 9 months after delivery to Dragon Systems.",
+          "annotation_id": "DRAGONSYSTEMSINC_01_08_1999-EX-10.17-OUTSOURCING AGREEMENT__Warranty Duration",
+          "evidence": [
+            {
+              "start": 3345,
+              "end": 3719,
+              "text": "Should MMI not supply the Services as agreed or should the Services become defective within 6 months from their delivery to Dragon Systems, Dragon Systems may at its option require MMI to complete or re-perform the Services within a reasonable period of time, rescind the contract or refuse payment of the compensation in part or in total, notwithstanding any damage claims."
+            }
+          ],
+          "scope_notes": "The stated defect-appearance window for delivered Services, not every other warranty obligation or remedy."
+        },
+        {
+          "id": "Q2",
+          "category": "Termination For Convenience",
+          "text": "Under the without-cause provision in Section 12, how much written notice must Dragon give to MMI?",
+          "answer_original": "60 days' written notice to MMI.",
+          "answer_modified": "90 days' written notice to MMI.",
+          "annotation_id": "DRAGONSYSTEMSINC_01_08_1999-EX-10.17-OUTSOURCING AGREEMENT__Termination For Convenience",
+          "evidence": [
+            {
+              "start": 6266,
+              "end": 6364,
+              "text": "Dragon may terminate this agreement without cause by giving sixty (60) days written notice to MMI."
+            }
+          ],
+          "scope_notes": "Dragon's without-cause termination right, not a reciprocal right for MMI or a for-cause termination ground."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 6: change the Services defect-appearance window from 6 months to 9 months after delivery to Dragon Systems; preserve the remedy alternatives and other obligations.",
+          "patches": [
+            {
+              "start": 3437,
+              "end": 3445,
+              "before": "6 months",
+              "after": "9 months"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 12: change Dragon's without-cause written notice to MMI from sixty (60) days to ninety (90) days. Preserve separate for-cause grounds and other party rights.",
+          "patches": [
+            {
+              "start": 6326,
+              "end": 6336,
+              "before": "sixty (60)",
+              "after": "ninety (90)"
+            }
+          ]
+        }
+      },
+      "independence_note": "The selected facts are the warranty's stated post-delivery defect window and Dragon's fixed written notice period. Neither question asks about an actual disputed termination or recovery.",
+      "review_notes": [
+        "The without-cause sentence names Dragon only; do not infer that both parties have this right.",
+        "The clause headed Governing Law names courts rather than a governing-law jurisdiction; it was deliberately not used."
+      ]
+    },
+    {
+      "id": "BER-08-NICE",
+      "original_contract_id": "NICELTD_06_26_2003-EX-4.5-OUTSOURCING AGREEMENT",
+      "contract_type": "Outsourcing Agreement",
+      "document_index": 41,
+      "paragraph_index": 0,
+      "context_sha256": "4dd3c78211abb8cbe0200daddaca6a1cf86ae1227766d9bcbc3e8fd1fd642870",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Warranty Duration",
+          "text": "According to definition (xxii), what is the default Warranty Period measured from Shipment Date, unless the parties agree otherwise in writing?",
+          "answer_original": "13 months from Shipment Date, unless otherwise agreed in writing.",
+          "answer_modified": "15 months from Shipment Date, unless otherwise agreed in writing.",
+          "annotation_id": "NICELTD_06_26_2003-EX-4.5-OUTSOURCING AGREEMENT__Warranty Duration",
+          "evidence": [
+            {
+              "start": 13475,
+              "end": 13656,
+              "text": "\"WARRANTY PERIOD\" - Thirteen (13) months from the Shipment Date of           the Product subject matter of the warranty, unless agreed otherwise by           the parties in writing."
+            }
+          ],
+          "scope_notes": "The default defined period, not an override or a longer warranty supplied for particular third-party items."
+        },
+        {
+          "id": "Q2",
+          "category": "Cap On Liability",
+          "text": "Under Section 15.4, what aggregate monetary ceiling is stated for Contractor's liability to NICE for the listed indirect-type damages, apart from the intellectual-property infringement exception?",
+          "answer_original": "US$5,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.",
+          "answer_modified": "US$6,000,000 in the aggregate for the specified claims, subject to Section 15.4's qualifications and IP exception.",
+          "annotation_id": "NICELTD_06_26_2003-EX-4.5-OUTSOURCING AGREEMENT__Cap On Liability",
+          "evidence": [
+            {
+              "start": 123423,
+              "end": 124041,
+              "text": "Notwithstanding anything to the contrary contained herein or           otherwise, Contractor's liability to NICE for any indirect, special,           incidental, exemplary or consequential damages as a result of any           claim arising under this Agreement or in connection therewith,           regardless of whether Contractor has been advised of the possibility           of such damages, shall not exceed five million US dollars ($5,000,000)           in the aggregate for all claims, except for infringement of           Intellectual Property rights for which Contractor is liable under           Section 12.6."
+            }
+          ],
+          "scope_notes": "Contractor-to-NICE cap in Section 15.4 for the specified indirect, special, incidental, exemplary or consequential damages; not NICE's reciprocal cap under Section 15.5."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Definition (xxii): change the default Warranty Period from Thirteen (13) months to Fifteen (15) months from Shipment Date. Preserve the written-override qualification and other warranty provisions.",
+          "patches": [
+            {
+              "start": 13495,
+              "end": 13508,
+              "before": "Thirteen (13)",
+              "after": "Fifteen (15)"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 15.4: change only Contractor's aggregate cap owed to NICE from five million US dollars ($5,000,000) to six million US dollars ($6,000,000). Preserve the IP exception, liability qualifications and NICE's separate reciprocal cap.",
+          "patches": [
+            {
+              "start": 123835,
+              "end": 123871,
+              "before": "five million US dollars ($5,000,000)",
+              "after": "six million US dollars ($6,000,000)"
+            }
+          ]
+        }
+      },
+      "independence_note": "The questions target the explicit default warranty-duration parameter and the monetary ceiling for the scoped claims. They do not ask whether a particular claim is actually covered or payable.",
+      "review_notes": [
+        "Shipment Date is separately defined; do not replace it with customer receipt or a guessed calendar date.",
+        "The original contains a separate matching $5 million cap for NICE; that occurrence must remain unchanged.",
+        "Preserve Section 12.6's IP carve-out and the qualifications about liability and non-waivable law."
+      ]
+    },
+    {
+      "id": "BER-09-Gridiron",
+      "original_contract_id": "GRIDIRONBIONUTRIENTS,INC_02_05_2020-EX-10.3-SUPPLY AGREEMENT",
+      "contract_type": "Supply Agreement",
+      "document_index": 169,
+      "paragraph_index": 0,
+      "context_sha256": "afc2435e7661797197d3fbc891439f9d04dd58801e6203c0f43ac83fbdd8ebad",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Termination For Convenience",
+          "text": "Which party or parties are expressly granted permission in Section 2.A to terminate the Agreement before delivery of the Product?",
+          "answer_original": "Either party: Shi Farms or Gridiron.",
+          "answer_modified": "Gridiron is the party expressly granted that permission in Section 2.A.",
+          "annotation_id": "GRIDIRONBIONUTRIENTS,INC_02_05_2020-EX-10.3-SUPPLY AGREEMENT__Termination For Convenience",
+          "evidence": [
+            {
+              "start": 2785,
+              "end": 2872,
+              "text": "Either Party may terminate this Agreement at any time prior to delivery of the Product."
+            }
+          ],
+          "scope_notes": "The express pre-delivery termination grant in Section 2.A, not bare party identification or any rights arising elsewhere or under outside law."
+        },
+        {
+          "id": "Q2",
+          "category": "Governing Law",
+          "text": "Which state's laws are specified in Section 5.B for construing the Agreement and its amendments?",
+          "answer_original": "Colorado.",
+          "answer_modified": "Oregon.",
+          "annotation_id": "GRIDIRONBIONUTRIENTS,INC_02_05_2020-EX-10.3-SUPPLY AGREEMENT__Governing Law",
+          "evidence": [
+            {
+              "start": 4139,
+              "end": 4368,
+              "text": "This Agreement and any amendments thereto shall be construed according to the laws of the State of Colorado without regard to conflicts of law principles and any disputes hereunder shall be litigated in a state court in Colorado."
+            }
+          ],
+          "scope_notes": "The substantive governing-law phrase, not the separately specified location of the state court."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 2.A: replace Either Party with Gridiron in the pre-delivery termination grant. Preserve the before-delivery condition and all other clauses.",
+          "patches": [
+            {
+              "start": 2785,
+              "end": 2797,
+              "before": "Either Party",
+              "after": "Gridiron"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 5.B: change only the substantive governing-law state from Colorado to Oregon. Preserve the Colorado state-court venue and all other wording.",
+          "patches": [
+            {
+              "start": 4238,
+              "end": 4246,
+              "before": "Colorado",
+              "after": "Oregon"
+            }
+          ]
+        }
+      },
+      "independence_note": "The questions concern the party set expressly granted one termination permission and the named substantive-law state. They do not infer whether Shi Farms might have other rights outside Section 2.A.",
+      "review_notes": [
+        "A defines Shi Farms and Gridiron as the two Parties; the question asks about a contractual right, not unrelated party identity.",
+        "B1 does not claim that Shi Farms is legally prohibited from terminating under every possible ground."
+      ]
+    },
+    {
+      "id": "BER-10-BellRing",
+      "original_contract_id": "BELLRINGBRANDS,INC_02_07_2020-EX-10.18-MASTER SUPPLY AGREEMENT",
+      "contract_type": "Supply Agreement",
+      "document_index": 107,
+      "paragraph_index": 0,
+      "context_sha256": "4db35cae428d32e800d78491fbda9306df3b93ae8bb5c4c48a899e4943eb21d8",
+      "questions": [
+        {
+          "id": "Q1",
+          "category": "Notice Period To Terminate Renewal",
+          "text": "Under Section 6.1, how far before expiration of the then-current term must a party notify the other of its intention not to renew?",
+          "answer_original": "No less than 12 months before expiration of the then-current term.",
+          "answer_modified": "No less than 9 months before expiration of the then-current term.",
+          "annotation_id": "BELLRINGBRANDS,INC_02_07_2020-EX-10.18-MASTER SUPPLY AGREEMENT__Notice Period To Terminate Renewal",
+          "evidence": [
+            {
+              "start": 21036,
+              "end": 21401,
+              "text": "This Agreement will commence on the Effective Date and continue for an Initial Term of five (5) years, and will automatically renew for additional periods of five (5) years unless one Party notifies the other of its intention not to renew, no less than 12 months prior to the expiration of the then-current term, unless terminated as permitted under this Agreement."
+            }
+          ],
+          "scope_notes": "Section 6.1 non-renewal notice, not a for-cause cure period or the duration of the initial/renewal terms."
+        },
+        {
+          "id": "Q2",
+          "category": "Governing Law",
+          "text": "Which state's laws are expressly selected to govern the Agreement under Section 12.1?",
+          "answer_original": "Delaware.",
+          "answer_modified": "New York.",
+          "annotation_id": "BELLRINGBRANDS,INC_02_07_2020-EX-10.18-MASTER SUPPLY AGREEMENT__Governing Law",
+          "evidence": [
+            {
+              "start": 31166,
+              "end": 31285,
+              "text": "This Agreement will be governed by the laws of the State of Delaware without regard to its conflicts of law principles."
+            }
+          ],
+          "scope_notes": "Section 12.1 substantive governing law, not the Delaware courts selected in Section 12.2."
+        }
+      ],
+      "variants": {
+        "B1": {
+          "affected_question": "Q1",
+          "semantic_change": "Section 6.1: change the minimum non-renewal notice from 12 months to 9 months before expiration. Preserve the five-year initial and renewal terms and the other termination/notice provisions.",
+          "patches": [
+            {
+              "start": 21289,
+              "end": 21298,
+              "before": "12 months",
+              "after": "9 months"
+            }
+          ]
+        },
+        "B2": {
+          "affected_question": "Q2",
+          "semantic_change": "Section 12.1: change only the governing-law state from Delaware to New York; preserve the Delaware court-selection provision and all other text.",
+          "patches": [
+            {
+              "start": 31226,
+              "end": 31234,
+              "before": "Delaware",
+              "after": "New York"
+            }
+          ]
+        }
+      },
+      "independence_note": "The questions request the printed non-renewal notice duration and named governing-law state, not an externally assessed legal effect on renewal.",
+      "review_notes": [
+        "Section 11's written-notice requirements remain unchanged.",
+        "The liability cap is redacted in the original and is deliberately not used as a question."
+      ]
+    }
+  ]
+}
